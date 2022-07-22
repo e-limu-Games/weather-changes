@@ -1,0 +1,187 @@
+{
+	"name": "Arainy",
+	"plugin-id": "Sprite",
+	"sid": 450241470582371,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 552548951793616
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 154,
+						"height": 42,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3372320,
+						"collisionPoly": {
+							"points": [
+								0.09740259740259741,
+								0.35714285714285715,
+								0.5,
+								0.16666666666666666,
+								0.922077922077922,
+								0.2619047619047619,
+								0.9675324675324676,
+								0.5,
+								0.9935064935064936,
+								0.9761904761904762,
+								0.5,
+								0.9285714285714286,
+								0,
+								0.9761904761904762,
+								0.09090909090909091,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 154,
+						"height": 42,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4004043,
+						"collisionPoly": {
+							"points": [
+								0.1396103896103896,
+								0.5119047619047619,
+								0.5,
+								0.2619047619047619,
+								0.8928571428571429,
+								0.38095238095238093,
+								0.922077922077922,
+								0.5,
+								0.9577922077922078,
+								0.8452380952380952,
+								0.5,
+								0.9880952380952381,
+								0.14935064935064934,
+								0.44047619047619047,
+								0.1396103896103896,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 202,
+						"height": 46,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 706890,
+						"collisionPoly": {
+							"points": [
+								0.06435643564356436,
+								0.2826086956521739,
+								0.5,
+								0.06521739130434782,
+								0.8316831683168316,
+								0.5,
+								0.5,
+								0.8695652173913043,
+								0.07920792079207921,
+								0.6304347826086957,
+								0.04950495049504951,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 202,
+						"height": 46,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9583076,
+						"collisionPoly": {
+							"points": [
+								0.04455445544554455,
+								0.1956521739130435,
+								0.5,
+								0.06521739130434782,
+								0.8663366336633663,
+								0.5652173913043478,
+								0.9752475247524752,
+								0.5,
+								0.9356435643564357,
+								0.717391304347826,
+								0.5,
+								0.9565217391304348,
+								0.0594059405940594,
+								0.717391304347826,
+								0.01485148514851485,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 211,
+						"height": 60,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2866802,
+						"collisionPoly": {
+							"points": [
+								0.11374407582938388,
+								0.4,
+								0.5,
+								0.26666666666666666,
+								0.943127962085308,
+								0.18333333333333332,
+								0.8436018957345972,
+								0.5,
+								0.919431279620853,
+								0.7166666666666667,
+								0.5,
+								0.9,
+								0.10426540284360189,
+								0.6166666666666667,
+								0.0947867298578199,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 494412862597385,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

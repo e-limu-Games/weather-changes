@@ -1,0 +1,463 @@
+{
+	"name": "Activity",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 650584488064425
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 812161591262852
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Sprite2",
+					"sid": 853422425482005,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"scene1\"",
+						"property": "offsetY",
+						"end-value": "282",
+						"time": "2",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "fader",
+					"sid": 666508052114057,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetOpacity",
+						"end-value": "0",
+						"time": "2",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "homebtn",
+					"sid": 403638874176789,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetHeight",
+						"end-value": "142",
+						"time": "1",
+						"ease": "easeinoutbounce",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "homebtn",
+					"sid": 390846306486455,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetWidth",
+						"end-value": "200",
+						"time": "1",
+						"ease": "easeinoutquad",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 883751141354762,
+					"parameters": {
+						"audio-file": "Activity Corner_high (1)",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 296838495002366
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-start",
+					"objectClass": "Touch",
+					"sid": 376698427297140
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 504459088461651
+				}
+			],
+			"sid": 433046111605205
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-end",
+					"objectClass": "Touch",
+					"sid": 980750644072016
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 896098761149920,
+					"parameters": {
+						"audio-file": "MenuMusic2",
+						"loop": "not-looping",
+						"volume": "-20",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 696583158497473
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "Sprite2",
+					"sid": 238849252401666,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"scene1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "logo",
+					"sid": 717235437564023,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "140",
+						"time": "2",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 794771786626491,
+					"parameters": {
+						"audio-file": "firstbutton",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "story1",
+					"sid": 831477920763051,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "scale",
+						"end-x": "1",
+						"end-y": "1",
+						"time": "0.7",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 635819775589994
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 645134007358575,
+					"parameters": {
+						"object": "homebtn2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "bar1",
+					"sid": 520805165198212,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "bar2",
+					"sid": 904175760298279,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "bar3",
+					"sid": 692764862595199,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "playbtn",
+					"sid": 644887581630237,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "0",
+						"end-y": "0",
+						"time": "1",
+						"ease": "easeinoutbounce",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 946413781983457,
+					"parameters": {
+						"audio-file": "Button",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 532663391811139,
+					"parameters": {
+						"layout": "Home"
+					}
+				}
+			],
+			"sid": 550534756245843
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 576869565356321,
+					"parameters": {
+						"object": "homebtn"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "bar1",
+					"sid": 144417604776300,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "bar2",
+					"sid": 521756760759102,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "bar3",
+					"sid": 881883399272823,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "playbtn",
+					"sid": 428487118390531,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "0",
+						"end-y": "0",
+						"time": "1",
+						"ease": "easeinoutbounce",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 299025704045007,
+					"parameters": {
+						"audio-file": "Button",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 937964207669857,
+					"parameters": {
+						"layout": "Home"
+					}
+				}
+			],
+			"sid": 476643006916916
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 123163690763384,
+					"parameters": {
+						"object": "story1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "bar1",
+					"sid": 722472720057044,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "bar2",
+					"sid": 652753703826471,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "bar3",
+					"sid": 382153601225387,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "playbtn",
+					"sid": 121064430366876,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "0",
+						"end-y": "0",
+						"time": "1",
+						"ease": "easeinoutbounce",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 773444405681757,
+					"parameters": {
+						"audio-file": "Button",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "fader",
+					"sid": 111923416238664,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"fadeout\"",
+						"property": "offsetOpacity",
+						"end-value": "100",
+						"time": "4",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 457795075101873
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "fader",
+					"sid": 371090722090340,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"fadeout\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 381535478706693,
+					"parameters": {
+						"layout": "Activity1"
+					}
+				}
+			],
+			"sid": 769317156585028
+		}
+	],
+	"sid": 565278509845860
+}

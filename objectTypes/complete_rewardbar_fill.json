@@ -1,0 +1,26 @@
+{
+	"name": "Complete_Rewardbar_Fill",
+	"plugin-id": "TiledBg",
+	"sid": 617568721470333,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 941332489162051
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 141,
+		"height": 200,
+		"originX": 0.6631205673758865,
+		"originY": 0.82875,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 6725977,
+		"useCollisionPoly": true
+	}
+}

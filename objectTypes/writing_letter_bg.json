@@ -1,0 +1,112 @@
+{
+	"name": "Writing_Letter_BG",
+	"plugin-id": "Sprite",
+	"sid": 480221682428439,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "num",
+			"type": "number",
+			"desc": "",
+			"sid": 212623262169245
+		},
+		{
+			"name": "Letter",
+			"type": "string",
+			"desc": "",
+			"sid": 291617008216161
+		},
+		{
+			"name": "selected",
+			"type": "boolean",
+			"desc": "",
+			"sid": 191025246504591
+		},
+		{
+			"name": "posx",
+			"type": "number",
+			"desc": "",
+			"sid": 865821268118813
+		},
+		{
+			"name": "found",
+			"type": "boolean",
+			"desc": "",
+			"sid": 549295825299712
+		},
+		{
+			"name": "order",
+			"type": "number",
+			"desc": "",
+			"sid": 225894139414596
+		},
+		{
+			"name": "max_size",
+			"type": "number",
+			"desc": "",
+			"sid": 272394816388758
+		},
+		{
+			"name": "hint",
+			"type": "boolean",
+			"desc": "",
+			"sid": 470631004691169
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 910850346439736
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 118,
+						"height": 118,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 745508,
+						"collisionPoly": {
+							"points": [
+								0.01694915254237288,
+								0.19491525423728814,
+								0.19491525423728814,
+								0.01694915254237288,
+								0.8050847457627118,
+								0.01694915254237288,
+								0.9830508474576272,
+								0.19491525423728814,
+								0.9830508474576272,
+								0.8050847457627118,
+								0.8050847457627118,
+								0.9830508474576272,
+								0.19491525423728814,
+								0.9830508474576272,
+								0.01694915254237288,
+								0.8050847457627118
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 991243402365725,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,63 @@
+{
+	"name": "Symbol_Loader",
+	"plugin-id": "Sprite",
+	"sid": 582303215895402,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 405813363723224
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 512,
+						"height": 512,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8061337,
+						"collisionPoly": {
+							"points": [
+								0.171875,
+								0.171875,
+								0.5,
+								0.0390625,
+								0.8203125,
+								0.171875,
+								0.953125,
+								0.5,
+								0.8203125,
+								0.8203125,
+								0.5,
+								0.953125,
+								0.171875,
+								0.8203125,
+								0.0390625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 112737119719544,
+				"name": "Animation 2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

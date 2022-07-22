@@ -1,0 +1,724 @@
+{
+	"name": "Global_Event_Sheet",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Start",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 368074348845364
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Global_Align",
+							"sid": 586359530611336
+						}
+					],
+					"sid": 350766592004331
+				},
+				{
+					"functionName": "Global_Align",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "BG_Fade",
+							"sid": 611008912908352,
+							"parameters": {
+								"width": "ViewportWidth(Self.LayerNumber)",
+								"height": "ViewportHeight(Self.LayerNumber)"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "BG_Gradient",
+							"sid": 671404786718192,
+							"parameters": {
+								"width": "ViewportWidth(Self.LayerNumber)",
+								"height": "ViewportHeight(Self.LayerNumber)"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "BG_Top",
+							"sid": 416695837681799,
+							"parameters": {
+								"width": "ViewportWidth(Self.LayerNumber)"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "BG_Top",
+							"sid": 742049169932880,
+							"parameters": {
+								"y": "ViewportTop(\"Background\")"
+							}
+						}
+					],
+					"sid": 188209141936615
+				}
+			],
+			"sid": 903447316360475
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Load_Words",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "Files_Loaded",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 987775095811923
+				},
+				{
+					"functionName": "Load_Words",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 467485263836531,
+							"parameters": {
+								"variable": "Files_Loaded",
+								"value": "0"
+							}
+						},
+						{
+							"type": "comment",
+							"text": "Load the dictionaries for your current language"
+						},
+						{
+							"id": "request-url",
+							"objectClass": "AJAX",
+							"sid": 814761913904314,
+							"parameters": {
+								"tag": "\"2\"",
+								"url": "\"2\"&Language&\".json\""
+							}
+						},
+						{
+							"id": "request-url",
+							"objectClass": "AJAX",
+							"sid": 744792795373102,
+							"parameters": {
+								"tag": "\"3\"",
+								"url": "\"3\"&Language&\".json\""
+							}
+						},
+						{
+							"id": "request-url",
+							"objectClass": "AJAX",
+							"sid": 681392216897547,
+							"parameters": {
+								"tag": "\"4\"",
+								"url": "\"4\"&Language&\".json\""
+							}
+						},
+						{
+							"id": "request-url",
+							"objectClass": "AJAX",
+							"sid": 904053062454772,
+							"parameters": {
+								"tag": "\"5\"",
+								"url": "\"5\"&Language&\".json\""
+							}
+						},
+						{
+							"id": "request-url",
+							"objectClass": "AJAX",
+							"sid": 151294953329148,
+							"parameters": {
+								"tag": "\"6\"",
+								"url": "\"6\"&Language&\".json\""
+							}
+						},
+						{
+							"type": "comment",
+							"text": "Load the levels for your current language"
+						},
+						{
+							"id": "request-url",
+							"objectClass": "AJAX",
+							"sid": 615468398236747,
+							"parameters": {
+								"tag": "\"level_words\"",
+								"url": "\"level_words_\"&Language&\".json\""
+							}
+						},
+						{
+							"type": "comment",
+							"text": "Load an array with the amount of words needed for each level"
+						},
+						{
+							"id": "request-url",
+							"objectClass": "AJAX",
+							"sid": 701074235131982,
+							"parameters": {
+								"tag": "\"level_needed\"",
+								"url": "\"level_needed_\"&Language&\".json\""
+							}
+						}
+					],
+					"sid": 964919036921408
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 760389257744280,
+							"parameters": {
+								"tag": "\"2\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 460908806984114
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 136146804601675,
+							"parameters": {
+								"tag": "\"3\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 876711734000159
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 462255485628952,
+							"parameters": {
+								"tag": "\"4\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 409633691433000
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 411558208743842,
+							"parameters": {
+								"tag": "\"5\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 362231972593308
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 272316059851504,
+							"parameters": {
+								"tag": "\"6\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 464780851484386
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 782528818469132,
+							"parameters": {
+								"tag": "\"level_words\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 375348363136623
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 250993781559777,
+							"parameters": {
+								"tag": "\"level_needed\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "Array_Levels_Data",
+							"sid": 331694921102762,
+							"parameters": {
+								"json": "AJAX.LastData"
+							}
+						}
+					],
+					"sid": 556780111766206
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-any-completed",
+							"objectClass": "AJAX",
+							"sid": 723938162359305
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 835315236799688,
+							"parameters": {
+								"variable": "Files_Loaded",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 283777707466121,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 447423507796406,
+									"parameters": {
+										"variable": "Files_Loaded",
+										"comparison": 0,
+										"value": "7"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "signal",
+									"objectClass": "System",
+									"sid": 418929037909118,
+									"parameters": {
+										"tag": "\"words_loaded\""
+									}
+								}
+							],
+							"sid": 470438863361249
+						}
+					]
+				}
+			],
+			"sid": 382180134686932
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Localization",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "Get_Text",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "string",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "string_number",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"sid": 761584824493204
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-function-return-value",
+							"objectClass": "Functions",
+							"sid": 804590191434285,
+							"parameters": {
+								"value": "Strings.Get(string_number&Language)"
+							}
+						}
+					],
+					"sid": 753561375298313
+				}
+			],
+			"sid": 979903539166875
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Reset",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "Reset",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "Layout",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"sid": 577370704974687
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 543340776532617,
+							"parameters": {
+								"variable": "Stop_Input",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 262714100093216,
+							"parameters": {
+								"variable": "Completed",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 822505403356242,
+							"parameters": {
+								"layer": "\"Completed\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 291400033257659,
+							"parameters": {
+								"group-name": "\"Completed\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 825983570166510,
+							"parameters": {
+								"group-name": "\"Writing\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "clear",
+							"objectClass": "Array_Words_Found",
+							"sid": 462311520953812,
+							"parameters": {
+								"value": "0"
+							}
+						},
+						{
+							"id": "go-to-layout-by-name",
+							"objectClass": "System",
+							"sid": 681705198161137,
+							"parameters": {
+								"layout": "Layout"
+							}
+						}
+					],
+					"sid": 272688519787184
+				}
+			],
+			"sid": 348168419783832
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "IAP",
+			"description": "This makes the no ads IAP work",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "No_Ad_ID",
+					"type": "string",
+					"initialValue": "your no ads product ID here",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": true,
+					"sid": 290666011954040
+				},
+				{
+					"eventType": "comment",
+					"text": "On the start of a layout check if the products have been registered.\nIf not register them.\nOnce they are registered check if the product is owned."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 322864306015484
+						}
+					],
+					"actions": [],
+					"sid": 242044372520605,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "store-registered",
+									"objectClass": "MobileIAP",
+									"sid": 698400912130253
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Check_noads",
+									"sid": 383256545315537
+								}
+							],
+							"sid": 497871486109406
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 348135315741033
+								}
+							],
+							"actions": [
+								{
+									"id": "register-product",
+									"objectClass": "MobileIAP",
+									"sid": 446575473467202,
+									"parameters": {
+										"product-id": "No_Ad_ID",
+										"product-type": "non-consumable"
+									}
+								},
+								{
+									"id": "complete-registration",
+									"objectClass": "MobileIAP",
+									"sid": 609357053155118
+								}
+							],
+							"sid": 205853862631616
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-registration-success",
+							"objectClass": "MobileIAP",
+							"sid": 825225255550142
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Check_noads",
+							"sid": 808369259624495
+						}
+					],
+					"sid": 885632572696051
+				},
+				{
+					"functionName": "Purchase",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "purchase-product",
+							"objectClass": "MobileIAP",
+							"sid": 874100905506107,
+							"parameters": {
+								"product-id": "No_Ad_ID"
+							}
+						}
+					],
+					"sid": 203904474411420
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-purchase-success",
+							"objectClass": "MobileIAP",
+							"sid": 227326055035257,
+							"parameters": {
+								"product-id": "No_Ad_ID"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Check_noads",
+							"sid": 277665996690416
+						}
+					],
+					"sid": 233400516675899
+				},
+				{
+					"eventType": "comment",
+					"text": "If the no ads IAP is owned set the boolean \"Ads\" to false to stop showing ads. Also hide any visible banners."
+				},
+				{
+					"functionName": "Check_noads",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [
+						{
+							"id": "product-owned",
+							"objectClass": "MobileIAP",
+							"sid": 474894933753159,
+							"parameters": {
+								"product-id": "No_Ad_ID"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 574216258182538,
+							"parameters": {
+								"variable": "Ads",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 854824586167433,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-showing-banner",
+									"objectClass": "MobileAdvert",
+									"sid": 218555068593652
+								}
+							],
+							"actions": [
+								{
+									"id": "hide-banner",
+									"objectClass": "MobileAdvert",
+									"sid": 168797926306529
+								}
+							],
+							"sid": 408550495921487
+						},
+						{
+							"eventType": "comment",
+							"text": "If the layout is startscreen remove the IAP button to indicate the product is already owned."
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 367273755459534,
+									"parameters": {
+										"first-value": "LayoutName",
+										"comparison": 0,
+										"second-value": "\"StartScreen\""
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "BTN_Startscreen",
+									"sid": 461361638052842,
+									"parameters": {
+										"instance-variable": "id",
+										"comparison": 0,
+										"value": "\"removead\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "BTN_Startscreen",
+									"sid": 639603336662019
+								}
+							],
+							"sid": 996841328679734
+						}
+					]
+				}
+			],
+			"sid": 992199171554446
+		}
+	],
+	"sid": 783534626275185
+}

@@ -1,0 +1,66 @@
+{
+	"name": "Complete_Medal",
+	"plugin-id": "Sprite",
+	"sid": 427958058179199,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 584059219784499
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 193,
+						"height": 208,
+						"originX": 0.5,
+						"originY": 0.4423076923076923,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7967960,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 894638393046564,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 138,
+						"height": 139,
+						"originX": 0.5,
+						"originY": 0.49640287769784175,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8153148,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 564277161393323,
+				"name": "Animation 2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

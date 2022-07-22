@@ -1,0 +1,40 @@
+{
+	"name": "Text",
+	"plugin-id": "Text",
+	"sid": 599899202605433,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "num",
+			"type": "number",
+			"desc": "",
+			"sid": 419004971840807
+		},
+		{
+			"name": "align_x",
+			"type": "number",
+			"desc": "",
+			"sid": 568457117667391
+		},
+		{
+			"name": "align_y",
+			"type": "number",
+			"desc": "",
+			"sid": 599966611048651
+		},
+		{
+			"name": "id",
+			"type": "string",
+			"desc": "",
+			"sid": 628275660873193
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 758572530192045
+		}
+	],
+	"effectTypes": []
+}

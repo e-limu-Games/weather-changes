@@ -1,0 +1,20 @@
+{
+	"name": "Complete_Spinningbar_Cover",
+	"plugin-id": "TiledBg",
+	"sid": 234567473522322,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 50,
+		"height": 50,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 1086819,
+		"useCollisionPoly": true
+	}
+}

@@ -1,0 +1,68 @@
+{
+	"name": "regPanel",
+	"plugin-id": "Sprite",
+	"sid": 243294187773084,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 296791404513086
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 832010952425725
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 400,
+						"height": 358,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9898564,
+						"collisionPoly": {
+							"points": [
+								0.0175,
+								0.019553072625698324,
+								0.5,
+								0,
+								0.98,
+								0.019553072625698324,
+								0.9975,
+								0.5,
+								0.98,
+								0.9776536312849162,
+								0.5,
+								0.9972067039106145,
+								0.0175,
+								0.9776536312849162,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 291424580975623,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

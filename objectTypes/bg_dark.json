@@ -1,0 +1,32 @@
+{
+	"name": "BG_Dark",
+	"plugin-id": "NinePatch",
+	"sid": 680720263433107,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 77,
+		"height": 77,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 3246274,
+		"collisionPoly": {
+			"points": [
+				0.03795782561173015,
+				0.03795782561173015,
+				0.9620421743882697,
+				0.03795782561173015,
+				0.9620421743882697,
+				0.9620421743882697,
+				0.03795782561173015,
+				0.9620421743882697
+			]
+		},
+		"useCollisionPoly": true
+	}
+}

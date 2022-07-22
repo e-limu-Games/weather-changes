@@ -1,0 +1,240 @@
+{
+	"name": "Symbol_Logo",
+	"plugin-id": "Sprite",
+	"sid": 156164863091868,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "num",
+			"type": "number",
+			"desc": "",
+			"sid": 888317296920936
+		},
+		{
+			"name": "align",
+			"type": "number",
+			"desc": "",
+			"sid": 680016098092730
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 414972634909681
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 106,
+						"height": 106,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3350817,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 760931406154761,
+				"name": "l0",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 106,
+						"height": 106,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3300182,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 870468774308768,
+				"name": "l1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 106,
+						"height": 106,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7663837,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 926082125458969,
+				"name": "l2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 106,
+						"height": 106,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6384195,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 285072863393453,
+				"name": "l3",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 106,
+						"height": 106,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5699792,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 988070747504582,
+				"name": "l4",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 106,
+						"height": 106,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2893316,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 865861223489830,
+				"name": "l5",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 106,
+						"height": 106,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9967583,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 515326414807951,
+				"name": "l6",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 106,
+						"height": 106,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8560391,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 129183810249009,
+				"name": "l7",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 106,
+						"height": 106,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 235678,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 652452236252984,
+				"name": "BLANK",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"name": "loading",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-loader-layout-complete",
+					"objectClass": "System",
+					"sid": 940850631136428
+				}
+			],
+			"actions": [],
+			"sid": 211558754909190
+		}
+	],
+	"sid": 931307952594679
+}

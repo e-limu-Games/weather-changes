@@ -1,0 +1,37 @@
+{
+	"name": "Reward_Rays",
+	"plugin-id": "Sprite",
+	"sid": 172242618229685,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 188,
+						"height": 188,
+						"originX": 0.9986666476527295,
+						"originY": 1.0013333523472705,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7486414,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 115898171872069,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

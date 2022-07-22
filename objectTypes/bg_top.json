@@ -1,0 +1,27 @@
+{
+	"name": "BG_Top",
+	"plugin-id": "NinePatch",
+	"sid": 588934185729251,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Top",
+			"type": "boolean",
+			"desc": "",
+			"sid": 462584186823733
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 120,
+		"height": 120,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 6440755,
+		"useCollisionPoly": true
+	}
+}

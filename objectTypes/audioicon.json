@@ -1,0 +1,89 @@
+{
+	"name": "audioicon",
+	"plugin-id": "Sprite",
+	"sid": 120243045028685,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 642,
+						"height": 456,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2342349,
+						"collisionPoly": {
+							"points": [
+								0.14953271028037382,
+								0.21052631578947367,
+								0.5,
+								0.0021929824561403508,
+								0.8629283489096573,
+								0.19078947368421054,
+								0.9844236760124611,
+								0.5,
+								0.8691588785046729,
+								0.8157894736842105,
+								0.5,
+								0.9956140350877193,
+								0.1277258566978193,
+								0.8179824561403509,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 642,
+						"height": 456,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1863558,
+						"collisionPoly": {
+							"points": [
+								0.14953271028037382,
+								0.21052631578947367,
+								0.5,
+								0.0021929824561403508,
+								0.8629283489096573,
+								0.19078947368421054,
+								0.9844236760124611,
+								0.5,
+								0.8691588785046729,
+								0.8157894736842105,
+								0.5,
+								0.9956140350877193,
+								0.1277258566978193,
+								0.8179824561403509,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 275228240477556,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

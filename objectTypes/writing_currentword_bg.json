@@ -1,0 +1,51 @@
+{
+	"name": "Writing_Currentword_BG",
+	"plugin-id": "NinePatch",
+	"sid": 742045063096822,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "shake",
+			"type": "boolean",
+			"desc": "",
+			"sid": 771040041631951
+		},
+		{
+			"name": "num",
+			"type": "number",
+			"desc": "",
+			"sid": 456150499560309
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 534590890588304
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 77,
+		"height": 77,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 5114337,
+		"collisionPoly": {
+			"points": [
+				0.04612945990254085,
+				0.04612945990254085,
+				0.9538705400974593,
+				0.04612945990254085,
+				0.9538705400974593,
+				0.9538705400974593,
+				0.04612945990254085,
+				0.9538705400974593
+			]
+		},
+		"useCollisionPoly": true
+	}
+}

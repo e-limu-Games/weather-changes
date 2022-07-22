@@ -1,0 +1,1668 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 29303,
+	"name": "Weather Changes",
+	"runtime": "c3",
+	"useWorker": "dom",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "advert",
+			"name": "Mobile advert",
+			"author": "Scirra",
+			"version": "r293.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "CORDOVAIAP",
+			"name": "Mobile IAP",
+			"author": "Scirra",
+			"version": "r293.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"version": "r293.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Local storage",
+			"author": "Scirra",
+			"version": "r293.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"version": "r293.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "AJAX",
+			"name": "AJAX",
+			"author": "Scirra",
+			"version": "r293.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r293.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r293.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Share",
+			"name": "Share",
+			"author": "Scirra",
+			"version": "r293.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Dictionary",
+			"name": "Dictionary",
+			"author": "Scirra",
+			"version": "r293.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"version": "r293.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r293.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r293.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "NinePatch",
+			"name": "9-patch",
+			"author": "Scirra",
+			"version": "r293.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TextBox",
+			"name": "Text input",
+			"author": "Scirra",
+			"version": "r293.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "List",
+			"name": "List",
+			"author": "Scirra",
+			"version": "r293.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"version": "r293.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "iframe",
+			"name": "iframe",
+			"author": "Scirra",
+			"version": "r293.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sparsha_FirebaseAuth",
+			"name": "Firebase Auth Basic",
+			"author": "Sparsha",
+			"version": "6.1.1",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sparsha_FirebaseSDK",
+			"name": "Firebase SDK",
+			"author": "Sparsha",
+			"version": "8.3.6",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "video",
+			"name": "Video",
+			"author": "Scirra",
+			"version": "r293.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r293.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"version": "r293.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"version": "r293.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Drag & Drop",
+			"author": "Scirra",
+			"version": "r293.3",
+			"bundled": false
+		}
+	],
+	"uniqueId": "870q8blwjd5",
+	"objectTypes": {
+		"items": [
+			"Sprite",
+			"Background",
+			"bar1",
+			"bar2",
+			"bar3",
+			"logo",
+			"fader",
+			"homeBG",
+			"homebtn",
+			"regPanel",
+			"login",
+			"Useremail",
+			"emailDisplay",
+			"submit",
+			"reg",
+			"Signupbtn",
+			"parentemail",
+			"fullname",
+			"nickname",
+			"gender",
+			"bgvideo",
+			"Sprite2",
+			"playbtn",
+			"skip",
+			"homebtn2",
+			"m1",
+			"story1",
+			"audiobtn",
+			"hint",
+			"bars",
+			"q1",
+			"instruction",
+			"windy",
+			"calm",
+			"cloudy",
+			"rainy",
+			"Acalm",
+			"Awindy",
+			"Arainy",
+			"a",
+			"b",
+			"c",
+			"Sprite3",
+			"Sprite4",
+			"Sprite5",
+			"Particles",
+			"next",
+			"Particles2",
+			"Particles3",
+			"Particles4",
+			"Particles5",
+			"Particles6",
+			"Particles7",
+			"Particles8",
+			"Particles9",
+			"Sprite6",
+			"tryagain",
+			"continue",
+			"Sprite7",
+			"d",
+			"Asnowy",
+			"snowy",
+			"story2",
+			"iframe",
+			"showanswer",
+			"Sprite8",
+			"Sprite9",
+			"Sprite10",
+			"FirebaseAuthBasic",
+			"FirebaseSDK",
+			"Video",
+			"Video2",
+			"pause",
+			"audioicon",
+			"Sprite11",
+			"completed",
+			"tryagain1",
+			"tryagain2",
+			"thumbsup_rightanswer",
+			"tryagain3",
+			"tryagain4",
+			"tryagain5",
+			"over1",
+			"Mouse",
+			"over2",
+			"over3",
+			"over4",
+			"sad_wronganswer"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"MobileAdvert",
+					"MobileIAP",
+					"Touch",
+					"LocalStorage",
+					"Browser",
+					"AJAX",
+					"Audio",
+					"Text",
+					"Share"
+				],
+				"subfolders": [],
+				"name": "Plugins"
+			},
+			{
+				"items": [
+					"Strings",
+					"Array_Levels_Data",
+					"Array_Words_Found",
+					"Shuffler",
+					"Array_Align_Letters",
+					"Save"
+				],
+				"subfolders": [],
+				"name": "Dictionaries and Arrays"
+			},
+			{
+				"items": [
+					"Complete_Medal",
+					"Complete_Spinningbar_Cover",
+					"Complete_Flash",
+					"Complete_Rewardbar_Glass",
+					"Complete_Rewardbar",
+					"Complete_Rewardbar_Fill",
+					"Complete_Symbol_Hint",
+					"Complete_Reward_Particle",
+					"Complete_Rewardbar_BG"
+				],
+				"subfolders": [],
+				"name": "Complete Window"
+			},
+			{
+				"items": [
+					"BTN_Gameplay",
+					"BTN_Select_Language",
+					"BTN_White",
+					"BTN_Startscreen"
+				],
+				"subfolders": [],
+				"name": "Buttons"
+			},
+			{
+				"items": [
+					"Reward_Rays",
+					"Reward_Bulb",
+					"Reward_Text_BG"
+				],
+				"subfolders": [],
+				"name": "Reward Effect"
+			},
+			{
+				"items": [
+					"BG_Gradient",
+					"BG_Fade",
+					"BG_Circle",
+					"BG_Dark",
+					"BG_Top",
+					"BG_Hints_Left",
+					"BG_Top_right",
+					"BG_Popupwindow"
+				],
+				"subfolders": [],
+				"name": "Backgrounds"
+			},
+			{
+				"items": [
+					"Writing_Line",
+					"Writing_Letter_BG",
+					"Writing_Currentword_BG",
+					"Writing_Hidden_Word"
+				],
+				"subfolders": [],
+				"name": "Writing"
+			},
+			{
+				"items": [
+					"Symbol_Loader",
+					"Symbol_Video",
+					"Symbol_Logo"
+				],
+				"subfolders": [],
+				"name": "Symbol"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Loader",
+			"Home",
+			"loading",
+			"UserSignIn",
+			"Register",
+			"VideoOne",
+			"Activity",
+			"Activity1",
+			"Activity2",
+			"Activity3",
+			"ActivityEnd",
+			"VideoTwo",
+			"Activity4",
+			"Activity5",
+			"Activity6",
+			"VideoOne2",
+			"Completed"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Loader",
+			"Home",
+			"Variables",
+			"Global_Event_Sheet",
+			"Register",
+			"SignIn",
+			"Video1",
+			"Game1",
+			"loading",
+			"Activity",
+			"Activity1",
+			"Activity2",
+			"Activity3",
+			"Activity4",
+			"Activity5",
+			"Activity6",
+			"ActivityEnd",
+			"Video2",
+			"Completed"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "flip.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 123983281741501,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "startsound.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 450845293908383,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "wrong.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 569326683023338,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Button.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 645749565096910,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "info_in.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 171344133676719,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "completed_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 901879784343269,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "completed_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 464544942927345,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "firstbutton.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 534523316302494,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "gameend.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 890949448667307,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Thunder Clap Sound Effect HD (Best Thunder Quality).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 827451261905734,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Correct_high.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 561921575506627,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Retry Sound_high.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 473687786614684,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Activity 1 Identifying Weather Conditions_high.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 658196605351015,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Windy.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 830301925117417,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Rainy.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 679571171681448,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Cloudy.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 973641947106088,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Calm.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 501565905328243,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Sunny.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 583822593826619,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Clear Night.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 768322117516689,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Partly Cloudy Night (2).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 221799013521059,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Snow.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 692702480838383,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Tornado (1).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 932933839765364,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "HAZE (1).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 328402679959080,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Fog (1).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 229764692814366,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Thunder (2).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 801947718763737,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Overcast (1).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 312584485857077,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Tornado (2).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 497145162042650,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Sunshine (1).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 650320919536473,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Mist.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 207123297911851,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Activity Corner_high (1).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 979502950910516,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Activity end screen_high (1).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 102820807446933,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Activity 6 Identifying Weather Symbols_high.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 215157838204284,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Activity 5 Identifying Weather Symbols_high.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 373030909944794,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Activity 4 Identifying Weather Symbols_high.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 990594860315309,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Activity 3 Identifying Weather Symbols_high.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 701071985308529,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Activity end screen_high.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 672733126718129,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": [
+				{
+					"items": [],
+					"subfolders": [
+						{
+							"items": [
+								{
+									"name": "pop6.webm",
+									"type": "audio/webm; codecs=opus",
+									"sid": 540359988623345,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "pop5.webm",
+									"type": "audio/webm; codecs=opus",
+									"sid": 505018761267503,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "pop4.webm",
+									"type": "audio/webm; codecs=opus",
+									"sid": 166181509627558,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "pop3.webm",
+									"type": "audio/webm; codecs=opus",
+									"sid": 972566243503817,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "pop2.webm",
+									"type": "audio/webm; codecs=opus",
+									"sid": 586705552783259,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "pop1.webm",
+									"type": "audio/webm; codecs=opus",
+									"sid": 456301277906621,
+									"file-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "add"
+						},
+						{
+							"items": [
+								{
+									"name": "popr5.webm",
+									"type": "audio/webm; codecs=opus",
+									"sid": 806393315643315,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "popr4.webm",
+									"type": "audio/webm; codecs=opus",
+									"sid": 162381927014137,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "popr3.webm",
+									"type": "audio/webm; codecs=opus",
+									"sid": 560917918542702,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "popr2.webm",
+									"type": "audio/webm; codecs=opus",
+									"sid": 682302541706586,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "popr1.webm",
+									"type": "audio/webm; codecs=opus",
+									"sid": 807685103999925,
+									"file-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "del"
+						}
+					],
+					"name": "write"
+				}
+			]
+		},
+		"music": {
+			"items": [
+				{
+					"name": "MenuMusic2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 837188091688547,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"video": {
+			"items": [
+				{
+					"name": "weather changes video 2.mp4",
+					"type": "video/mp4",
+					"sid": 111794306963280,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "weather changes video 1.mp4",
+					"type": "video/mp4",
+					"sid": 578316914795630,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"font": {
+			"items": [
+				{
+					"name": "Roboto-Black.woff",
+					"type": "application/font-woff",
+					"sid": 502914722998214,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "mPlus-Medium.woff",
+					"type": "application/font-woff",
+					"sid": 433980457192940,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 883167344881881,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 895270490698573,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 157900899498803,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 298257330639093,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 790272844840964,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 613191639593905,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 849054043189444,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [
+				{
+					"name": "strings.json",
+					"type": "application/json",
+					"sid": 491258759720495,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": [
+				{
+					"items": [
+						{
+							"name": "6en.json",
+							"type": "application/json",
+							"sid": 650272196744129,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "5en.json",
+							"type": "application/json",
+							"sid": 943369190269818,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "level_needed_en.json",
+							"type": "application/json",
+							"sid": 810339205789572,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "level_words_en.json",
+							"type": "application/json",
+							"sid": 817055963451636,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "4en.json",
+							"type": "application/json",
+							"sid": 506219319494863,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "3en.json",
+							"type": "application/json",
+							"sid": 837909566251459,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "2en.json",
+							"type": "application/json",
+							"sid": 882011687515233,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "english"
+				},
+				{
+					"items": [
+						{
+							"name": "5de.json",
+							"type": "application/json",
+							"sid": 107973947481585,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "6de.json",
+							"type": "application/json",
+							"sid": 561647799475752,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "level_needed_de.json",
+							"type": "application/json",
+							"sid": 512073225815209,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "level_words_de.json",
+							"type": "application/json",
+							"sid": 617751161105387,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "4de.json",
+							"type": "application/json",
+							"sid": 141631730652300,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "3de.json",
+							"type": "application/json",
+							"sid": 123393822635601,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "2de.json",
+							"type": "application/json",
+							"sid": 230927546863304,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "deutsch"
+				},
+				{
+					"items": [
+						{
+							"name": "5es.json",
+							"type": "application/json",
+							"sid": 804146278209424,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "level_words_es.json",
+							"type": "application/json",
+							"sid": 582283580298310,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "level_needed_es.json",
+							"type": "application/json",
+							"sid": 226883550122146,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "4es.json",
+							"type": "application/json",
+							"sid": 966743750115113,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "3es.json",
+							"type": "application/json",
+							"sid": 676924617581420,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "2es.json",
+							"type": "application/json",
+							"sid": 478313566572690,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "6es.json",
+							"type": "application/json",
+							"sid": 418746940272224,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "espanol"
+				},
+				{
+					"items": [
+						{
+							"name": "level_needed_fr.json",
+							"type": "application/json",
+							"sid": 998406828251609,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "level_words_fr.json",
+							"type": "application/json",
+							"sid": 164362007280641,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "4fr.json",
+							"type": "application/json",
+							"sid": 295778044318370,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "5fr.json",
+							"type": "application/json",
+							"sid": 782212475122352,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "6fr.json",
+							"type": "application/json",
+							"sid": 922867502711891,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "3fr.json",
+							"type": "application/json",
+							"sid": 964219843230721,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "2fr.json",
+							"type": "application/json",
+							"sid": 228469067489579,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "francais"
+				},
+				{
+					"items": [
+						{
+							"name": "level_needed_it.json",
+							"type": "application/json",
+							"sid": 368309088387645,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "level_words_it.json",
+							"type": "application/json",
+							"sid": 836089320989923,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "6it.json",
+							"type": "application/json",
+							"sid": 165318649356814,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "5it.json",
+							"type": "application/json",
+							"sid": 367444392300640,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "4it.json",
+							"type": "application/json",
+							"sid": 423609027333663,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "3it.json",
+							"type": "application/json",
+							"sid": 555227058873968,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "2it.json",
+							"type": "application/json",
+							"sid": 671198131110270,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "italiano"
+				},
+				{
+					"items": [
+						{
+							"name": "level_needed_sv.json",
+							"type": "application/json",
+							"sid": 426750256542914,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "level_words_sv.json",
+							"type": "application/json",
+							"sid": 889711375773351,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "6sv.json",
+							"type": "application/json",
+							"sid": 867348090785302,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "5sv.json",
+							"type": "application/json",
+							"sid": 410207789668852,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "4sv.json",
+							"type": "application/json",
+							"sid": 311240507775647,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "3sv.json",
+							"type": "application/json",
+							"sid": 158348708266755,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "2sv.json",
+							"type": "application/json",
+							"sid": 729186570922162,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "svenska"
+				},
+				{
+					"items": [
+						{
+							"name": "level_needed_tr.json",
+							"type": "application/json",
+							"sid": 531124335814668,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "level_words_tr.json",
+							"type": "application/json",
+							"sid": 225743460417822,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "6tr.json",
+							"type": "application/json",
+							"sid": 336541233831201,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "5tr.json",
+							"type": "application/json",
+							"sid": 767730466349477,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "4tr.json",
+							"type": "application/json",
+							"sid": 823306271510728,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "3tr.json",
+							"type": "application/json",
+							"sid": 195300754701591,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "2tr.json",
+							"type": "application/json",
+							"sid": 452952798185283,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "turkce"
+				},
+				{
+					"items": [
+						{
+							"name": "level_needed_nl.json",
+							"type": "application/json",
+							"sid": 211696791556454,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "level_words_nl.json",
+							"type": "application/json",
+							"sid": 843575628665146,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "4nl.json",
+							"type": "application/json",
+							"sid": 199476655530887,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "3nl.json",
+							"type": "application/json",
+							"sid": 376828489439793,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "2nl.json",
+							"type": "application/json",
+							"sid": 413108260229721,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "5nl.json",
+							"type": "application/json",
+							"sid": 670128191232684,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "6nl.json",
+							"type": "application/json",
+							"sid": 241330027088164,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "dutch"
+				},
+				{
+					"items": [
+						{
+							"name": "level_needed_ru.json",
+							"type": "application/json",
+							"sid": 638395359688477,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "level_words_ru.json",
+							"type": "application/json",
+							"sid": 173970355108403,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "6ru.json",
+							"type": "application/json",
+							"sid": 743357533513615,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "5ru.json",
+							"type": "application/json",
+							"sid": 804110207054024,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "4ru.json",
+							"type": "application/json",
+							"sid": 731278499764604,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "3ru.json",
+							"type": "application/json",
+							"sid": 746047346593369,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "2ru.json",
+							"type": "application/json",
+							"sid": 124122530984910,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "russian"
+				},
+				{
+					"items": [
+						{
+							"name": "level_needed_pt.json",
+							"type": "application/json",
+							"sid": 575269829301427,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "level_words_pt.json",
+							"type": "application/json",
+							"sid": 421495343968491,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "6pt.json",
+							"type": "application/json",
+							"sid": 209109038104150,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "5pt.json",
+							"type": "application/json",
+							"sid": 961425571752600,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "4pt.json",
+							"type": "application/json",
+							"sid": 644689584062978,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "3pt.json",
+							"type": "application/json",
+							"sid": 817722599114157,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "2pt.json",
+							"type": "application/json",
+							"sid": 124951338717032,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "portugese"
+				}
+			]
+		}
+	},
+	"timelines": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "Weather Changes",
+		"version": "1.0.0.1",
+		"author": "",
+		"authorEmail": "abiola@e-limu.org",
+		"authorWebsite": "https://e-limu.org/",
+		"appId": "com.your.id",
+		"pixelRounding": true,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": true,
+		"fullscreenMode": "scale-outer",
+		"fullscreenQuality": "high",
+		"viewportFit": "cover",
+		"backgroundColor": [
+			0.5176470588235295,
+			0.7529411764705882,
+			0.9137254901960784,
+			0
+		],
+		"splashColor": [
+			0.5176470588235295,
+			0.7529411764705882,
+			0.9137254901960784,
+			0
+		],
+		"useThemeColor": true,
+		"themeColor": [
+			0.5176470588235295,
+			0.7529411764705882,
+			0.9137254901960784,
+			0
+		],
+		"orientations": "portrait",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "bilinear",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https"
+	},
+	"viewportWidth": 720,
+	"viewportHeight": 1280,
+	"firstLayout": "Loader"
+}

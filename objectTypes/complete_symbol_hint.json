@@ -1,0 +1,67 @@
+{
+	"name": "Complete_Symbol_Hint",
+	"plugin-id": "Sprite",
+	"sid": 386129163216116,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "pin_y",
+			"type": "number",
+			"desc": "",
+			"sid": 396509227539434
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 255,
+						"height": 255,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9783257,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 460398864260799,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 150,
+						"height": 150,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4183952,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 142857533700320,
+				"name": "Animation 2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

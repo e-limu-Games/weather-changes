@@ -1,0 +1,32 @@
+{
+	"name": "Complete_Rewardbar_Glass",
+	"plugin-id": "NinePatch",
+	"sid": 845987340607737,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 82,
+		"height": 64,
+		"originX": -1.4085365853658536,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 7231930,
+		"collisionPoly": {
+			"points": [
+				0,
+				0.015625,
+				0.9878048780487805,
+				0.015625,
+				0.9878048780487805,
+				0.984375,
+				0,
+				0.984375
+			]
+		},
+		"useCollisionPoly": true
+	}
+}

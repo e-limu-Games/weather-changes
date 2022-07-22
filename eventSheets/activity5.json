@@ -1,0 +1,4491 @@
+{
+	"name": "Activity5",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 618161871489744
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "Sprite2",
+					"sid": 697293168105430,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"scene1\"",
+						"property": "offsetY",
+						"end-value": "282",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "fader",
+					"sid": 817629520400890,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetOpacity",
+						"end-value": "0",
+						"time": "2",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "homebtn",
+					"sid": 240176294389086,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetHeight",
+						"end-value": "142",
+						"time": "1",
+						"ease": "easeinoutbounce",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "homebtn",
+					"sid": 676521941583070,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetWidth",
+						"end-value": "200",
+						"time": "1",
+						"ease": "easeinoutquad",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "audiobtn",
+					"sid": 131342264009222,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetHeight",
+						"end-value": "142",
+						"time": "1",
+						"ease": "easeinoutbounce",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "audiobtn",
+					"sid": 584726403605317,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetWidth",
+						"end-value": "200",
+						"time": "1",
+						"ease": "easeinoutquad",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "hint",
+					"sid": 395025262814679,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetHeight",
+						"end-value": "142",
+						"time": "1",
+						"ease": "easeinoutbounce",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "hint",
+					"sid": 715269280367564,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetWidth",
+						"end-value": "200",
+						"time": "1",
+						"ease": "easeinoutquad",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "bars",
+					"sid": 774990418173395,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetOpacity",
+						"end-value": "100",
+						"time": "2",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "logo",
+					"sid": 642200376611984,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "230",
+						"time": "1",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "next",
+					"sid": 328021362627960,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"next\"",
+						"property": "size",
+						"end-x": "400",
+						"end-y": "283",
+						"time": "1",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "q1",
+					"sid": 915420653544788,
+					"parameters": {
+						"frame-number": "4"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Particles2",
+					"sid": 864374369891069,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Particles3",
+					"sid": 434324223076262,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Particles4",
+					"sid": 153803183682792,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Particles5",
+					"sid": 939523152667154,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Particles6",
+					"sid": 636711195198820,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Particles7",
+					"sid": 803122705247212,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Particles8",
+					"sid": 268733271755117,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Particles9",
+					"sid": 194593934641814,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "calm",
+					"sid": 416546577292844,
+					"parameters": {
+						"frame-number": "4"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "cloudy",
+					"sid": 933147019108162,
+					"parameters": {
+						"frame-number": "6"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "windy",
+					"sid": 558154575212734,
+					"parameters": {
+						"frame-number": "7"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Arainy",
+					"sid": 136659023327824,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Awindy",
+					"sid": 307181538847821,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "rainy",
+					"sid": 973599085270848,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "snowy",
+					"sid": 681795521890883,
+					"parameters": {
+						"frame-number": "4"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Asnowy",
+					"sid": 820529176991274,
+					"parameters": {
+						"frame-number": "2"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Acalm",
+					"sid": 767825813091033,
+					"parameters": {
+						"frame-number": "2"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "bars",
+					"sid": 829335913152322,
+					"parameters": {
+						"frame-number": "4"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Sprite6",
+					"sid": 765453216578432,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "scale",
+						"end-x": "1.5",
+						"end-y": "1.5",
+						"time": "0.5",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "sad_wronganswer",
+					"sid": 275557306796237,
+					"parameters": {
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 634496215121674
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-start",
+					"objectClass": "Touch",
+					"sid": 593421716682979
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 823018982071374
+				}
+			],
+			"sid": 990525379486279
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-end",
+					"objectClass": "Touch",
+					"sid": 309186129948710
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 791274839315733,
+					"parameters": {
+						"audio-file": "MenuMusic2",
+						"loop": "not-looping",
+						"volume": "-20",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 319796670903544
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "Sprite2",
+					"sid": 788966068025170,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"scene1\""
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 300197847175811,
+					"parameters": {
+						"variable": "tryCount",
+						"comparison": 2,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 213240142404711,
+					"parameters": {
+						"audio-file": "startsound",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "q1",
+					"sid": 401044205144870,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "scale",
+						"end-x": "2",
+						"end-y": "2",
+						"time": "1",
+						"ease": "easeinoutelastic",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "calm",
+					"sid": 851216518674064,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "scale",
+						"end-x": "2",
+						"end-y": "2",
+						"time": "2",
+						"ease": "easeinoutquad",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "cloudy",
+					"sid": 804113663533345,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "scale",
+						"end-x": "2",
+						"end-y": "2",
+						"time": "1.7",
+						"ease": "easeinoutquint",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "windy",
+					"sid": 957570889283718,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "scale",
+						"end-x": "2",
+						"end-y": "2",
+						"time": "1.5",
+						"ease": "easeinoutelastic",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "rainy",
+					"sid": 767416703775138,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "scale",
+						"end-x": "2",
+						"end-y": "2",
+						"time": "2.2",
+						"ease": "easeinoutelastic",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "snowy",
+					"sid": 390171617233374,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "scale",
+						"end-x": "2",
+						"end-y": "2",
+						"time": "2.2",
+						"ease": "easeinoutelastic",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "logo",
+					"sid": 785057693007677,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "scale",
+						"end-x": "0.3",
+						"end-y": "0.3",
+						"time": "0.5",
+						"ease": "easeinoutelastic",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Acalm",
+					"sid": 912720127386936,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "scale",
+						"end-x": "2",
+						"end-y": "2",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Awindy",
+					"sid": 257485189069399,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "scale",
+						"end-x": "2",
+						"end-y": "2",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Arainy",
+					"sid": 537124438359410,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "scale",
+						"end-x": "2",
+						"end-y": "2",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Asnowy",
+					"sid": 564809371815139,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "scale",
+						"end-x": "2",
+						"end-y": "2",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 180741365276959
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 964847756620837,
+					"parameters": {
+						"object": "homebtn2"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 886452382290884,
+					"parameters": {
+						"variable": "tryCount",
+						"comparison": 2,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "bar1",
+					"sid": 733889853604763,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "bar2",
+					"sid": 680732970807306,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "bar3",
+					"sid": 988075925520625,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "playbtn",
+					"sid": 392340672424256,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "0",
+						"end-y": "0",
+						"time": "1",
+						"ease": "easeinoutbounce",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 926266507454061,
+					"parameters": {
+						"audio-file": "Button",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 294383143179802,
+					"parameters": {
+						"layout": "VideoOne"
+					}
+				}
+			],
+			"sid": 546696156619463
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "fader",
+					"sid": 760562258474896,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"fadeout\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 233617970441744
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "calm",
+					"sid": 740145474133435,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 601828530984505,
+					"parameters": {
+						"audio-file": "pop5",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 998583143963563,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "calm",
+							"sid": 697311125981633,
+							"parameters": {
+								"object": "a"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "calm",
+							"sid": 863594451781878,
+							"parameters": {
+								"frame-number": "8"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "a",
+							"sid": 227530380639981,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 536813669302353
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "calm",
+							"sid": 781432665107968,
+							"parameters": {
+								"object": "b"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "calm",
+							"sid": 488881434673400,
+							"parameters": {
+								"frame-number": "8"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "b",
+							"sid": 764386305157982,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 994368690482379
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "calm",
+							"sid": 109550653678082,
+							"parameters": {
+								"object": "c"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "calm",
+							"sid": 521208249613067,
+							"parameters": {
+								"frame-number": "8"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "c",
+							"sid": 661503432587763,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 601770910495362
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "calm",
+							"sid": 790578074198910,
+							"parameters": {
+								"object": "d"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "calm",
+							"sid": 572355990260117,
+							"parameters": {
+								"frame-number": "8"
+							}
+						}
+					],
+					"sid": 704501263329098
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "calm",
+							"sid": 175040062366241,
+							"parameters": {
+								"object": "a"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "calm",
+							"sid": 597460790403066,
+							"parameters": {
+								"object": "b"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "calm",
+							"sid": 534558078483147,
+							"parameters": {
+								"object": "c"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "calm",
+							"sid": 967589653381563,
+							"parameters": {
+								"object": "d"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "calm",
+							"sid": 684294189402168,
+							"parameters": {
+								"frame-number": "4"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "a",
+							"sid": 409705762123442,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "0"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "b",
+							"sid": 746776338094077,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "0"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "c",
+							"sid": 908861558858987,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 913896105225775
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "cloudy",
+					"sid": 558222130612121,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 438974341648937,
+					"parameters": {
+						"audio-file": "pop5",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 774204713437836,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "cloudy",
+							"sid": 350016191751016,
+							"parameters": {
+								"object": "a"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "cloudy",
+							"sid": 391189323483645,
+							"parameters": {
+								"frame-number": "5"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "a",
+							"sid": 626583569689408,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 382208216271238
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "cloudy",
+							"sid": 531655892201865,
+							"parameters": {
+								"object": "b"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "cloudy",
+							"sid": 533094892707141,
+							"parameters": {
+								"frame-number": "5"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "b",
+							"sid": 520483834769470,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 299173695930538
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "cloudy",
+							"sid": 839211004643062,
+							"parameters": {
+								"object": "c"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "cloudy",
+							"sid": 335153461241311,
+							"parameters": {
+								"frame-number": "5"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "c",
+							"sid": 280427034617866,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 620165363567307
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "cloudy",
+							"sid": 728066586819350,
+							"parameters": {
+								"object": "d"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "cloudy",
+							"sid": 178716648802028,
+							"parameters": {
+								"frame-number": "5"
+							}
+						}
+					],
+					"sid": 120251783659706
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "cloudy",
+							"sid": 261921300311535,
+							"parameters": {
+								"object": "a"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "cloudy",
+							"sid": 503576429485559,
+							"parameters": {
+								"object": "b"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "cloudy",
+							"sid": 244683409688974,
+							"parameters": {
+								"object": "c"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "cloudy",
+							"sid": 119437506946765,
+							"parameters": {
+								"object": "d"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "cloudy",
+							"sid": 926890065224625,
+							"parameters": {
+								"frame-number": "6"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "a",
+							"sid": 146784082193013,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "0"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "b",
+							"sid": 531840372133804,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "0"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "c",
+							"sid": 790982797658316,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 746774964852844
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "rainy",
+					"sid": 809411905807778,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 560748254012240,
+					"parameters": {
+						"audio-file": "pop5",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 233416544756061,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "rainy",
+							"sid": 657696131223337,
+							"parameters": {
+								"object": "a"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "rainy",
+							"sid": 994744066695734,
+							"parameters": {
+								"frame-number": "4"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "a",
+							"sid": 821194701624558,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 651821381964577
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "rainy",
+							"sid": 671609896709084,
+							"parameters": {
+								"object": "b"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "rainy",
+							"sid": 379170968332787,
+							"parameters": {
+								"frame-number": "4"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "b",
+							"sid": 482735950374572,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 569541109683453
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "rainy",
+							"sid": 175827825275536,
+							"parameters": {
+								"object": "c"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "rainy",
+							"sid": 925275485752023,
+							"parameters": {
+								"frame-number": "4"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "c",
+							"sid": 769304176262398,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 902870964202720
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "rainy",
+							"sid": 999526436623057,
+							"parameters": {
+								"object": "d"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "rainy",
+							"sid": 254811684425105,
+							"parameters": {
+								"frame-number": "4"
+							}
+						}
+					],
+					"sid": 546307630484367
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "rainy",
+							"sid": 494061004628997,
+							"parameters": {
+								"object": "a"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "rainy",
+							"sid": 909193035325786,
+							"parameters": {
+								"object": "b"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "rainy",
+							"sid": 136095733178198,
+							"parameters": {
+								"object": "c"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "rainy",
+							"sid": 880654906760346,
+							"parameters": {
+								"object": "d"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "rainy",
+							"sid": 466192144380320,
+							"parameters": {
+								"frame-number": "0"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "a",
+							"sid": 735079108345065,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "0"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "b",
+							"sid": 999844795394140,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "0"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "c",
+							"sid": 644222357142057,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 248667005182915
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "windy",
+					"sid": 353286975764922,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 323978423927055,
+					"parameters": {
+						"audio-file": "pop5",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 576199641844608,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "windy",
+							"sid": 966721547449270,
+							"parameters": {
+								"object": "b"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "windy",
+							"sid": 326984383876987,
+							"parameters": {
+								"frame-number": "8"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "b",
+							"sid": 205222971034647,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 249884805073913
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "windy",
+							"sid": 416439943969164,
+							"parameters": {
+								"object": "c"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "windy",
+							"sid": 754887469573588,
+							"parameters": {
+								"frame-number": "8"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "c",
+							"sid": 927670148422037,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 957654928940206
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "windy",
+							"sid": 115268288183322,
+							"parameters": {
+								"object": "d"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "windy",
+							"sid": 243195383755029,
+							"parameters": {
+								"frame-number": "8"
+							}
+						}
+					],
+					"sid": 249384479996748
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "windy",
+							"sid": 808267152408653,
+							"parameters": {
+								"object": "a"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "windy",
+							"sid": 933217934782623,
+							"parameters": {
+								"frame-number": "8"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "a",
+							"sid": 245059366932308,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 170907306287773
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "windy",
+							"sid": 590456743874225,
+							"parameters": {
+								"object": "a"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "windy",
+							"sid": 338370076137022,
+							"parameters": {
+								"object": "b"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "windy",
+							"sid": 325829413189654,
+							"parameters": {
+								"object": "c"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "windy",
+							"sid": 793798605846169,
+							"parameters": {
+								"object": "d"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "windy",
+							"sid": 459069914121746,
+							"parameters": {
+								"frame-number": "7"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "a",
+							"sid": 632279133490527,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "0"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "b",
+							"sid": 973955873057664,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "0"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "c",
+							"sid": 505399024631090,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 741954343185710
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "snowy",
+					"sid": 431906281276455,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 837449404942849,
+					"parameters": {
+						"audio-file": "pop5",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 985624038838302,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "snowy",
+							"sid": 115119507435449,
+							"parameters": {
+								"object": "b"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "snowy",
+							"sid": 218745595000731,
+							"parameters": {
+								"frame-number": "7"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "b",
+							"sid": 967903630534886,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 142482924372915
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "snowy",
+							"sid": 697453629259486,
+							"parameters": {
+								"object": "c"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "snowy",
+							"sid": 977186228555892,
+							"parameters": {
+								"frame-number": "7"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "c",
+							"sid": 102886782452685,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 301544312036530
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "snowy",
+							"sid": 338863416335334,
+							"parameters": {
+								"object": "d"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "snowy",
+							"sid": 211228653769386,
+							"parameters": {
+								"frame-number": "7"
+							}
+						}
+					],
+					"sid": 217692000457372
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "snowy",
+							"sid": 242287614142083,
+							"parameters": {
+								"object": "a"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "snowy",
+							"sid": 632703507420143,
+							"parameters": {
+								"frame-number": "7"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "a",
+							"sid": 465297158003566,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 361449272256798
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "snowy",
+							"sid": 263040952393972,
+							"parameters": {
+								"object": "a"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "snowy",
+							"sid": 670078924970216,
+							"parameters": {
+								"object": "b"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "snowy",
+							"sid": 864213686357750,
+							"parameters": {
+								"object": "c"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "snowy",
+							"sid": 276876620463031,
+							"parameters": {
+								"object": "d"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "snowy",
+							"sid": 595783665303375,
+							"parameters": {
+								"frame-number": "4"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "a",
+							"sid": 309222940514883,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "0"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "b",
+							"sid": 567896440905329,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "0"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "c",
+							"sid": 272655153762870,
+							"parameters": {
+								"instance-variable": "plus",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 922615256852433
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "calm",
+					"sid": 942469248272047,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 806130925281524,
+					"parameters": {
+						"variable": "tryCount",
+						"comparison": 2,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 768678450920908,
+					"parameters": {
+						"audio-file": "popr5",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 117905665359146
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "cloudy",
+					"sid": 604715056140060,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 803436162063678,
+					"parameters": {
+						"variable": "tryCount",
+						"comparison": 2,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 304357730420496,
+					"parameters": {
+						"audio-file": "popr5",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 229098825684759
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "rainy",
+					"sid": 221467632589246,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 148198841790041,
+					"parameters": {
+						"variable": "tryCount",
+						"comparison": 2,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 151846505783123,
+					"parameters": {
+						"audio-file": "popr5",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 425146001009645
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "windy",
+					"sid": 974570311753451,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 496220319895751,
+					"parameters": {
+						"variable": "tryCount",
+						"comparison": 2,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 695356567979935,
+					"parameters": {
+						"audio-file": "popr5",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 664313427322100
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 122735214897175,
+					"parameters": {
+						"variable": "tryCount",
+						"comparison": 2,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 318824435643265,
+					"parameters": {
+						"variable": "CountAnswer",
+						"comparison": 5,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "next",
+					"sid": 596121088581629,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"next\"",
+						"property": "size",
+						"end-x": "0",
+						"end-y": "0",
+						"time": "1",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "continue",
+					"sid": 784042302044883,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"next\"",
+						"property": "size",
+						"end-x": "400",
+						"end-y": "283",
+						"time": "1",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 845732524912181,
+					"parameters": {
+						"audio-file": "gameend",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 727068270031179,
+					"parameters": {
+						"variable": "CountAnswer",
+						"value": "-1"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles2",
+					"sid": 118476089639245,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles3",
+					"sid": 954490955394978,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles4",
+					"sid": 909592437514009,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles5",
+					"sid": 669658630158806,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles6",
+					"sid": 880139067157611,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles7",
+					"sid": 336425080753604,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles8",
+					"sid": 512061819611707,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles9",
+					"sid": 109717972502908,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Sprite6",
+					"sid": 756609964421149,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetOpacity",
+						"end-value": "100",
+						"time": "2",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Sprite6",
+					"sid": 467833282843358,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite6",
+					"sid": 110520762392641,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 778418309629380,
+					"parameters": {
+						"audio-file": "Correct_high",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "rainy",
+					"sid": 850651612537184
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "thumbsup_rightanswer",
+					"sid": 229289634109279,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "thumbsup_rightanswer",
+					"sid": 976372480708599,
+					"parameters": {
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 519394109332470
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "next",
+					"sid": 271170487163799,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"next\""
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 647917540527029,
+					"parameters": {
+						"variable": "tryCount",
+						"comparison": 2,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-active",
+					"objectClass": "next",
+					"sid": 662037910148704,
+					"behaviorType": "Sine",
+					"parameters": {
+						"state": "active"
+					}
+				}
+			],
+			"sid": 180349637948205
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 937221562506069,
+					"parameters": {
+						"object": "next"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 808319175848483,
+					"parameters": {
+						"variable": "tryCount",
+						"comparison": 2,
+						"value": "1"
+					}
+				},
+				{
+					"id": "collisions-enabled",
+					"objectClass": "next",
+					"sid": 163002400988724
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "Sprite6",
+					"sid": 214336070789659,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetOpacity",
+						"end-value": "100",
+						"time": "2",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Sprite6",
+					"sid": 418424185217341,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 241661907853013,
+					"parameters": {
+						"audio-file": "Button",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "Sprite6",
+					"sid": 147188878639197
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite6",
+					"sid": 831256374815221,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 865562653271375,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 292044223590420,
+							"parameters": {
+								"variable": "tryCount",
+								"comparison": 2,
+								"value": "1"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "calm",
+							"sid": 149210379465960,
+							"parameters": {
+								"object": "a"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 733486425106993,
+							"parameters": {
+								"variable": "CountAnswer",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 483961124323138,
+							"parameters": {
+								"audio-file": "pop5",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Acalm",
+							"sid": 258080610375925,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 532227019175744,
+							"parameters": {
+								"audio-file": "startsound",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "calm",
+							"sid": 983518484302914,
+							"parameters": {
+								"object": "Particles",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "Particles",
+							"sid": 785644387136914,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "position",
+								"end-x": "-157",
+								"end-y": "25",
+								"time": "0.5",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "calm",
+							"sid": 671237376152280
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Sprite3",
+							"sid": 473517519665972,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Acalm",
+							"sid": 225853612799381,
+							"parameters": {
+								"frame-number": "3"
+							}
+						}
+					],
+					"sid": 764508394295116
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 421472438590075,
+							"parameters": {
+								"variable": "tryCount",
+								"comparison": 2,
+								"value": "1"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "cloudy",
+							"sid": 968457348315945,
+							"parameters": {
+								"object": "b"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 573878647316116,
+							"parameters": {
+								"variable": "CountAnswer",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 937636455928706,
+							"parameters": {
+								"audio-file": "pop5",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 423436351488278,
+							"parameters": {
+								"audio-file": "startsound",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Awindy",
+							"sid": 230953155833790,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "cloudy",
+							"sid": 287327270547858,
+							"parameters": {
+								"object": "Particles",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "cloudy",
+							"sid": 201376688545426
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "Particles",
+							"sid": 987117177486533,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "position",
+								"end-x": "-157",
+								"end-y": "25",
+								"time": "0.5",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Sprite4",
+							"sid": 747698281093435,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Awindy",
+							"sid": 178612125142013,
+							"parameters": {
+								"frame-number": "2"
+							}
+						}
+					],
+					"sid": 226936564285596
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "windy",
+							"sid": 225812273263078,
+							"parameters": {
+								"object": "c"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 907633670430081,
+							"parameters": {
+								"variable": "tryCount",
+								"comparison": 2,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 725152633078164,
+							"parameters": {
+								"variable": "CountAnswer",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 187328109214715,
+							"parameters": {
+								"audio-file": "pop5",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 678932428176737,
+							"parameters": {
+								"audio-file": "startsound",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Arainy",
+							"sid": 376998122271965,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "windy",
+							"sid": 212234356686558,
+							"parameters": {
+								"object": "Particles",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "Particles",
+							"sid": 239874307955924,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "position",
+								"end-x": "-157",
+								"end-y": "25",
+								"time": "0.5",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "windy",
+							"sid": 927128038042836
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Sprite5",
+							"sid": 868873251433692,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Arainy",
+							"sid": 284183433419951,
+							"parameters": {
+								"frame-number": "3"
+							}
+						}
+					],
+					"sid": 244181740440853
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "snowy",
+							"sid": 407124280363901,
+							"parameters": {
+								"object": "d"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 471340371081987,
+							"parameters": {
+								"variable": "tryCount",
+								"comparison": 2,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 750625153089331,
+							"parameters": {
+								"variable": "CountAnswer",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 319537106050757,
+							"parameters": {
+								"audio-file": "pop5",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 212115402667303,
+							"parameters": {
+								"audio-file": "startsound",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Asnowy",
+							"sid": 549457333796688,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "snowy",
+							"sid": 336616687931610,
+							"parameters": {
+								"object": "Particles",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "Particles",
+							"sid": 479514120562107,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "position",
+								"end-x": "-157",
+								"end-y": "25",
+								"time": "0.5",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "snowy",
+							"sid": 122622035106257
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Sprite7",
+							"sid": 964917772679731,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Asnowy",
+							"sid": 926486923718052,
+							"parameters": {
+								"frame-number": "4"
+							}
+						}
+					],
+					"sid": 582349045596101
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 190972107247227,
+							"parameters": {
+								"variable": "CountAnswer",
+								"comparison": 2,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 385037999391565,
+							"parameters": {
+								"variable": "tryCount",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 609584580569440
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 156399590523772,
+					"parameters": {
+						"variable": "tryCount",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "next",
+					"sid": 167547898667063,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"next\"",
+						"property": "size",
+						"end-x": "0",
+						"end-y": "0",
+						"time": "1",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "tryagain",
+					"sid": 208105198611994,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "300",
+						"end-y": "213",
+						"time": "1",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 998574483746426,
+					"parameters": {
+						"variable": "tryCount",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 551898981628956,
+					"parameters": {
+						"audio-file": "Retry Sound_high",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 544114595331672
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 231734014216082,
+					"parameters": {
+						"object": "tryagain"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 331016614743657,
+					"parameters": {
+						"variable": "tryCount",
+						"value": "0"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "next",
+					"sid": 628375892093694,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"next\"",
+						"property": "size",
+						"end-x": "300",
+						"end-y": "212",
+						"time": "1",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "tryagain",
+					"sid": 638911302883571,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "0",
+						"end-y": "0",
+						"time": "1",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 134690377193706,
+					"parameters": {
+						"variable": "HowManyTry",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite6",
+					"sid": 432169601831658,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "sad_wronganswer",
+					"sid": 409382113683828,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "sad_wronganswer",
+					"sid": 291026109638088,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "sad_wronganswer",
+					"sid": 363443643470548,
+					"parameters": {
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 235157898615949
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "a",
+					"sid": 529046829406416,
+					"parameters": {
+						"instance-variable": "plus",
+						"comparison": 4,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "b",
+					"sid": 264302355469064,
+					"parameters": {
+						"instance-variable": "plus",
+						"comparison": 4,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "c",
+					"sid": 516057901013303,
+					"parameters": {
+						"instance-variable": "plus",
+						"comparison": 4,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "next",
+					"sid": 636988221035827,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				}
+			],
+			"sid": 703632917688403
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 641143560998131,
+					"parameters": {
+						"variable": "tryCount",
+						"comparison": 4,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Sprite6",
+					"sid": 349075313072234,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "sad_wronganswer",
+					"sid": 510488568427138,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 845497421668880
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "calm",
+					"sid": 250172347908801,
+					"parameters": {
+						"object": "Acalm"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "calm",
+					"sid": 246148884489484,
+					"parameters": {
+						"object": "Acalm",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 478372353970548
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "calm",
+					"sid": 905683101164805,
+					"parameters": {
+						"object": "Awindy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "calm",
+					"sid": 951098103027757,
+					"parameters": {
+						"object": "Awindy",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 288507094337790
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "calm",
+					"sid": 100007550075510,
+					"parameters": {
+						"object": "Arainy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "calm",
+					"sid": 610464062927375,
+					"parameters": {
+						"object": "Arainy",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 366164415528702
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "calm",
+					"sid": 743924236969808,
+					"parameters": {
+						"object": "Asnowy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "calm",
+					"sid": 990104774546781,
+					"parameters": {
+						"object": "Asnowy",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 749270946628603
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "rainy",
+					"sid": 710242433913071,
+					"parameters": {
+						"object": "Acalm"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "rainy",
+					"sid": 539020818689351,
+					"parameters": {
+						"object": "Acalm",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 126143873100680
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "rainy",
+					"sid": 835765777630077,
+					"parameters": {
+						"object": "Awindy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "rainy",
+					"sid": 859296387758946,
+					"parameters": {
+						"object": "Awindy",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 648489112459520
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "rainy",
+					"sid": 844997801273870,
+					"parameters": {
+						"object": "Arainy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "rainy",
+					"sid": 844773744764179,
+					"parameters": {
+						"object": "Arainy",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 336233957665318
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "windy",
+					"sid": 794365961065073,
+					"parameters": {
+						"object": "Acalm"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "windy",
+					"sid": 556667516819146,
+					"parameters": {
+						"object": "Acalm",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 302697437103727
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "windy",
+					"sid": 524631543580810,
+					"parameters": {
+						"object": "Awindy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "windy",
+					"sid": 593786799685573,
+					"parameters": {
+						"object": "Awindy",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 304007651903253
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "windy",
+					"sid": 833218396661343,
+					"parameters": {
+						"object": "Arainy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "windy",
+					"sid": 845904209094438,
+					"parameters": {
+						"object": "Arainy",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 876199832559612
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "windy",
+					"sid": 320112312688794,
+					"parameters": {
+						"object": "Asnowy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "windy",
+					"sid": 251563326166247,
+					"parameters": {
+						"object": "Asnowy",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 669186404262124
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "cloudy",
+					"sid": 407201861842791,
+					"parameters": {
+						"object": "Acalm"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "cloudy",
+					"sid": 930726623406565,
+					"parameters": {
+						"object": "Acalm",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 555807134284224
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "cloudy",
+					"sid": 246249270061076,
+					"parameters": {
+						"object": "Awindy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "cloudy",
+					"sid": 842492625856703,
+					"parameters": {
+						"object": "Awindy",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 187164958112798
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "cloudy",
+					"sid": 789335919006808,
+					"parameters": {
+						"object": "Arainy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "cloudy",
+					"sid": 425563019268577,
+					"parameters": {
+						"object": "Arainy",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 730781888272628
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "cloudy",
+					"sid": 156331055443959,
+					"parameters": {
+						"object": "Asnowy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "cloudy",
+					"sid": 878759239294225,
+					"parameters": {
+						"object": "Asnowy",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 776447945567559
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "snowy",
+					"sid": 498909013003840,
+					"parameters": {
+						"object": "Acalm"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "snowy",
+					"sid": 739919264091639,
+					"parameters": {
+						"object": "Acalm",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 486220595146661
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "snowy",
+					"sid": 626477552852690,
+					"parameters": {
+						"object": "Awindy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "snowy",
+					"sid": 176707945475555,
+					"parameters": {
+						"object": "Awindy",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 333991094304136
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "snowy",
+					"sid": 162205844066960,
+					"parameters": {
+						"object": "Arainy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "snowy",
+					"sid": 414350758052936,
+					"parameters": {
+						"object": "Arainy",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 267911351445472
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "snowy",
+					"sid": 315991474901006,
+					"parameters": {
+						"object": "Asnowy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "snowy",
+					"sid": 224505389373010,
+					"parameters": {
+						"object": "Asnowy",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 332952763167774
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 751834989996197,
+					"parameters": {
+						"object": "continue"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 499194704802296,
+					"parameters": {
+						"layout": "Activity6"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 829413748877354,
+					"parameters": {
+						"variable": "CountAnswer",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 536697727775239,
+					"parameters": {
+						"variable": "HowManyTry",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 504828329862099,
+					"parameters": {
+						"variable": "tryCount",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles2",
+					"sid": 915068762293269,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles3",
+					"sid": 335407869307267,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles4",
+					"sid": 149653326791274,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles5",
+					"sid": 829504958225826,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles6",
+					"sid": 599873286116893,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles7",
+					"sid": 149535756627390,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles7",
+					"sid": 621928630860121,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles8",
+					"sid": 904323448708008,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles9",
+					"sid": 868126279854829,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles9",
+					"sid": 714349002911040,
+					"parameters": {
+						"opacity": "0"
+					}
+				}
+			],
+			"sid": 448060386195479
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 532712068313078,
+					"parameters": {
+						"object": "showanswer"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Acalm",
+					"sid": 963461497630632,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Awindy",
+					"sid": 259800616218028,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "windy",
+					"sid": 782383669574924,
+					"parameters": {
+						"object": "Particles",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "windy",
+					"sid": 894734960639382
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Particles",
+					"sid": 484821864614787,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "position",
+						"end-x": "-157",
+						"end-y": "25",
+						"time": "0.5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite4",
+					"sid": 637019773833452,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Awindy",
+					"sid": 855433255120411,
+					"parameters": {
+						"frame-number": "2"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 110999049032178,
+					"parameters": {
+						"audio-file": "startsound",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "calm",
+					"sid": 398772186593553,
+					"parameters": {
+						"object": "Particles",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Particles",
+					"sid": 253482455123096,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "position",
+						"end-x": "-157",
+						"end-y": "25",
+						"time": "0.5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "calm",
+					"sid": 720444914479209
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Arainy",
+					"sid": 506522695559076,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "cloudy",
+					"sid": 733424343685037,
+					"parameters": {
+						"object": "Particles",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Particles",
+					"sid": 555050182893142,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "position",
+						"end-x": "-157",
+						"end-y": "25",
+						"time": "0.5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "cloudy",
+					"sid": 178586376482551
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite5",
+					"sid": 121954475447546,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Arainy",
+					"sid": 808949830773951,
+					"parameters": {
+						"frame-number": "3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite3",
+					"sid": 447259812993457,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite7",
+					"sid": 931096730159889,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Acalm",
+					"sid": 284921545703751,
+					"parameters": {
+						"frame-number": "3"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Asnowy",
+					"sid": 395203122016515,
+					"parameters": {
+						"frame-number": "4"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Asnowy",
+					"sid": 661477365038055,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "next",
+					"sid": 613368022258053,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"next\"",
+						"property": "size",
+						"end-x": "0",
+						"end-y": "0",
+						"time": "1",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "continue",
+					"sid": 987837500440508,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"next\"",
+						"property": "size",
+						"end-x": "400",
+						"end-y": "283",
+						"time": "1",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 731805618131794,
+					"parameters": {
+						"audio-file": "gameend",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 978533863533147,
+					"parameters": {
+						"variable": "CountAnswer",
+						"value": "-1"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles2",
+					"sid": 967919851495417,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles3",
+					"sid": 524373297773146,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles4",
+					"sid": 513372427715741,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles5",
+					"sid": 678077791075014,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles6",
+					"sid": 281345227277534,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles7",
+					"sid": 481618085322800,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles8",
+					"sid": 721443659006713,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Particles9",
+					"sid": 373650275397366,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Sprite6",
+					"sid": 349783402291392,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetOpacity",
+						"end-value": "100",
+						"time": "2",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Sprite6",
+					"sid": 925325146079530,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 470421836910374,
+					"parameters": {
+						"variable": "HowManyTry",
+						"value": "0"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "rainy",
+					"sid": 409334991124575
+				},
+				{
+					"id": "destroy",
+					"objectClass": "cloudy",
+					"sid": 631024689264604
+				},
+				{
+					"id": "destroy",
+					"objectClass": "snowy",
+					"sid": 295717227502201
+				},
+				{
+					"id": "destroy",
+					"objectClass": "calm",
+					"sid": 837399670367326
+				},
+				{
+					"id": "destroy",
+					"objectClass": "windy",
+					"sid": 866575180327821
+				},
+				{
+					"id": "destroy",
+					"objectClass": "showanswer",
+					"sid": 917994768641551
+				}
+			],
+			"sid": 839988068271645
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 321238069209510,
+					"parameters": {
+						"variable": "HowManyTry",
+						"comparison": 4,
+						"value": "1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 167327545757098
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "tryagain",
+					"sid": 753685736165499,
+					"parameters": {
+						"object": "showanswer",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "tryagain",
+					"sid": 254360744399528,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "0",
+						"end-y": "0",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "showanswer",
+					"sid": 159809565035082,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "300",
+						"end-y": "213",
+						"time": "1",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "tryagain",
+					"sid": 756966367386783
+				},
+				{
+					"id": "destroy",
+					"objectClass": "next",
+					"sid": 405896241958628
+				}
+			],
+			"sid": 329401645029929
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 787333880776789,
+					"parameters": {
+						"object": "audiobtn"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 519717357929025
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 428330197851276,
+					"parameters": {
+						"audio-file": "Button",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 294546441235662,
+					"parameters": {
+						"audio-file": "Activity 5 Identifying Weather Symbols_high",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 283487669189093
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 390875306731897,
+					"parameters": {
+						"object": "windy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 709280143604963,
+					"parameters": {
+						"audio-file": "Sunshine (1)",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 810646432536203
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 147898253730877,
+					"parameters": {
+						"object": "calm"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 693629438388458,
+					"parameters": {
+						"audio-file": "HAZE (1)",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 949573331172058
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 748747458756325,
+					"parameters": {
+						"object": "cloudy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 340598529609611,
+					"parameters": {
+						"audio-file": "Partly Cloudy Night (2)",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 642172113077000
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 838815140640870,
+					"parameters": {
+						"object": "rainy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 283279620016174,
+					"parameters": {
+						"audio-file": "Rainy",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 339698555580402
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 235655694376583,
+					"parameters": {
+						"object": "snowy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 847775312524440,
+					"parameters": {
+						"audio-file": "Mist",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 604864652769393
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 412275337440570,
+					"parameters": {
+						"object": "hint"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 979606763501137,
+					"parameters": {
+						"audio-file": "Button",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Sprite11",
+					"sid": 926184027944646,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite11",
+					"sid": 895654212564093,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 353727822808900,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Sprite11",
+					"sid": 563304539964792,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetOpacity",
+						"end-value": "0",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 744286215191467
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 969744745843962,
+					"parameters": {
+						"object": "homebtn"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 700176292641390,
+					"parameters": {
+						"layout": "Home"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 741690856155841,
+					"parameters": {
+						"audio-file": "Button",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 910794037905133
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 140422358843525,
+					"parameters": {
+						"object": "homebtn2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 823592351174701,
+					"parameters": {
+						"layout": "Home"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 772293309989363,
+					"parameters": {
+						"audio-file": "Button",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 177504818153647
+		}
+	],
+	"sid": 838750347010588
+}

@@ -1,0 +1,2275 @@
+{
+	"name": "Game1",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Global_Event_Sheet"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 937320137131037
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Align_StartScreen",
+					"sid": 852369214468891
+				}
+			],
+			"sid": 276702988723778
+		},
+		{
+			"eventType": "comment",
+			"text": "This function aligns all the objects on the startscreen"
+		},
+		{
+			"functionName": "Align_StartScreen5",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"type": "comment",
+					"text": "\"Logo_Flip\" will start the logo animation."
+				},
+				{
+					"callFunction": "Logo_Flip",
+					"sid": 980421823470133
+				},
+				{
+					"type": "comment",
+					"text": "The setting animation will set all the setting buttons to the correct animation. For example if you have muted sound you want a mute sound animation to be shown."
+				},
+				{
+					"callFunction": "Settings",
+					"sid": 391368984394630,
+					"parameters": [
+						"\"settingsicons\""
+					]
+				}
+			],
+			"sid": 156585206369379,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Settings buttons alignment"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "BTN_Startscreen",
+							"sid": 215705639358744,
+							"parameters": {
+								"instance-variable": "num",
+								"comparison": 3,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "BTN_Startscreen",
+							"sid": 405255438035216,
+							"parameters": {
+								"x": "ViewportLeft(0)+60",
+								"y": "ViewportTop(0)+60+Self.aligner"
+							}
+						}
+					],
+					"sid": 602449521660378
+				},
+				{
+					"eventType": "comment",
+					"text": "Language button alignment"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "BTN_Startscreen",
+							"sid": 771768600124371,
+							"parameters": {
+								"instance-variable": "num",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "BTN_Startscreen",
+							"sid": 275499824790604,
+							"parameters": {
+								"x": "ViewportRight(0)-60",
+								"y": "ViewportTop(0)+60"
+							}
+						}
+					],
+					"sid": 131692949734751
+				},
+				{
+					"eventType": "comment",
+					"text": "Play Button"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "BTN_Startscreen",
+							"sid": 137637393783337,
+							"parameters": {
+								"instance-variable": "num",
+								"comparison": 0,
+								"value": "5"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Text",
+							"sid": 439408374161380,
+							"parameters": {
+								"instance-variable": "num",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "BTN_Startscreen",
+							"sid": 945378458881251,
+							"parameters": {
+								"x": "ViewportLeft(0)-152"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "BTN_Startscreen",
+							"sid": 684022243745453,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"in_right\"",
+								"property": "offsetX",
+								"end-value": "390",
+								"time": "0.35",
+								"ease": "easeoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "Text",
+							"sid": 960587146298964,
+							"parameters": {
+								"x": "ViewportLeft(0)-178"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text",
+							"sid": 914333511709587,
+							"parameters": {
+								"text": "Functions.Get_Text(\"4\")&newline&Level"
+							}
+						}
+					],
+					"sid": 813371498833853
+				},
+				{
+					"eventType": "comment",
+					"text": "Three buttons on bottom of startscreen."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "repeat",
+							"objectClass": "System",
+							"sid": 881469269635240,
+							"parameters": {
+								"count": "3"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "BTN_Startscreen",
+							"sid": 637502600003510,
+							"parameters": {
+								"instance-variable": "num",
+								"comparison": 0,
+								"value": "6+loopindex"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-y",
+							"objectClass": "BTN_Startscreen",
+							"sid": 624027031176040,
+							"parameters": {
+								"y": "ViewportBottom(\"Background\")+35"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 181670256161222,
+							"parameters": {
+								"seconds": "loopindex/15"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "BTN_Startscreen",
+							"sid": 887869824488683,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"in\"",
+								"property": "offsetY",
+								"end-value": "ViewportBottom(\"Background\")-175",
+								"time": "0.35",
+								"ease": "easeoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 855390464216311
+				}
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "This makes the \"Level X\" text follows the play button when it slides in from the right"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-playing",
+					"objectClass": "BTN_Startscreen",
+					"sid": 966321544917794,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"in_right\""
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Text",
+					"sid": 930227968369005,
+					"parameters": {
+						"instance-variable": "num",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Text",
+					"sid": 977822152119792,
+					"parameters": {
+						"x": "BTN_Startscreen.X-26"
+					}
+				}
+			],
+			"sid": 103538393314258
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "BTN_Startscreen",
+					"sid": 339983239296022,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"in_right\""
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Text",
+					"sid": 617821697894481,
+					"parameters": {
+						"instance-variable": "num",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Text",
+					"sid": 743943626871476,
+					"parameters": {
+						"x": "BTN_Startscreen.X-26"
+					}
+				}
+			],
+			"sid": 480941389618171
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Logo5",
+			"description": "This makes the logo animation work",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "Logo_Flip5",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [
+						{
+							"id": "for-each-ordered",
+							"objectClass": "System",
+							"sid": 799391072287542,
+							"parameters": {
+								"object": "Symbol_Logo",
+								"expression": "Symbol_Logo.num",
+								"order": "ascending"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-y",
+							"objectClass": "Symbol_Logo",
+							"sid": 792858279810178,
+							"parameters": {
+								"y": "(ViewportTop(0)+122+(540-(ViewportTop(0)+120))/2)+Self.align"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 559574885025798,
+							"parameters": {
+								"seconds": "loopindex/7"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "Symbol_Logo",
+							"sid": 564760531882513,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"flip_in\"",
+								"property": "offsetWidth",
+								"end-value": "0",
+								"time": "0.12",
+								"ease": "easeinsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 638526495642607
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "Symbol_Logo",
+							"sid": 874266468723659,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"flip_in\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "Symbol_Logo",
+							"sid": 202174146295731,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"flip_out\"",
+								"property": "offsetWidth",
+								"end-value": "106",
+								"time": "0.12",
+								"ease": "easeoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 921865497315454,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Symbol_Logo",
+									"sid": 919285079085773,
+									"parameters": {
+										"animation": "\"BLANK\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Symbol_Logo",
+									"sid": 331678824444531,
+									"parameters": {
+										"animation": "\"l\"&Self.num",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 198818885837165
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 110013455031463
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Symbol_Logo",
+									"sid": 875993336173295,
+									"parameters": {
+										"animation": "\"BLANK\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 132812855301081
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "Symbol_Logo",
+							"sid": 626070462675661,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"flip_out\""
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Symbol_Logo",
+							"sid": 282892758640864,
+							"parameters": {
+								"instance-variable": "num",
+								"comparison": 0,
+								"value": "7"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 517984644053221,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Symbol_Logo",
+									"sid": 789252019705101,
+									"parameters": {
+										"animation": "\"BLANK\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Logo_Flip",
+									"sid": 615734710101161
+								}
+							],
+							"sid": 277430953618725
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 635191532019997
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Logo_Bounce",
+									"sid": 418075449310667
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 301802535712493,
+									"parameters": {
+										"seconds": "2"
+									}
+								},
+								{
+									"callFunction": "Logo_Flip",
+									"sid": 288945548710194
+								}
+							],
+							"sid": 717730495317842
+						}
+					]
+				},
+				{
+					"functionName": "Logo_Bounce5",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [
+						{
+							"id": "for-each-ordered",
+							"objectClass": "System",
+							"sid": 682060828306592,
+							"parameters": {
+								"object": "Symbol_Logo",
+								"expression": "Symbol_Logo.num",
+								"order": "ascending"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 566333247709057,
+							"parameters": {
+								"seconds": "loopindex/16"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Symbol_Logo",
+							"sid": 920027779855287,
+							"parameters": {
+								"y": "Self.Y-1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 485463003904584,
+							"parameters": {
+								"seconds": "dt"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Symbol_Logo",
+							"sid": 336907482924610,
+							"parameters": {
+								"y": "Self.Y-2"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 398317325427610,
+							"parameters": {
+								"seconds": "dt"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Symbol_Logo",
+							"sid": 385122291285701,
+							"parameters": {
+								"y": "Self.Y-3"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 250508359070704,
+							"parameters": {
+								"seconds": "dt"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Symbol_Logo",
+							"sid": 269259724649744,
+							"parameters": {
+								"y": "Self.Y-4"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 325134523296583,
+							"parameters": {
+								"seconds": "dt"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Symbol_Logo",
+							"sid": 992461871215662,
+							"parameters": {
+								"y": "Self.Y-5"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 761360064687382,
+							"parameters": {
+								"seconds": "dt"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Symbol_Logo",
+							"sid": 128111916373619,
+							"parameters": {
+								"y": "Self.Y+1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 184717044296200,
+							"parameters": {
+								"seconds": "dt"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Symbol_Logo",
+							"sid": 786440063340632,
+							"parameters": {
+								"y": "Self.Y+2"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 269222360196428,
+							"parameters": {
+								"seconds": "dt"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Symbol_Logo",
+							"sid": 164305265829921,
+							"parameters": {
+								"y": "Self.Y+3"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 860360080480979,
+							"parameters": {
+								"seconds": "dt"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Symbol_Logo",
+							"sid": 760795419484633,
+							"parameters": {
+								"y": "Self.Y+4"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 447064501554083,
+							"parameters": {
+								"seconds": "dt"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Symbol_Logo",
+							"sid": 882207748766867,
+							"parameters": {
+								"y": "Self.Y+5"
+							}
+						}
+					],
+					"sid": 209192568389273
+				}
+			],
+			"sid": 798679360820232
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Buttons_StartScreen5",
+			"description": "The buttons on the start screen",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Disable all touches when the language layer is shown"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 134291049165031,
+							"parameters": {
+								"object": "BTN_Startscreen"
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 178441765593129,
+							"parameters": {
+								"layer": "\"Language\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "BTN_Startscreen",
+							"sid": 924629241181439,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"touch\"",
+								"property": "scale",
+								"end-x": "0.85",
+								"end-y": "0.85",
+								"time": "0.075",
+								"ease": "noease",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "yes"
+							}
+						}
+					],
+					"sid": 377021043756985,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Check if the player has sound enabled."
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-at-x",
+									"objectClass": "Save",
+									"sid": 607793099756821,
+									"parameters": {
+										"x": "0",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 728487278297003,
+									"parameters": {
+										"audio-file": "Button",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 234960944665512
+						},
+						{
+							"eventType": "comment",
+							"text": "Setting buttons"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "BTN_Startscreen",
+									"sid": 172823752623216,
+									"parameters": {
+										"instance-variable": "id",
+										"comparison": 0,
+										"value": "\"settingsopen\""
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "BTN_Startscreen",
+									"sid": 536507702097988,
+									"parameters": {
+										"instance-variable": "id",
+										"comparison": 0,
+										"value": "\"sound\""
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "BTN_Startscreen",
+									"sid": 235220042804555,
+									"parameters": {
+										"instance-variable": "id",
+										"comparison": 0,
+										"value": "\"music\""
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "BTN_Startscreen",
+									"sid": 528287557779187,
+									"parameters": {
+										"instance-variable": "id",
+										"comparison": 0,
+										"value": "\"haptic\""
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "BTN_Startscreen",
+									"sid": 812846557167973,
+									"parameters": {
+										"instance-variable": "id",
+										"comparison": 0,
+										"value": "\"language\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Settings",
+									"sid": 711421138534246,
+									"parameters": [
+										"BTN_Startscreen.id"
+									]
+								}
+							],
+							"sid": 281147957808849,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "comment",
+							"text": "When the player wants to play check if the current level has any save before it starts"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "BTN_Startscreen",
+									"sid": 316058173970879,
+									"parameters": {
+										"instance-variable": "id",
+										"comparison": 0,
+										"value": "\"classic\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 197947234018548,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 969858186564109,
+											"parameters": {
+												"seconds": "0.15"
+											}
+										},
+										{
+											"id": "check-item-exists",
+											"objectClass": "LocalStorage",
+											"sid": 134617417033201,
+											"parameters": {
+												"key": "\"save_current_level\"&Language"
+											}
+										}
+									],
+									"sid": 980574090888117
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 585190224326085
+										}
+									],
+									"actions": [
+										{
+											"id": "alert",
+											"objectClass": "Browser",
+											"sid": 563709156406709,
+											"parameters": {
+												"message": "\"Congratulations!\"&newline&\"You have completed all levels!\""
+											}
+										}
+									],
+									"sid": 323528812804346
+								}
+							]
+						},
+						{
+							"eventType": "comment",
+							"text": "Rate app"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "BTN_Startscreen",
+									"sid": 546985803329074,
+									"parameters": {
+										"instance-variable": "id",
+										"comparison": 0,
+										"value": "\"rate\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "rate-app",
+									"objectClass": "Share",
+									"sid": 508267578199885,
+									"parameters": {
+										"dialogText": "\"If you enjoy my game please consider rating it in the store!\"",
+										"confirmButtonText": "\"Yes\"",
+										"cancelButtonText": "\"No\"",
+										"appIdentifier": "\"YOUR APP ID\""
+									}
+								}
+							],
+							"sid": 968448030771626
+						},
+						{
+							"eventType": "comment",
+							"text": "Remove ads"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "BTN_Startscreen",
+									"sid": 315894783776510,
+									"parameters": {
+										"instance-variable": "id",
+										"comparison": 0,
+										"value": "\"removeads\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Purchase",
+									"sid": 280269190467668
+								}
+							],
+							"sid": 243257900156428
+						},
+						{
+							"eventType": "comment",
+							"text": "Share app"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "BTN_Startscreen",
+									"sid": 337112253086591,
+									"parameters": {
+										"instance-variable": "id",
+										"comparison": 0,
+										"value": "\"share\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "share-text",
+									"objectClass": "Share",
+									"sid": 870906769050614,
+									"parameters": {
+										"text": "\"Hi, Join the e-limu platform for great educational games\"",
+										"title": "\"\"",
+										"url": "\"\""
+									}
+								}
+							],
+							"sid": 779196918505760
+						}
+					]
+				}
+			],
+			"sid": 699197791547276
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Settings5",
+			"description": "This makes the settings work",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "Settings5",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "setting_action",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"sid": 266701909175908
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 693263697840896,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 562324633430965,
+									"parameters": {
+										"variable": "setting_action",
+										"comparison": 0,
+										"value": "\"settingsicons\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 442929898769257,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "BTN_Startscreen",
+											"sid": 855901160953005,
+											"parameters": {
+												"instance-variable": "num",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 232034160593556,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-at-x",
+													"objectClass": "Save",
+													"sid": 654145829149122,
+													"parameters": {
+														"x": "0",
+														"comparison": 0,
+														"value": "1"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "BTN_Startscreen",
+													"sid": 263346683159318,
+													"parameters": {
+														"animation": "\"Sound\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 237805258842727
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-at-x",
+													"objectClass": "Save",
+													"sid": 891663202858092,
+													"parameters": {
+														"x": "0",
+														"comparison": 0,
+														"value": "-1"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "BTN_Startscreen",
+													"sid": 362934507757461,
+													"parameters": {
+														"animation": "\"Mute\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 375058781552158
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "BTN_Startscreen",
+											"sid": 779201104859922,
+											"parameters": {
+												"instance-variable": "num",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 422041667903472,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-at-x",
+													"objectClass": "Save",
+													"sid": 315856572389744,
+													"parameters": {
+														"x": "1",
+														"comparison": 0,
+														"value": "1"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "BTN_Startscreen",
+													"sid": 697965493602002,
+													"parameters": {
+														"animation": "\"Music\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 927462279853228,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "is-tag-playing",
+															"objectClass": "Audio",
+															"sid": 945603231281552,
+															"parameters": {
+																"tag": "\"music\""
+															},
+															"isInverted": true
+														}
+													],
+													"actions": [],
+													"sid": 657336602928106
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-at-x",
+													"objectClass": "Save",
+													"sid": 742226420250658,
+													"parameters": {
+														"x": "1",
+														"comparison": 0,
+														"value": "-1"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "BTN_Startscreen",
+													"sid": 453302750584517,
+													"parameters": {
+														"animation": "\"NoMusic\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 385610666217061,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "is-tag-playing",
+															"objectClass": "Audio",
+															"sid": 704108519058227,
+															"parameters": {
+																"tag": "\"music\""
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "stop",
+															"objectClass": "Audio",
+															"sid": 910620138243086,
+															"parameters": {
+																"tag": "\"music\""
+															}
+														}
+													],
+													"sid": 750172171364955
+												}
+											]
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "BTN_Startscreen",
+											"sid": 304760206156857,
+											"parameters": {
+												"instance-variable": "num",
+												"comparison": 0,
+												"value": "3"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 679811467809053,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-at-x",
+													"objectClass": "Save",
+													"sid": 615309566738752,
+													"parameters": {
+														"x": "2",
+														"comparison": 0,
+														"value": "1"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "BTN_Startscreen",
+													"sid": 217684259213380,
+													"parameters": {
+														"animation": "\"Haptic\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 239756407777263
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-at-x",
+													"objectClass": "Save",
+													"sid": 527523913802451,
+													"parameters": {
+														"x": "2",
+														"comparison": 0,
+														"value": "-1"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "BTN_Startscreen",
+													"sid": 174716627809756,
+													"parameters": {
+														"animation": "\"NoHaptic\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 444526688936890
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 380889853861344,
+									"parameters": {
+										"variable": "setting_action",
+										"comparison": 0,
+										"value": "\"settingsopen\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 356325596028814,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "repeat",
+											"objectClass": "System",
+											"sid": 516553926834555,
+											"parameters": {
+												"count": "3"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "BTN_Startscreen",
+											"sid": 100494261073047,
+											"parameters": {
+												"instance-variable": "num",
+												"comparison": 0,
+												"value": "loopindex+1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 618486057819729,
+											"parameters": {
+												"seconds": "loopindex/15"
+											}
+										},
+										{
+											"id": "set-opacity",
+											"objectClass": "BTN_Startscreen",
+											"sid": 808945100455047,
+											"parameters": {
+												"opacity": "0"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "BTN_Startscreen",
+											"sid": 631469461073247,
+											"parameters": {
+												"visibility": "toggle"
+											}
+										}
+									],
+									"sid": 959536025691265
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 716479953543730,
+									"parameters": {
+										"variable": "setting_action",
+										"comparison": 0,
+										"value": "\"sound\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-at-x",
+									"objectClass": "Save",
+									"sid": 297475372090564,
+									"parameters": {
+										"x": "0",
+										"value": "Self.At(0)*-1"
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 615844052289788,
+									"parameters": {
+										"key": "\"save_global\"",
+										"value": "Save.AsJSON"
+									}
+								},
+								{
+									"callFunction": "Settings",
+									"sid": 563101801379955,
+									"parameters": [
+										"\"settingsicons\""
+									]
+								}
+							],
+							"sid": 346536501854664
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 744763699012846,
+									"parameters": {
+										"variable": "setting_action",
+										"comparison": 0,
+										"value": "\"music\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-at-x",
+									"objectClass": "Save",
+									"sid": 900414911500972,
+									"parameters": {
+										"x": "1",
+										"value": "Self.At(1)*-1"
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 663449616432385,
+									"parameters": {
+										"key": "\"save_global\"",
+										"value": "Save.AsJSON"
+									}
+								},
+								{
+									"callFunction": "Settings",
+									"sid": 497042486025053,
+									"parameters": [
+										"\"settingsicons\""
+									]
+								}
+							],
+							"sid": 837195290206340
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 672501671647000,
+									"parameters": {
+										"variable": "setting_action",
+										"comparison": 0,
+										"value": "\"haptic\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-at-x",
+									"objectClass": "Save",
+									"sid": 690312884829920,
+									"parameters": {
+										"x": "2",
+										"value": "Self.At(2)*-1"
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 759806709814704,
+									"parameters": {
+										"key": "\"save_global\"",
+										"value": "Save.AsJSON"
+									}
+								},
+								{
+									"callFunction": "Settings",
+									"sid": 110102118510465,
+									"parameters": [
+										"\"settingsicons\""
+									]
+								}
+							],
+							"sid": 675667404478634
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 998017978144977,
+									"parameters": {
+										"variable": "setting_action",
+										"comparison": 0,
+										"value": "\"language\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 908589742317775,
+									"parameters": {
+										"layer": "\"Language\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"callFunction": "Language_Change",
+									"sid": 407533191980495
+								}
+							],
+							"sid": 694532809001282
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 383210927837076,
+							"parameters": {
+								"interval-seconds": "2*dt"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "BTN_Startscreen",
+							"sid": 357444736562207
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "BTN_Startscreen",
+							"sid": 784943091332192,
+							"parameters": {
+								"instance-variable": "num",
+								"comparison": 3,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "BTN_Startscreen",
+							"sid": 802871402359506,
+							"parameters": {
+								"opacity": "min(100,Self.Opacity+600*dt)"
+							}
+						}
+					],
+					"sid": 587850870747543
+				}
+			],
+			"sid": 168897127060499
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Change_Language5",
+			"description": "This makes the language change work",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "Language_Select5",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "When the language has been changed save the setting"
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 124011932011016,
+							"parameters": {
+								"key": "\"save_global\"",
+								"value": "Save.AsJSON"
+							}
+						},
+						{
+							"type": "comment",
+							"text": "Check if the language has a save"
+						},
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 238014173056182,
+							"parameters": {
+								"key": "\"save_\"&Language"
+							}
+						},
+						{
+							"callFunction": "Load_Words",
+							"sid": 520487319030398
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 745666756300558,
+							"parameters": {
+								"tag": "\"words_loaded\""
+							}
+						},
+						{
+							"type": "comment",
+							"text": "Once the dictionaries has been loaded set the layer invisible"
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 193562673249263,
+							"parameters": {
+								"layer": "\"Language\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-opacity",
+							"objectClass": "System",
+							"sid": 306174552276715,
+							"parameters": {
+								"layer": "\"Language\"",
+								"opacity": "0"
+							}
+						}
+					],
+					"sid": 966741295500082
+				},
+				{
+					"functionName": "Language_Change5",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 670260356865509,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Text",
+									"sid": 596092194192973,
+									"parameters": {
+										"instance-variable": "num",
+										"comparison": 0,
+										"value": "100"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "Text",
+									"sid": 869739942413943,
+									"parameters": {
+										"text": "Functions.Get_Text(\"0\")"
+									}
+								}
+							],
+							"sid": 475377404949856
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Text",
+									"sid": 127798697201837,
+									"parameters": {
+										"instance-variable": "id",
+										"comparison": 0,
+										"value": "Language"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Text",
+									"sid": 154081478926080,
+									"parameters": {
+										"instance-variable": "num",
+										"comparison": 0,
+										"value": "101"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-font-color",
+									"objectClass": "Text",
+									"sid": 729246765788070,
+									"parameters": {
+										"color": "rgb(255, 255, 255)"
+									}
+								},
+								{
+									"id": "set-position-to-another-object",
+									"objectClass": "BTN_Select_Language",
+									"sid": 220494235766995,
+									"parameters": {
+										"object": "Text",
+										"image-point-optional": "0"
+									}
+								},
+								{
+									"id": "set-size",
+									"objectClass": "BTN_Select_Language",
+									"sid": 299347155749886,
+									"parameters": {
+										"width": "131",
+										"height": "48"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "BTN_Select_Language",
+									"sid": 394683023285166,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"select\"",
+										"property": "size",
+										"end-x": "175",
+										"end-y": "74",
+										"time": "0.75",
+										"ease": "easeoutelastic",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no"
+									}
+								}
+							],
+							"sid": 443834717744959
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Text",
+									"sid": 158635358865856,
+									"parameters": {
+										"instance-variable": "id",
+										"comparison": 1,
+										"value": "Language"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Text",
+									"sid": 849739295006416,
+									"parameters": {
+										"instance-variable": "num",
+										"comparison": 0,
+										"value": "101"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-font-color",
+									"objectClass": "Text",
+									"sid": 391863119104590,
+									"parameters": {
+										"color": "rgb(41, 15, 44)"
+									}
+								}
+							],
+							"sid": 459997841133812
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Text",
+									"sid": 698689838599364,
+									"parameters": {
+										"instance-variable": "num",
+										"comparison": 0,
+										"value": "102"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "Text",
+									"sid": 519694424964740,
+									"parameters": {
+										"text": "Functions.Get_Text(\"1\")"
+									}
+								}
+							],
+							"sid": 247563656237459
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 153060405978848,
+							"parameters": {
+								"layer": "\"Language\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-opacity",
+							"objectClass": "System",
+							"sid": 278264816351950,
+							"parameters": {
+								"layer": "\"Language\"",
+								"opacity": "min(100,LayerOpacity(\"Language\")+300*dt)"
+							}
+						}
+					],
+					"sid": 279501126412027,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 701026012951751,
+									"parameters": {
+										"object": "BTN_White"
+									}
+								},
+								{
+									"id": "layer-is-visible",
+									"objectClass": "System",
+									"sid": 275624261313216,
+									"parameters": {
+										"layer": "\"Language\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 781602143333613,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-at-x",
+											"objectClass": "Save",
+											"sid": 937605876063102,
+											"parameters": {
+												"x": "0",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 883814636153063,
+											"parameters": {
+												"audio-file": "Button",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 129683918725583
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "tween-two-properties",
+											"objectClass": "BTN_White",
+											"sid": 935062293957216,
+											"behaviorType": "Tween",
+											"parameters": {
+												"tags": "\"touch\"",
+												"property": "scale",
+												"end-x": "0.85",
+												"end-y": "0.85",
+												"time": "0.075",
+												"ease": "noease",
+												"destroy-on-complete": "no",
+												"loop": "no",
+												"ping-pong": "yes"
+											}
+										},
+										{
+											"id": "wait-for-previous-actions",
+											"objectClass": "System",
+											"sid": 762911061842815
+										},
+										{
+											"callFunction": "Language_Select",
+											"sid": 588549243511396
+										}
+									],
+									"sid": 114383095046574
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 458761309090014,
+									"parameters": {
+										"object": "Text"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Text",
+									"sid": 780453119046564,
+									"parameters": {
+										"instance-variable": "num",
+										"comparison": 0,
+										"value": "101"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 628919337060033,
+									"parameters": {
+										"variable": "Language",
+										"value": "Text.id"
+									}
+								},
+								{
+									"id": "set-at-x",
+									"objectClass": "Save",
+									"sid": 793669848837514,
+									"parameters": {
+										"x": "3",
+										"value": "Language"
+									}
+								},
+								{
+									"callFunction": "Language_Change",
+									"sid": 585029017028280
+								}
+							],
+							"sid": 777582228056679,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-at-x",
+											"objectClass": "Save",
+											"sid": 260838678771751,
+											"parameters": {
+												"x": "0",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 740620978323314,
+											"parameters": {
+												"audio-file": "Button",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 920281906047916
+								}
+							]
+						}
+					]
+				}
+			],
+			"sid": 450877342860683
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Check_Save5",
+			"description": "Check if player has played before for current language",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Check level for the current language"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-missing",
+							"objectClass": "LocalStorage",
+							"sid": 570034876247402,
+							"parameters": {
+								"key": "\"save_\"&Language"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Text",
+							"sid": 650523445667576,
+							"parameters": {
+								"instance-variable": "num",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 400690916194562,
+							"parameters": {
+								"variable": "Level",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text",
+							"sid": 893726812066357,
+							"parameters": {
+								"text": "Functions.Get_Text(\"4\")&newline&Level"
+							}
+						}
+					],
+					"sid": 596633112032342
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 955795014284358,
+							"parameters": {
+								"key": "\"save_\"&Language"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 597164393782438,
+							"parameters": {
+								"key": "\"save_\"&Language"
+							}
+						}
+					],
+					"sid": 311029906453338
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 853920515638035,
+							"parameters": {
+								"key": "\"save_\"&Language"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Text",
+							"sid": 259413084201394,
+							"parameters": {
+								"instance-variable": "num",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 289411055122769,
+							"parameters": {
+								"variable": "Level",
+								"value": "LocalStorage.ItemValue"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text",
+							"sid": 760628149293631,
+							"parameters": {
+								"text": "Functions.Get_Text(\"4\")&newline&Level"
+							}
+						}
+					],
+					"sid": 642033132239823
+				},
+				{
+					"eventType": "comment",
+					"text": "Check potential save before going to gameplay"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-missing",
+							"objectClass": "LocalStorage",
+							"sid": 756633625767092,
+							"parameters": {
+								"key": "\"save_current_level\"&Language"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 608405685880525
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 156264781436191,
+							"parameters": {
+								"key": "\"save_current_level\"&Language"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 640206854112938,
+							"parameters": {
+								"key": "\"save_current_level\"&Language"
+							}
+						}
+					],
+					"sid": 712544828243897
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 516183994852538,
+							"parameters": {
+								"key": "\"save_current_level\"&Language"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 319807510974533
+				}
+			],
+			"sid": 166803891060488
+		}
+	],
+	"sid": 305316119705730
+}

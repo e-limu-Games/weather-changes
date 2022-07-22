@@ -1,0 +1,106 @@
+{
+	"name": "Variables",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Language",
+			"type": "string",
+			"initialValue": "",
+			"comment": "Current language in ISO 639-1 format",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 773489661645663
+		},
+		{
+			"eventType": "variable",
+			"name": "Level",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "Current level of player",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 446756403090545
+		},
+		{
+			"eventType": "variable",
+			"name": "Letters",
+			"type": "string",
+			"initialValue": "",
+			"comment": "The letters on the table",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 203142449089030
+		},
+		{
+			"eventType": "variable",
+			"name": "Stop_Input",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "Block touch inputs",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 771526649854726
+		},
+		{
+			"eventType": "variable",
+			"name": "Completed",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "Block touch inputs",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 791498731087491
+		},
+		{
+			"eventType": "variable",
+			"name": "Size",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Size on the hidden squares",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 355536872851298
+		},
+		{
+			"eventType": "variable",
+			"name": "LetterOrder",
+			"type": "string",
+			"initialValue": "",
+			"comment": "The order which letters were touched",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 314232376374673
+		},
+		{
+			"eventType": "variable",
+			"name": "CurrentWord",
+			"type": "string",
+			"initialValue": "",
+			"comment": "The current word written",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 511425067466401
+		},
+		{
+			"eventType": "variable",
+			"name": "Hint",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "True if player used hint to find the word",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 311145561231302
+		},
+		{
+			"eventType": "variable",
+			"name": "Ads",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "True if ads are allowed",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 837224855892710
+		}
+	],
+	"sid": 556420027269001
+}

@@ -1,0 +1,62 @@
+{
+	"name": "Writing_Line",
+	"plugin-id": "Sprite",
+	"sid": 799924233342994,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "follow",
+			"type": "boolean",
+			"desc": "",
+			"sid": 204159672139065
+		},
+		{
+			"name": "num",
+			"type": "number",
+			"desc": "",
+			"sid": 717253866886926
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 12,
+						"height": 12,
+						"originX": 0,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2205366,
+						"collisionPoly": {
+							"points": [
+								0.08333333333333333,
+								0.9166666666666666,
+								0.08333333333333333,
+								0.08333333333333337,
+								0.9166666666666666,
+								0.08333333333333337,
+								0.9166666666666666,
+								0.9166666666666666
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 543667686397182,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

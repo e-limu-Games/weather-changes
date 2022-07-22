@@ -1,0 +1,33 @@
+{
+	"name": "BTN_White",
+	"plugin-id": "NinePatch",
+	"sid": 122014670981137,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "action",
+			"type": "string",
+			"desc": "",
+			"sid": 297238303756527
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 959885114285148
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 122,
+		"height": 115,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 8214392,
+		"useCollisionPoly": true
+	}
+}

@@ -1,0 +1,662 @@
+{
+	"name": "Loader",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Global_Event_Sheet"
+		},
+		{
+			"eventType": "comment",
+			"text": "This is the loader Layout event sheet. This is where all saved data and dictionaries are loaded into the game "
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-loader-layout-complete",
+					"objectClass": "System",
+					"sid": 840500082141056
+				}
+			],
+			"actions": [
+				{
+					"type": "comment",
+					"text": "The Array_Align_Letters contains data on how to align the letters depending on how many letters there are. This ensures they are properly aligned no matter if there are 3-6 letters."
+				},
+				{
+					"id": "load",
+					"objectClass": "Array_Align_Letters",
+					"sid": 983861229693885,
+					"parameters": {
+						"json": "\"{\"\"c2array\"\":true,\"\"size\"\":[7,2,5],\"\"data\"\":[[[0,0,0,0,0],[-173,-173,-170,-170,-174]],[[128,164,150,146,139],[71,-13,-61,-78,-92]],[[-128,0,100,146,168],[71,157,122,78,47]],[[0,-164,-100,0,75],[0,-13,122,170,160]],[[0,0,-150,-146,-75],[0,0,-61,78,160]],[[0,0,0,-146,-168],[0,0,0,-78,47]],[[0,0,0,0,-139],[0,0,0,0,-92]]]}\""
+					}
+				},
+				{
+					"type": "comment",
+					"text": "Check if a save exist."
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 530088101273631,
+					"parameters": {
+						"key": "\"save_global\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 661517356202877,
+					"parameters": {
+						"audio-file": "completed_1",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "fader",
+					"sid": 187513595265916,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"fade\"",
+						"property": "offsetOpacity",
+						"end-value": "100",
+						"time": "8",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "sign-out",
+					"objectClass": "FirebaseAuthBasic",
+					"sid": 731854858583431
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 276170046601685,
+					"parameters": {
+						"audio-file": "MenuMusic2",
+						"loop": "looping",
+						"volume": "-20",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 577888708875494
+		},
+		{
+			"eventType": "comment",
+			"text": "SAVE_GLOBAL contains data that is the same no matter what language the player is using.\nThe other saves are \"SAVE_LANGUAGE\" and \"SAVE_CURRENT_LANGUAGE\". These are specific for each language.\n\nFeel free to add your own values into the array. Currently data is saved into the array like this:\n\nArray.at(0)=Sound (1=ON -1=OFF)\nArray.at(1)=Music (1=ON -1=OFF)\nArray.at(2)=Vibration (1=ON -1=OFF)\nArray.at(3)=Language (Uses standard ISO 639-1 to specify language)\nArray.at(4)=Hints. (4=1 hint)"
+		},
+		{
+			"eventType": "comment",
+			"text": "If no save is found everything is set to default."
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 949805273002168,
+					"parameters": {
+						"key": "\"save_global\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "comment",
+					"text": "Sound on"
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "Save",
+					"sid": 307732998855226,
+					"parameters": {
+						"x": "0",
+						"value": "1"
+					}
+				},
+				{
+					"type": "comment",
+					"text": "Music on"
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "Save",
+					"sid": 973483321221342,
+					"parameters": {
+						"x": "1",
+						"value": "1"
+					}
+				},
+				{
+					"type": "comment",
+					"text": "Vibration on"
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "Save",
+					"sid": 797183628701536,
+					"parameters": {
+						"x": "2",
+						"value": "1"
+					}
+				},
+				{
+					"type": "comment",
+					"text": "2 hints by default"
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "Save",
+					"sid": 625778919952795,
+					"parameters": {
+						"x": "4",
+						"value": "8"
+					}
+				}
+			],
+			"sid": 625968501985657,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "If no save is found we will check what language the user phone is. If the language of the phone is supported by the game we set the language here. Otherwise we default to english"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 532974845160092,
+							"parameters": {
+								"first-value": "lowercase(mid(Browser.Language,0,2))",
+								"comparison": 0,
+								"second-value": "\"de\""
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 615075945242983,
+							"parameters": {
+								"first-value": "lowercase(mid(Browser.Language,0,2))",
+								"comparison": 0,
+								"second-value": "\"en\""
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 130186600386835,
+							"parameters": {
+								"first-value": "lowercase(mid(Browser.Language,0,2))",
+								"comparison": 0,
+								"second-value": "\"es\""
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 393490575896284,
+							"parameters": {
+								"first-value": "lowercase(mid(Browser.Language,0,2))",
+								"comparison": 0,
+								"second-value": "\"fr\""
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 131142404487683,
+							"parameters": {
+								"first-value": "lowercase(mid(Browser.Language,0,2))",
+								"comparison": 0,
+								"second-value": "\"it\""
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 225906581007316,
+							"parameters": {
+								"first-value": "lowercase(mid(Browser.Language,0,2))",
+								"comparison": 0,
+								"second-value": "\"sv\""
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 697687781061281,
+							"parameters": {
+								"first-value": "lowercase(mid(Browser.Language,0,2))",
+								"comparison": 0,
+								"second-value": "\"tr\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 693752268449227,
+							"parameters": {
+								"variable": "Language",
+								"value": "lowercase(mid(Browser.Language,0,2))"
+							}
+						},
+						{
+							"id": "set-at-x",
+							"objectClass": "Save",
+							"sid": 331670052736989,
+							"parameters": {
+								"x": "3",
+								"value": "Language"
+							}
+						},
+						{
+							"type": "comment",
+							"text": "Now that we have the language we can load the correct dictionaries.\nDictionaries are loaded by calling the function \"Load_Words\""
+						},
+						{
+							"callFunction": "Load_Words",
+							"sid": 235932388987247
+						},
+						{
+							"type": "comment",
+							"text": "Wait until everything is loaded. Before loading the save for the current language"
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 293712946793015,
+							"parameters": {
+								"tag": "\"words_loaded\""
+							}
+						},
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 931099530626074,
+							"parameters": {
+								"key": "\"save_\"&Language"
+							}
+						}
+					],
+					"sid": 477022446583788,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "comment",
+					"text": "If the user device is another language than what we support set the language to english"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 598157107097708
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 160256545074246,
+							"parameters": {
+								"variable": "Language",
+								"value": "\"en\""
+							}
+						},
+						{
+							"id": "set-at-x",
+							"objectClass": "Save",
+							"sid": 371258386327485,
+							"parameters": {
+								"x": "3",
+								"value": "Language"
+							}
+						},
+						{
+							"type": "comment",
+							"text": "Now that we have the language we can load the correct dictionaries.\nDictionaries are loaded by calling the function \"Load_Words\""
+						},
+						{
+							"callFunction": "Load_Words",
+							"sid": 325034710130947
+						},
+						{
+							"type": "comment",
+							"text": "Wait until everything is loaded. Before loading the save for the current language"
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 800971047031656,
+							"parameters": {
+								"tag": "\"words_loaded\""
+							}
+						},
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 521362711935685,
+							"parameters": {
+								"key": "\"save_\"&Language"
+							}
+						}
+					],
+					"sid": 249555704853859
+				}
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "If a save exists load it into the save array"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 383091458231507,
+					"parameters": {
+						"key": "\"save_global\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 105523964431510,
+					"parameters": {
+						"key": "\"save_global\""
+					}
+				}
+			],
+			"sid": 309005302258625
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 648763164662476,
+					"parameters": {
+						"key": "\"save_global\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "Save",
+					"sid": 279203200569415,
+					"parameters": {
+						"json": "LocalStorage.ItemValue"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 839941885849443,
+					"parameters": {
+						"variable": "Language",
+						"value": "Save.At(3)"
+					}
+				},
+				{
+					"type": "comment",
+					"text": "Now that we have the language we can load the correct dictionaries.\nDictionaries are loaded by calling the function \"Load_Words\""
+				},
+				{
+					"callFunction": "Load_Words",
+					"sid": 635082627335808
+				},
+				{
+					"type": "comment",
+					"text": "Wait until everything is loaded. Before loading the save for the current language"
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 500798020594634,
+					"parameters": {
+						"tag": "\"words_loaded\""
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 238185853251776,
+					"parameters": {
+						"key": "\"save_\"&Language"
+					}
+				}
+			],
+			"sid": 482909401262429
+		},
+		{
+			"eventType": "comment",
+			"text": "If there is no save for the specific language load the localized strings"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 470414552244196,
+					"parameters": {
+						"key": "\"save_\"&Language"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 378463797667935,
+					"parameters": {
+						"tag": "\"strings\"",
+						"file": "strings.json"
+					}
+				}
+			],
+			"sid": 470916135891470
+		},
+		{
+			"eventType": "comment",
+			"text": "If a language specific save exist load it and set the level to the saved value then load the localized strings"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 563768496917332,
+					"parameters": {
+						"key": "\"save_\"&Language"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 601392315510422,
+					"parameters": {
+						"key": "\"save_\"&Language"
+					}
+				}
+			],
+			"sid": 338124153013382
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 707686863899509,
+					"parameters": {
+						"key": "\"save_\"&Language"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 432476357633287,
+					"parameters": {
+						"variable": "Level",
+						"value": "LocalStorage.ItemValue"
+					}
+				},
+				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 566762664576309,
+					"parameters": {
+						"tag": "\"strings\"",
+						"file": "strings.json"
+					}
+				}
+			],
+			"sid": 646866879003040
+		},
+		{
+			"eventType": "comment",
+			"text": "When the localized strings are loaded start the game by going to the startscreen"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-completed",
+					"objectClass": "AJAX",
+					"sid": 446925222942420,
+					"parameters": {
+						"tag": "\"strings\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "Strings",
+					"sid": 566268236716385,
+					"parameters": {
+						"json": "AJAX.LastData"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 301939416980590,
+					"parameters": {
+						"layout": "Home"
+					}
+				}
+			],
+			"sid": 209343383778220,
+			"disabled": true
+		},
+		{
+			"eventType": "comment",
+			"text": "Spinning animation for the loader circle"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 257007674415168,
+					"parameters": {
+						"interval-seconds": "0.1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "Symbol_Loader",
+					"sid": 313701889737104,
+					"parameters": {
+						"angle": "Self.Angle+30"
+					}
+				}
+			],
+			"sid": 319426927209096
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "Sprite",
+					"sid": 662841176962897,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"scene1\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 296319969014475,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "fader",
+					"sid": 908128513467548,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"fade\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 923940477589122,
+					"parameters": {
+						"audio-file": "startsound",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 263631086549060,
+					"parameters": {
+						"layout": "Home"
+					}
+				}
+			],
+			"sid": 386401765777658
+		}
+	],
+	"sid": 264868290305819
+}

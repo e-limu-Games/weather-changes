@@ -1,0 +1,126 @@
+{
+	"name": "BTN_Gameplay",
+	"plugin-id": "Sprite",
+	"sid": 271410358420352,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "action",
+			"type": "string",
+			"desc": "",
+			"sid": 464372173091904
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 367883322172704
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 74,
+						"height": 73,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 606972,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 623195810433182,
+				"name": "quit",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 138,
+						"height": 138,
+						"originX": 0.5,
+						"originY": 0.47101449275362317,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5569818,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 775977823892109,
+				"name": "shuffle",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 138,
+						"height": 138,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1485324,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 739751339160692,
+				"name": "reveal",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 138,
+						"height": 138,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7534754,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.7971014492753623,
+								"y": 0.7101449275362319
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 824947149996396,
+				"name": "brain",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
