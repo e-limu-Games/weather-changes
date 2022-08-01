@@ -3,6 +3,10 @@
 	"events": [
 		{
 			"eventType": "include",
+			"includeSheet": "LayoutSetUp"
+		},
+		{
+			"eventType": "include",
 			"includeSheet": "Global_Event_Sheet"
 		},
 		{

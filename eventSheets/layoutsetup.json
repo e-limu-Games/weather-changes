@@ -1,0 +1,79 @@
+{
+	"name": "LayoutSetUp",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 847065558207167
+				}
+			],
+			"actions": [
+				{
+					"id": "lock-orientation",
+					"objectClass": "Browser",
+					"sid": 146276693157115,
+					"parameters": {
+						"orientation": "landscape"
+					}
+				},
+				{
+					"id": "request-fullscreen",
+					"objectClass": "Browser",
+					"sid": 144120337109844,
+					"parameters": {
+						"mode": "stretch-letterbox-scale",
+						"navigation-ui": "hide"
+					}
+				},
+				{
+					"id": "load-stylesheet",
+					"objectClass": "Browser",
+					"sid": 253489668445365,
+					"parameters": {
+						"url": "\"CustomStyle.css\""
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 806124483088497
+				}
+			],
+			"sid": 942946046366762
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 559142914464110
+				}
+			],
+			"actions": [
+				{
+					"id": "lock-orientation",
+					"objectClass": "Browser",
+					"sid": 361298014993408,
+					"parameters": {
+						"orientation": "landscape"
+					}
+				},
+				{
+					"id": "request-fullscreen",
+					"objectClass": "Browser",
+					"sid": 740985748316325,
+					"parameters": {
+						"mode": "stretch-letterbox-scale",
+						"navigation-ui": "hide"
+					}
+				}
+			],
+			"sid": 501251984520607
+		}
+	],
+	"sid": 458969458346726
+}

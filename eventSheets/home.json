@@ -26,6 +26,10 @@
 			"includeSheet": "Global_Event_Sheet"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "LayoutSetUp"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
