@@ -410,8 +410,8 @@
 		}
 	],
 	"effectTypes": [],
-	"width": 720,
-	"height": 1280,
+	"width": 3840,
+	"height": 2160,
 	"unboundedScrolling": true,
 	"vpX": 0.5,
 	"vpY": 0.5,
