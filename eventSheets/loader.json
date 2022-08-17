@@ -61,13 +61,13 @@
 				{
 					"id": "tween-one-property",
 					"objectClass": "fader",
-					"sid": 187513595265916,
+					"sid": 531626377939478,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"fade\"",
 						"property": "offsetOpacity",
 						"end-value": "100",
-						"time": "8",
+						"time": "1",
 						"ease": "default",
 						"destroy-on-complete": "no",
 						"loop": "no",
@@ -545,43 +545,6 @@
 		},
 		{
 			"eventType": "comment",
-			"text": "When the localized strings are loaded start the game by going to the startscreen"
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-completed",
-					"objectClass": "AJAX",
-					"sid": 446925222942420,
-					"parameters": {
-						"tag": "\"strings\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "load",
-					"objectClass": "Strings",
-					"sid": 566268236716385,
-					"parameters": {
-						"json": "AJAX.LastData"
-					}
-				},
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 301939416980590,
-					"parameters": {
-						"layout": "Home"
-					}
-				}
-			],
-			"sid": 209343383778220,
-			"disabled": true
-		},
-		{
-			"eventType": "comment",
 			"text": "Spinning animation for the loader circle"
 		},
 		{
@@ -613,23 +576,6 @@
 			"conditions": [
 				{
 					"id": "on-tweens-finished",
-					"objectClass": "Sprite",
-					"sid": 662841176962897,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"scene1\""
-					}
-				}
-			],
-			"actions": [],
-			"sid": 296319969014475,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-tweens-finished",
 					"objectClass": "fader",
 					"sid": 908128513467548,
 					"behaviorType": "Tween",
@@ -654,6 +600,7 @@
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 263631086549060,
+					"disabled": true,
 					"parameters": {
 						"layout": "Home"
 					}
