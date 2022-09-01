@@ -1,14 +1,14 @@
 {
-	"name": "story2",
+	"name": "ActivityIntro1",
 	"plugin-id": "Sprite",
-	"sid": 831926763445330,
+	"sid": 955673769234608,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Tween",
 			"name": "Tween",
-			"sid": 233835823895277
+			"sid": 196275214229795
 		}
 	],
 	"effectTypes": [],
@@ -17,14 +17,14 @@
 			{
 				"frames": [
 					{
-						"width": 858,
-						"height": 438,
+						"width": 1000,
+						"height": 830,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
-						"exportFormat": "png",
+						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9706477,
+						"imageSpriteId": 8777497,
 						"collisionPoly": {
 							"points": [
 								0.11421911421911422,
@@ -49,7 +49,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 991333014074435,
+				"sid": 264650456150745,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

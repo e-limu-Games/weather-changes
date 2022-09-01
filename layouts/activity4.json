@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Sprite2",
+					"type": "CloudBackground",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",

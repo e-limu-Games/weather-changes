@@ -1,0 +1,21 @@
+{
+	"name": "MainButtons",
+	"plugin-id": "Sprite",
+	"sid": 719986087183760,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"audiobtn",
+		"audioicon",
+		"homebtn2",
+		"homebtn",
+		"hint",
+		"pause",
+		"playbtn",
+		"skip",
+		"showanswer",
+		"tryagain",
+		"continue"
+	]
+}

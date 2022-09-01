@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 29303,
+	"savedWithRelease": 30800,
 	"name": "Weather Changes",
 	"runtime": "c3",
 	"useWorker": "dom",
@@ -11,7 +11,7 @@
 			"id": "advert",
 			"name": "Mobile advert",
 			"author": "Scirra",
-			"version": "r293.3",
+			"version": "r308",
 			"bundled": false
 		},
 		{
@@ -19,7 +19,7 @@
 			"id": "CORDOVAIAP",
 			"name": "Mobile IAP",
 			"author": "Scirra",
-			"version": "r293.3",
+			"version": "r308",
 			"bundled": false
 		},
 		{
@@ -27,7 +27,7 @@
 			"id": "Touch",
 			"name": "Touch",
 			"author": "Scirra",
-			"version": "r293.3",
+			"version": "r308",
 			"bundled": false
 		},
 		{
@@ -35,7 +35,7 @@
 			"id": "LocalStorage",
 			"name": "Local storage",
 			"author": "Scirra",
-			"version": "r293.3",
+			"version": "r308",
 			"bundled": false
 		},
 		{
@@ -43,7 +43,7 @@
 			"id": "Browser",
 			"name": "Browser",
 			"author": "Scirra",
-			"version": "r293.3",
+			"version": "r308",
 			"bundled": false
 		},
 		{
@@ -51,7 +51,7 @@
 			"id": "AJAX",
 			"name": "AJAX",
 			"author": "Scirra",
-			"version": "r293.3",
+			"version": "r308",
 			"bundled": false
 		},
 		{
@@ -59,7 +59,7 @@
 			"id": "Audio",
 			"name": "Audio",
 			"author": "Scirra",
-			"version": "r293.3",
+			"version": "r308",
 			"bundled": false
 		},
 		{
@@ -67,7 +67,7 @@
 			"id": "Text",
 			"name": "Text",
 			"author": "Scirra",
-			"version": "r293.3",
+			"version": "r308",
 			"bundled": false
 		},
 		{
@@ -75,7 +75,7 @@
 			"id": "Share",
 			"name": "Share",
 			"author": "Scirra",
-			"version": "r293.3",
+			"version": "r308",
 			"bundled": false
 		},
 		{
@@ -83,7 +83,7 @@
 			"id": "Dictionary",
 			"name": "Dictionary",
 			"author": "Scirra",
-			"version": "r293.3",
+			"version": "r308",
 			"bundled": false
 		},
 		{
@@ -91,7 +91,7 @@
 			"id": "Arr",
 			"name": "Array",
 			"author": "Scirra",
-			"version": "r293.3",
+			"version": "r308",
 			"bundled": false
 		},
 		{
@@ -99,7 +99,7 @@
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
-			"version": "r293.3",
+			"version": "r308",
 			"bundled": false
 		},
 		{
@@ -107,7 +107,7 @@
 			"id": "TiledBg",
 			"name": "Tiled Background",
 			"author": "Scirra",
-			"version": "r293.3",
+			"version": "r308",
 			"bundled": false
 		},
 		{
@@ -115,7 +115,7 @@
 			"id": "NinePatch",
 			"name": "9-patch",
 			"author": "Scirra",
-			"version": "r293.3",
+			"version": "r308",
 			"bundled": false
 		},
 		{
@@ -123,7 +123,7 @@
 			"id": "TextBox",
 			"name": "Text input",
 			"author": "Scirra",
-			"version": "r293.3",
+			"version": "r308",
 			"bundled": false
 		},
 		{
@@ -131,7 +131,7 @@
 			"id": "List",
 			"name": "List",
 			"author": "Scirra",
-			"version": "r293.3",
+			"version": "r308",
 			"bundled": false
 		},
 		{
@@ -139,7 +139,7 @@
 			"id": "Particles",
 			"name": "Particles",
 			"author": "Scirra",
-			"version": "r293.3",
+			"version": "r308",
 			"bundled": false
 		},
 		{
@@ -147,7 +147,7 @@
 			"id": "iframe",
 			"name": "iframe",
 			"author": "Scirra",
-			"version": "r293.3",
+			"version": "r308",
 			"bundled": false
 		},
 		{
@@ -171,7 +171,7 @@
 			"id": "video",
 			"name": "Video",
 			"author": "Scirra",
-			"version": "r293.3",
+			"version": "r308",
 			"bundled": false
 		},
 		{
@@ -179,7 +179,7 @@
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
-			"version": "r293.3",
+			"version": "r308",
 			"bundled": false
 		},
 		{
@@ -187,7 +187,7 @@
 			"id": "Tween",
 			"name": "Tween",
 			"author": "Scirra",
-			"version": "r293.3",
+			"version": "r308",
 			"bundled": false
 		},
 		{
@@ -195,7 +195,7 @@
 			"id": "Sin",
 			"name": "Sine",
 			"author": "Scirra",
-			"version": "r293.3",
+			"version": "r308",
 			"bundled": false
 		},
 		{
@@ -203,7 +203,7 @@
 			"id": "DragnDrop",
 			"name": "Drag & Drop",
 			"author": "Scirra",
-			"version": "r293.3",
+			"version": "r308",
 			"bundled": false
 		}
 	],
@@ -231,12 +231,12 @@
 			"nickname",
 			"gender",
 			"bgvideo",
-			"Sprite2",
+			"CloudBackground",
 			"playbtn",
 			"skip",
 			"homebtn2",
 			"m1",
-			"story1",
+			"ActivityIntro1",
 			"audiobtn",
 			"hint",
 			"bars",
@@ -272,7 +272,7 @@
 			"d",
 			"Asnowy",
 			"snowy",
-			"story2",
+			"ActivityIntro2",
 			"iframe",
 			"showanswer",
 			"Sprite8",
@@ -286,12 +286,12 @@
 			"audioicon",
 			"Sprite11",
 			"completed",
-			"tryagain1",
-			"tryagain2",
+			"PlayAgainBtn",
+			"CleanlinessBtn",
 			"thumbsup_rightanswer",
-			"tryagain3",
-			"tryagain4",
-			"tryagain5",
+			"MathNinjaBtn",
+			"ShapesTriviaBtn",
+			"TimeMachineBtn",
 			"over1",
 			"Mouse",
 			"over2",
@@ -399,7 +399,10 @@
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"LoadingBar",
+			"MainButtons"
+		],
 		"subfolders": []
 	},
 	"layouts": {
@@ -415,27 +418,27 @@
 			"Activity2",
 			"Activity3",
 			"ActivityEnd",
-			"VideoTwo",
+			"VideoTwo2",
 			"Activity4",
 			"Activity5",
 			"Activity6",
-			"VideoOne2",
+			"VideoTwo",
 			"Completed"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Loader",
-			"Home",
+			"Loader_ES",
+			"Home_ES",
 			"Variables",
 			"Global_Event_Sheet",
 			"Register",
 			"SignIn",
-			"Video1",
+			"VideoOne_ES",
 			"Game1",
 			"loading",
-			"Activity",
+			"Activity_ES",
 			"Activity1",
 			"Activity2",
 			"Activity3",
@@ -443,8 +446,8 @@
 			"Activity5",
 			"Activity6",
 			"ActivityEnd",
-			"Video2",
-			"Completed",
+			"VideoTwo_ES",
+			"Completed_ES",
 			"LayoutSetUp"
 		],
 		"subfolders": []
@@ -1625,8 +1628,8 @@
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": true,
-		"fullscreenMode": "scale-outer",
-		"fullscreenQuality": "high",
+		"fullscreenMode": "scale-inner",
+		"fullscreenQuality": "low",
 		"viewportFit": "cover",
 		"backgroundColor": [
 			0.5176470588235295,
@@ -1647,23 +1650,24 @@
 			0.9137254901960784,
 			0
 		],
-		"orientations": "portrait",
+		"orientations": "landscape",
 		"webgpu": "auto",
 		"gpuPreference": "high-performance",
 		"scriptsType": "module",
 		"framerateMode": "vsync",
 		"compositingMode": "standard",
-		"sampling": "bilinear",
+		"sampling": "nearest",
 		"downscaling": "medium",
 		"renderingMode": "auto",
 		"anisotropicFiltering": "auto",
 		"maxSpriteSheetSize": 2048,
-		"loaderStyle": "splash",
+		"loaderStyle": "progress-logo",
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
-		"cordovaAndroidScheme": "https"
+		"cordovaAndroidScheme": "https",
+		"autoReloadScriptsOnPreview": false
 	},
-	"viewportWidth": 720,
-	"viewportHeight": 1280,
+	"viewportWidth": 1920,
+	"viewportHeight": 1080,
 	"firstLayout": "Loader"
 }

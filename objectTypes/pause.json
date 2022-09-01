@@ -4,7 +4,13 @@
 	"sid": 364101546683371,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 452082566258423
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -16,7 +22,7 @@
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
-						"exportFormat": "png",
+						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"imageSpriteId": 4887939,
 						"collisionPoly": {

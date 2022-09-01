@@ -1,0 +1,13 @@
+{
+	"name": "LoadingBar",
+	"plugin-id": "Sprite",
+	"sid": 957558975745744,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"bar1",
+		"bar2",
+		"bar3"
+	]
+}

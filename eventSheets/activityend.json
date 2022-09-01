@@ -13,7 +13,7 @@
 			"actions": [
 				{
 					"id": "tween-one-property",
-					"objectClass": "Sprite2",
+					"objectClass": "CloudBackground",
 					"sid": 869133413979067,
 					"behaviorType": "Tween",
 					"parameters": {
@@ -94,7 +94,7 @@
 			"conditions": [
 				{
 					"id": "on-tweens-finished",
-					"objectClass": "Sprite2",
+					"objectClass": "CloudBackground",
 					"sid": 221859643288978,
 					"behaviorType": "Tween",
 					"parameters": {
@@ -132,7 +132,7 @@
 				},
 				{
 					"id": "tween-two-properties",
-					"objectClass": "story2",
+					"objectClass": "ActivityIntro2",
 					"sid": 794671689387200,
 					"behaviorType": "Tween",
 					"parameters": {
@@ -310,7 +310,7 @@
 					"objectClass": "Touch",
 					"sid": 315491636472388,
 					"parameters": {
-						"object": "story2"
+						"object": "ActivityIntro2"
 					}
 				}
 			],
@@ -396,7 +396,7 @@
 					"objectClass": "System",
 					"sid": 135256008259462,
 					"parameters": {
-						"layout": "VideoOne2"
+						"layout": "VideoTwo"
 					}
 				}
 			],
@@ -421,7 +421,7 @@
 					"objectClass": "System",
 					"sid": 814384680830675,
 					"parameters": {
-						"layout": "VideoTwo"
+						"layout": "VideoTwo2"
 					}
 				}
 			],
@@ -436,7 +436,7 @@
 					"objectClass": "Touch",
 					"sid": 185197437459035,
 					"parameters": {
-						"object": "tryagain1"
+						"object": "PlayAgainBtn"
 					}
 				}
 			],
@@ -471,7 +471,7 @@
 					"objectClass": "Touch",
 					"sid": 334392246948090,
 					"parameters": {
-						"object": "tryagain2"
+						"object": "CleanlinessBtn"
 					}
 				}
 			],
@@ -507,7 +507,7 @@
 					"objectClass": "Touch",
 					"sid": 206457876440168,
 					"parameters": {
-						"object": "tryagain3"
+						"object": "MathNinjaBtn"
 					}
 				}
 			],
@@ -543,7 +543,7 @@
 					"objectClass": "Touch",
 					"sid": 723289689588848,
 					"parameters": {
-						"object": "tryagain3"
+						"object": "MathNinjaBtn"
 					}
 				}
 			],
@@ -579,7 +579,7 @@
 					"objectClass": "Touch",
 					"sid": 486219822810259,
 					"parameters": {
-						"object": "tryagain4"
+						"object": "ShapesTriviaBtn"
 					}
 				}
 			],
@@ -615,7 +615,7 @@
 					"objectClass": "Touch",
 					"sid": 109726269882110,
 					"parameters": {
-						"object": "tryagain5"
+						"object": "TimeMachineBtn"
 					}
 				}
 			],
@@ -651,7 +651,7 @@
 					"objectClass": "Mouse",
 					"sid": 840509608505553,
 					"parameters": {
-						"object": "tryagain5"
+						"object": "TimeMachineBtn"
 					}
 				}
 			],
@@ -675,7 +675,7 @@
 					"objectClass": "Mouse",
 					"sid": 930295249456337,
 					"parameters": {
-						"object": "tryagain5"
+						"object": "TimeMachineBtn"
 					},
 					"isInverted": true
 				}
@@ -700,7 +700,7 @@
 					"objectClass": "Mouse",
 					"sid": 822984511248602,
 					"parameters": {
-						"object": "tryagain2"
+						"object": "CleanlinessBtn"
 					}
 				}
 			],
@@ -724,7 +724,7 @@
 					"objectClass": "Mouse",
 					"sid": 139570113633948,
 					"parameters": {
-						"object": "tryagain2"
+						"object": "CleanlinessBtn"
 					},
 					"isInverted": true
 				}
@@ -749,7 +749,7 @@
 					"objectClass": "Mouse",
 					"sid": 604911198916695,
 					"parameters": {
-						"object": "tryagain3"
+						"object": "MathNinjaBtn"
 					}
 				}
 			],
@@ -773,7 +773,7 @@
 					"objectClass": "Mouse",
 					"sid": 837201952380873,
 					"parameters": {
-						"object": "tryagain3"
+						"object": "MathNinjaBtn"
 					},
 					"isInverted": true
 				}
@@ -798,7 +798,7 @@
 					"objectClass": "Mouse",
 					"sid": 452559475640633,
 					"parameters": {
-						"object": "tryagain4"
+						"object": "ShapesTriviaBtn"
 					}
 				}
 			],
@@ -822,7 +822,7 @@
 					"objectClass": "Mouse",
 					"sid": 854328639446946,
 					"parameters": {
-						"object": "tryagain4"
+						"object": "ShapesTriviaBtn"
 					},
 					"isInverted": true
 				}

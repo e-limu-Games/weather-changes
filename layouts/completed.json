@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Sprite2",
+					"type": "CloudBackground",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -309,7 +309,7 @@
 					}
 				},
 				{
-					"type": "tryagain5",
+					"type": "TimeMachineBtn",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -425,7 +425,7 @@
 					}
 				},
 				{
-					"type": "tryagain2",
+					"type": "CleanlinessBtn",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -454,7 +454,7 @@
 					}
 				},
 				{
-					"type": "tryagain3",
+					"type": "MathNinjaBtn",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -483,7 +483,7 @@
 					}
 				},
 				{
-					"type": "tryagain4",
+					"type": "ShapesTriviaBtn",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -546,7 +546,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "tryagain1",
+					"type": "PlayAgainBtn",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -613,5 +613,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Completed"
+	"eventSheet": "Completed_ES"
 }

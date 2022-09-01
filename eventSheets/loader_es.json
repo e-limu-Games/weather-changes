@@ -1,5 +1,5 @@
 {
-	"name": "Loader",
+	"name": "Loader_ES",
 	"events": [
 		{
 			"eventType": "include",
@@ -23,6 +23,45 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "sign-out",
+					"objectClass": "FirebaseAuthBasic",
+					"sid": 210461703617900
+				},
+				{
+					"id": "set-size",
+					"objectClass": "logo",
+					"sid": 574139378583516,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "CloudBackground",
+					"sid": 609486921508204,
+					"parameters": {
+						"x": "960",
+						"y": "730"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "LoadingBar",
+					"sid": 599865146455206,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 299809748844188,
+					"parameters": {
+						"seconds": "0.15"
+					}
+				},
 				{
 					"type": "comment",
 					"text": "The Array_Align_Letters contains data on how to align the letters depending on how many letters there are. This ensures they are properly aligned no matter if there are 3-6 letters."
@@ -59,27 +98,6 @@
 					}
 				},
 				{
-					"id": "tween-one-property",
-					"objectClass": "fader",
-					"sid": 531626377939478,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"fade\"",
-						"property": "offsetOpacity",
-						"end-value": "100",
-						"time": "1",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "sign-out",
-					"objectClass": "FirebaseAuthBasic",
-					"sid": 731854858583431
-				},
-				{
 					"id": "play",
 					"objectClass": "Audio",
 					"sid": 276170046601685,
@@ -88,6 +106,22 @@
 						"loop": "looping",
 						"volume": "-20",
 						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "fader",
+					"sid": 858879259399966,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"fade\"",
+						"property": "offsetOpacity",
+						"end-value": "0",
+						"time": "0.5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
 					}
 				}
 			],
@@ -577,7 +611,7 @@
 				{
 					"id": "on-tweens-finished",
 					"objectClass": "fader",
-					"sid": 908128513467548,
+					"sid": 425498622807985,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"fade\""
@@ -586,9 +620,47 @@
 			],
 			"actions": [
 				{
+					"id": "tween-one-property",
+					"objectClass": "CloudBackground",
+					"sid": 302231233760898,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "350",
+						"time": "1.5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 405301253556740
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "logo",
+					"sid": 829036085528888,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "890",
+						"end-y": "315",
+						"time": "0.75",
+						"ease": "easeinoutbounce",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 923940477589122,
+					"sid": 550648277772771,
 					"parameters": {
 						"audio-file": "startsound",
 						"loop": "not-looping",
@@ -597,16 +669,36 @@
 					}
 				},
 				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 203932858915493
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "LoadingBar",
+					"sid": 870309307946177,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 523082113580207,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 263631086549060,
-					"disabled": true,
+					"sid": 300921445706333,
 					"parameters": {
 						"layout": "Home"
 					}
 				}
 			],
-			"sid": 386401765777658
+			"sid": 584821085444954
 		}
 	],
 	"sid": 264868290305819

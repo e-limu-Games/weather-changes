@@ -1,5 +1,5 @@
 {
-	"name": "Sprite2",
+	"name": "CloudBackground",
 	"plugin-id": "Sprite",
 	"sid": 457686879484217,
 	"isGlobal": false,
@@ -22,7 +22,7 @@
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
-						"exportFormat": "png",
+						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"imageSpriteId": 8996279,
 						"collisionPoly": {

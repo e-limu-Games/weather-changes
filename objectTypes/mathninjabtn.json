@@ -1,7 +1,7 @@
 {
-	"name": "tryagain5",
+	"name": "MathNinjaBtn",
 	"plugin-id": "Sprite",
-	"sid": 539771020241491,
+	"sid": 367771658894035,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -16,14 +16,14 @@
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
-						"exportFormat": "png",
+						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6980769,
+						"imageSpriteId": 2271497,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 464324257214230,
+				"sid": 313771811692779,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

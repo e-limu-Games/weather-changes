@@ -1,5 +1,5 @@
 {
-	"name": "VideoOne2",
+	"name": "VideoTwo2",
 	"layers": [
 		{
 			"name": "Background",
@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Sprite2",
+					"type": "CloudBackground",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -15,7 +15,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 134,
+					"uid": 392,
 					"instanceVariables": {},
 					"behaviors": {
 						"Tween": {
@@ -25,10 +25,10 @@
 						}
 					},
 					"world": {
-						"x": 351,
-						"y": 991,
-						"width": 3522,
-						"height": 2000,
+						"x": 960,
+						"y": 688,
+						"width": 2102,
+						"height": 1613,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -50,7 +50,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 137,
+					"uid": 393,
 					"instanceVariables": {},
 					"behaviors": {
 						"Tween": {
@@ -60,8 +60,8 @@
 						}
 					},
 					"world": {
-						"x": 342,
-						"y": -156,
+						"x": 960,
+						"y": 300,
 						"width": 800,
 						"height": 285,
 						"originX": 0.5,
@@ -85,7 +85,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 147,
+					"uid": 394,
 					"instanceVariables": {},
 					"behaviors": {
 						"Tween": {
@@ -120,7 +120,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 268,
+					"uid": 395,
 					"instanceVariables": {},
 					"behaviors": {
 						"Tween": {
@@ -155,7 +155,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 269,
+					"uid": 396,
 					"instanceVariables": {},
 					"behaviors": {
 						"Tween": {
@@ -190,7 +190,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 270,
+					"uid": 397,
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -248,7 +248,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 271,
+					"uid": 398,
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -306,7 +306,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 272,
+					"uid": 399,
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -354,37 +354,9 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "Video",
-					"properties": {
-						"webm-source": "weather changes video 2.mp4",
-						"ogg-theora-source": "weather changes video 2.mp4",
-						"h264-source": "weather changes video 2.mp4",
-						"autoplay": "preload",
-						"play-in-background": false,
-						"initially-visible": true
-					},
-					"uid": 273,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": -696,
-						"y": 184,
-						"width": 2102,
-						"height": 853,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
-					}
 				}
 			],
-			"sid": 948587266924343,
+			"sid": 895901027423051,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -416,114 +388,8 @@
 			"name": "Language",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [
-				{
-					"type": "fader",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 274,
-					"instanceVariables": {},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 351,
-						"y": 991,
-						"width": 2817,
-						"height": 1999.9999999999998,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "fader",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 275,
-					"instanceVariables": {},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 351,
-						"y": 913.5,
-						"width": 2817,
-						"height": 1855,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "audiobtn",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 304,
-					"instanceVariables": {},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 1126,
-						"y": 15,
-						"width": 0,
-						"height": 0,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
-			"sid": 807249404472208,
+			"instances": [],
+			"sid": 949008235991310,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"isInitiallyInteractive": true,
@@ -550,16 +416,85 @@
 			"blendMode": "normal",
 			"zElevation": 0,
 			"global": false
+		},
+		{
+			"name": "Overlay",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "fader",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 401,
+					"instanceVariables": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 961,
+						"y": 540.5,
+						"width": 2093,
+						"height": 1238,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 337071180402709,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
 		}
 	],
-	"sid": 499020174061765,
+	"sid": 877550595995376,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 1708,
-	"height": 960,
+	"width": 3840,
+	"height": 2160,
 	"unboundedScrolling": true,
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Video2"
+	"eventSheet": "VideoOne_ES"
 }

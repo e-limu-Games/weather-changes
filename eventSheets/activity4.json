@@ -13,7 +13,7 @@
 			"actions": [
 				{
 					"id": "tween-one-property",
-					"objectClass": "Sprite2",
+					"objectClass": "CloudBackground",
 					"sid": 372464309792666,
 					"behaviorType": "Tween",
 					"parameters": {
@@ -415,7 +415,7 @@
 			"conditions": [
 				{
 					"id": "on-tweens-finished",
-					"objectClass": "Sprite2",
+					"objectClass": "CloudBackground",
 					"sid": 351063493597363,
 					"behaviorType": "Tween",
 					"parameters": {

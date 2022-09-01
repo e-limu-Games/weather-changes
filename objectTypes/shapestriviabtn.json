@@ -1,5 +1,5 @@
 {
-	"name": "tryagain4",
+	"name": "ShapesTriviaBtn",
 	"plugin-id": "Sprite",
 	"sid": 214991426736894,
 	"isGlobal": false,
@@ -16,7 +16,7 @@
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
-						"exportFormat": "png",
+						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"imageSpriteId": 4152694,
 						"useCollisionPoly": true,

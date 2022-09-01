@@ -1,7 +1,7 @@
 {
-	"name": "tryagain3",
+	"name": "PlayAgainBtn",
 	"plugin-id": "Sprite",
-	"sid": 367771658894035,
+	"sid": 667680042648138,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -16,14 +16,14 @@
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
-						"exportFormat": "png",
+						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2271497,
+						"imageSpriteId": 1017565,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 313771811692779,
+				"sid": 608353499776644,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
