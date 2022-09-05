@@ -392,32 +392,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-tweens-finished",
-					"objectClass": "fader",
-					"sid": 541863669499736,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"fadeout\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 674993385042771,
-					"parameters": {
-						"layout": "VideoTwo2"
-					}
-				}
-			],
-			"sid": 667955777236271,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-touched-object",
 					"objectClass": "Touch",
 					"sid": 692599272654420,

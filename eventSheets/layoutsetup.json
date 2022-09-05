@@ -22,9 +22,9 @@
 				{
 					"id": "request-fullscreen",
 					"objectClass": "Browser",
-					"sid": 486832541231138,
+					"sid": 137648092727657,
 					"parameters": {
-						"mode": "stretch-scale-outer",
+						"mode": "stretch-letterbox-scale",
 						"navigation-ui": "hide"
 					}
 				},
@@ -65,9 +65,9 @@
 				{
 					"id": "request-fullscreen",
 					"objectClass": "Browser",
-					"sid": 262330750645586,
+					"sid": 440471954332567,
 					"parameters": {
-						"mode": "stretch-scale-outer",
+						"mode": "stretch-letterbox-scale",
 						"navigation-ui": "hide"
 					}
 				}

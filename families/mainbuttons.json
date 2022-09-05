@@ -7,11 +7,10 @@
 	"effectTypes": [],
 	"members": [
 		"audiobtn",
-		"audioicon",
 		"homebtn2",
 		"homebtn",
 		"hint",
-		"pause",
+		"pausebtn",
 		"playbtn",
 		"skip",
 		"showanswer",

@@ -264,7 +264,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 320,
-						"y": 170,
+						"y": 200,
 						"width": 1280,
 						"height": 720,
 						"originX": 0,
@@ -331,7 +331,7 @@
 					},
 					"world": {
 						"x": 960,
-						"y": 90,
+						"y": 88,
 						"width": 348,
 						"height": 124,
 						"originX": 0.5,
@@ -366,7 +366,7 @@
 					},
 					"world": {
 						"x": 120,
-						"y": 90,
+						"y": 88,
 						"width": 200,
 						"height": 140,
 						"originX": 0.5,
@@ -400,7 +400,42 @@
 						}
 					},
 					"world": {
-						"x": 1110,
+						"x": 1120,
+						"y": 950,
+						"width": 200,
+						"height": 140,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "pausebtn",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 209,
+					"instanceVariables": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 800,
 						"y": 950,
 						"width": 200,
 						"height": 140,
@@ -435,7 +470,7 @@
 						}
 					},
 					"world": {
-						"x": 810,
+						"x": 800,
 						"y": 950,
 						"width": 200,
 						"height": 140,
@@ -484,78 +519,7 @@
 			"name": "Language",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [
-				{
-					"type": "fader",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 60,
-					"instanceVariables": {},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 351,
-						"y": 991,
-						"width": 2817,
-						"height": 1999.9999999999998,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "fader",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 209,
-					"instanceVariables": {},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 351,
-						"y": 913.5,
-						"width": 2817,
-						"height": 1855,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
+			"instances": [],
 			"sid": 138688822593678,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
@@ -598,7 +562,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 274,
+					"uid": 60,
 					"instanceVariables": {},
 					"behaviors": {
 						"Tween": {
@@ -608,10 +572,10 @@
 						}
 					},
 					"world": {
-						"x": 956,
-						"y": 542.5,
-						"width": 2009,
-						"height": 1151,
+						"x": 960,
+						"y": 540,
+						"width": 2066,
+						"height": 1203,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

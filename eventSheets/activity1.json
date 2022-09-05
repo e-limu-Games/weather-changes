@@ -107,38 +107,6 @@
 				},
 				{
 					"id": "tween-one-property",
-					"objectClass": "audiobtn",
-					"sid": 629533330555908,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetHeight",
-						"end-value": "142",
-						"time": "1",
-						"ease": "easeinoutbounce",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-one-property",
-					"objectClass": "audiobtn",
-					"sid": 347357174237389,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetWidth",
-						"end-value": "200",
-						"time": "1",
-						"ease": "easeinoutquad",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-one-property",
 					"objectClass": "hint",
 					"sid": 597664717161929,
 					"behaviorType": "Tween",
@@ -3604,16 +3572,7 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-touched-object",
-					"objectClass": "Touch",
-					"sid": 994557460183048,
-					"parameters": {
-						"object": "audiobtn"
-					}
-				}
-			],
+			"conditions": [],
 			"actions": [
 				{
 					"id": "stop-all",

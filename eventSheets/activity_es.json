@@ -2,6 +2,10 @@
 	"name": "Activity_ES",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "LayoutSetUp"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -14,10 +18,10 @@
 				{
 					"id": "set-position",
 					"objectClass": "logo",
-					"sid": 554280028931387,
+					"sid": 925943402136493,
 					"parameters": {
 						"x": "960",
-						"y": "-120"
+						"y": "-500"
 					}
 				},
 				{

@@ -40,41 +40,52 @@
 			],
 			"actions": [
 				{
-					"id": "tween-one-property",
-					"objectClass": "homebtn",
-					"sid": 117721392382034,
-					"behaviorType": "Tween",
+					"id": "set-y",
+					"objectClass": "logo",
+					"sid": 563892221283141,
 					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetHeight",
-						"end-value": "142",
-						"time": "1",
-						"ease": "easeinoutbounce",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
+						"y": "-500"
 					}
 				},
 				{
-					"id": "tween-one-property",
-					"objectClass": "homebtn",
-					"sid": 256159057760416,
-					"behaviorType": "Tween",
+					"id": "set-size",
+					"objectClass": "regPanel",
+					"sid": 111801008223810,
 					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetWidth",
-						"end-value": "200",
-						"time": "1",
-						"ease": "easeinoutquad",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "audiobtn",
+					"sid": 979918692842407,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "homebtn",
+					"sid": 808610938937713,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 216341699720336,
+					"parameters": {
+						"seconds": "0.15"
 					}
 				},
 				{
 					"id": "tween-one-property",
 					"objectClass": "fader",
-					"sid": 697998195932963,
+					"sid": 935803835348754,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"fade\"",
@@ -88,9 +99,79 @@
 					}
 				},
 				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 427438730786959
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "logo",
+					"sid": 370163133845370,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "88",
+						"time": "0.75",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 686119555753632
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "homebtn",
+					"sid": 373191288142169,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "200",
+						"end-y": "140",
+						"time": "0.5",
+						"ease": "easeinoutbounce",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 176525754750051
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "audiobtn",
+					"sid": 687492145382335,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "200",
+						"end-y": "140",
+						"time": "0.5",
+						"ease": "easeinoutbounce",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 711678683250897
+				},
+				{
 					"id": "tween-two-properties",
 					"objectClass": "regPanel",
-					"sid": 793441175104940,
+					"sid": 737220288359466,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"\"",
@@ -98,7 +179,7 @@
 						"end-x": "850",
 						"end-y": "761",
 						"time": "1.5",
-						"ease": "easeinoutbounce",
+						"ease": "easeoutbounce",
 						"destroy-on-complete": "no",
 						"loop": "no",
 						"ping-pong": "no"
@@ -2191,35 +2272,6 @@
 					],
 					"actions": [
 						{
-							"id": "set-active",
-							"objectClass": "regPanel",
-							"sid": 559681830587547,
-							"disabled": true,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "active"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 962906294603717,
-							"disabled": true,
-							"parameters": {
-								"seconds": "0.5"
-							}
-						},
-						{
-							"id": "set-active",
-							"objectClass": "regPanel",
-							"sid": 907033219870297,
-							"disabled": true,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "inactive"
-							}
-						},
-						{
 							"id": "tween-two-properties",
 							"objectClass": "regPanel",
 							"sid": 781087593008191,
@@ -2265,24 +2317,8 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "bar1",
-							"sid": 441867881993119,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "bar2",
-							"sid": 907991464806268,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "bar3",
-							"sid": 421270406144740,
+							"objectClass": "LoadingBar",
+							"sid": 486992851322174,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -2301,9 +2337,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 818300468392219,
+							"sid": 704890766066490,
 							"parameters": {
-								"seconds": "3"
+								"seconds": "1"
 							}
 						},
 						{
@@ -2333,35 +2369,6 @@
 					],
 					"actions": [
 						{
-							"id": "set-active",
-							"objectClass": "regPanel",
-							"sid": 559681830587547,
-							"disabled": true,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "active"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 962906294603717,
-							"disabled": true,
-							"parameters": {
-								"seconds": "0.5"
-							}
-						},
-						{
-							"id": "set-active",
-							"objectClass": "regPanel",
-							"sid": 907033219870297,
-							"disabled": true,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "inactive"
-							}
-						},
-						{
 							"id": "tween-two-properties",
 							"objectClass": "regPanel",
 							"sid": 781087593008191,
@@ -2407,24 +2414,8 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "bar1",
-							"sid": 441867881993119,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "bar2",
-							"sid": 907991464806268,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "bar3",
-							"sid": 421270406144740,
+							"objectClass": "LoadingBar",
+							"sid": 723665639622273,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -2443,9 +2434,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 228584791326268,
+							"sid": 599983750391952,
 							"parameters": {
-								"seconds": "3"
+								"seconds": "1"
 							}
 						},
 						{
@@ -2469,7 +2460,7 @@
 					"objectClass": "Touch",
 					"sid": 568487099245302,
 					"parameters": {
-						"object": "audioicon"
+						"object": "audiobtn"
 					}
 				}
 			],
@@ -2485,7 +2476,7 @@
 				},
 				{
 					"id": "set-animation-frame",
-					"objectClass": "audioicon",
+					"objectClass": "audiobtn",
 					"sid": 169899901760681,
 					"parameters": {
 						"frame-number": "audioIndex"
@@ -2596,7 +2587,7 @@
 				},
 				{
 					"id": "set-animation-frame",
-					"objectClass": "audioicon",
+					"objectClass": "audiobtn",
 					"sid": 985751995558490,
 					"parameters": {
 						"frame-number": "audioIndex"

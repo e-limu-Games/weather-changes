@@ -26,7 +26,7 @@
 					},
 					"world": {
 						"x": 960,
-						"y": 688,
+						"y": 800,
 						"width": 2102,
 						"height": 1613,
 						"originX": 0.5,
@@ -270,7 +270,7 @@
 					},
 					"world": {
 						"x": 320,
-						"y": 170,
+						"y": 200,
 						"width": 1280,
 						"height": 720,
 						"originX": 0,
@@ -316,43 +316,7 @@
 			"name": "Language",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [
-				{
-					"type": "audiobtn",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 304,
-					"instanceVariables": {},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 1126,
-						"y": 15,
-						"width": 0,
-						"height": 0,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
+			"instances": [],
 			"sid": 807249404472208,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
@@ -406,7 +370,7 @@
 					},
 					"world": {
 						"x": 960,
-						"y": 90,
+						"y": 88,
 						"width": 348,
 						"height": 124,
 						"originX": 0.5,
@@ -441,7 +405,7 @@
 					},
 					"world": {
 						"x": 120,
-						"y": 90,
+						"y": 88,
 						"width": 200,
 						"height": 140,
 						"originX": 0.5,
@@ -475,7 +439,42 @@
 						}
 					},
 					"world": {
-						"x": 1110,
+						"x": 1120,
+						"y": 950,
+						"width": 200,
+						"height": 140,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "pausebtn",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 274,
+					"instanceVariables": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 800,
 						"y": 950,
 						"width": 200,
 						"height": 140,
@@ -500,7 +499,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 269,
+					"uid": 275,
 					"instanceVariables": {},
 					"behaviors": {
 						"Tween": {
@@ -510,7 +509,7 @@
 						}
 					},
 					"world": {
-						"x": 810,
+						"x": 800,
 						"y": 950,
 						"width": 200,
 						"height": 140,

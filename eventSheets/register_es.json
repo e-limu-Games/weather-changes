@@ -1,5 +1,5 @@
 {
-	"name": "Register",
+	"name": "Register_ES",
 	"events": [
 		{
 			"eventType": "variable",
@@ -26,6 +26,10 @@
 			"includeSheet": "Global_Event_Sheet"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "LayoutSetUp"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -35,6 +39,15 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "reg",
+					"sid": 915723951503457,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
 				{
 					"id": "tween-one-property",
 					"objectClass": "homebtn",
@@ -2136,32 +2149,17 @@
 			],
 			"actions": [
 				{
-					"id": "tween-one-property",
+					"id": "tween-two-properties",
 					"objectClass": "reg",
-					"sid": 744128572196657,
+					"sid": 869179920846989,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"reg\"",
-						"property": "offsetWidth",
-						"end-value": "800",
-						"time": "1.5",
-						"ease": "easeinoutelastic",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-one-property",
-					"objectClass": "reg",
-					"sid": 839471631720357,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetHeight",
-						"end-value": "974",
-						"time": "1",
-						"ease": "easeinoutback",
+						"property": "size",
+						"end-x": "800",
+						"end-y": "974",
+						"time": "0.75",
+						"ease": "default",
 						"destroy-on-complete": "no",
 						"loop": "no",
 						"ping-pong": "no"
