@@ -1,7 +1,7 @@
 {
-	"name": "Sprite5",
+	"name": "Correct1",
 	"plugin-id": "Sprite",
-	"sid": 594917210584868,
+	"sid": 945979715508491,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,7 +18,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3679196,
+						"imageSpriteId": 2816403,
 						"collisionPoly": {
 							"points": [
 								0,
@@ -43,7 +43,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 268723354481953,
+				"sid": 816241113147202,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

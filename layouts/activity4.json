@@ -523,7 +523,7 @@
 					}
 				},
 				{
-					"type": "Sprite4",
+					"type": "Correct2",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -552,7 +552,7 @@
 					}
 				},
 				{
-					"type": "Sprite5",
+					"type": "Correct3",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1714,5 +1714,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Activity4"
+	"eventSheet": "Activity4_ES"
 }

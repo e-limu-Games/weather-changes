@@ -278,10 +278,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 297,
-						"y": 625,
-						"width": 2824.9585714285718,
-						"height": 1312,
+						"x": 700,
+						"y": 540,
+						"width": 2598,
+						"height": 1130,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -397,8 +397,8 @@
 						}
 					},
 					"world": {
-						"x": -283,
-						"y": 600,
+						"x": 570,
+						"y": 540,
 						"width": 1000,
 						"height": 815.9999999999999,
 						"originX": 0.5,
@@ -407,43 +407,10 @@
 							1,
 							1,
 							1,
-							0
+							1
 						],
 						"angle": 0,
 						"zElevation": 0
-					}
-				},
-				{
-					"type": "Useremail",
-					"properties": {
-						"text": "",
-						"placeholder": "Parent's email",
-						"tooltip": "Enter your parent email here",
-						"initially-visible": false,
-						"enabled": true,
-						"read-only": false,
-						"spell-check": true,
-						"type": "email",
-						"auto-font-size": false,
-						"id": "",
-						"class": ""
-					},
-					"uid": 159,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": -584,
-						"y": 560,
-						"width": 656,
-						"height": 106,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
 					}
 				},
 				{
@@ -478,35 +445,6 @@
 						"height": 90,
 						"originX": 0,
 						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "submit",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 144,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": -274,
-						"y": 883,
-						"width": 184,
-						"height": 61,
-						"originX": 0.5,
-						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -559,8 +497,8 @@
 						}
 					},
 					"world": {
-						"x": 191,
-						"y": 754,
+						"x": 985,
+						"y": 544,
 						"width": 70,
 						"height": 159,
 						"originX": 0.5,
@@ -617,8 +555,8 @@
 						}
 					},
 					"world": {
-						"x": 287,
-						"y": 749,
+						"x": 1081,
+						"y": 539,
 						"width": 75,
 						"height": 220,
 						"originX": 0.5,
@@ -675,39 +613,10 @@
 						}
 					},
 					"world": {
-						"x": 386,
-						"y": 739,
+						"x": 1180,
+						"y": 529,
 						"width": 75,
 						"height": 300,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "m1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 67,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 884,
-						"y": 799,
-						"width": 670.926517571885,
-						"height": 670.4819277108434,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -738,6 +647,165 @@
 				1
 			],
 			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Mascot",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "m1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 67,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1394,
+						"y": 709,
+						"width": 670,
+						"height": 670,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 389846191748586,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Input",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Useremail",
+					"properties": {
+						"text": "",
+						"placeholder": "Parent's email",
+						"tooltip": "Enter your parent email here",
+						"initially-visible": true,
+						"enabled": true,
+						"read-only": false,
+						"spell-check": true,
+						"type": "email",
+						"auto-font-size": false,
+						"id": "#input",
+						"class": ""
+					},
+					"uid": 159,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 305.30627346303964,
+						"y": 505.005211814953,
+						"width": 613.5962314014537,
+						"height": 96.09199015893591,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "submit",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 144,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 570,
+						"y": 715,
+						"width": 184,
+						"height": 61,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 212297138453257,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -1575,11 +1643,11 @@
 	"sid": 124869121827556,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 1708,
-	"height": 960,
+	"width": 3840,
+	"height": 2160,
 	"unboundedScrolling": true,
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "SignIn"
+	"eventSheet": "UserSignIn_ES"
 }

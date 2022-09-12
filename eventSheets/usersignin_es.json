@@ -1,5 +1,5 @@
 {
-	"name": "SignIn",
+	"name": "UserSignIn_ES",
 	"events": [
 		{
 			"eventType": "variable",
@@ -16,6 +16,10 @@
 			"includeSheet": "Global_Event_Sheet"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "LayoutSetUp"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -25,6 +29,57 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "login",
+					"sid": 855277789178056,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Useremail",
+					"sid": 471071477783053,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Useremail",
+					"sid": 633108674570612,
+					"parameters": {
+						"property-name": "\"border\"",
+						"value": "\"0\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "Useremail",
+					"sid": 277371677758611,
+					"parameters": {
+						"property-name": "\"padding\"",
+						"value": "\"10px\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "submit",
+					"sid": 581238487401495,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 393245404108581,
+					"parameters": {
+						"seconds": "0.15"
+					}
+				},
 				{
 					"id": "tween-one-property",
 					"objectClass": "homebtn",
@@ -74,16 +129,17 @@
 					}
 				},
 				{
-					"id": "tween-one-property",
+					"id": "tween-two-properties",
 					"objectClass": "login",
-					"sid": 503884553849699,
+					"sid": 630458014710128,
 					"behaviorType": "Tween",
 					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetOpacity",
-						"end-value": "100",
-						"time": "2",
-						"ease": "default",
+						"tags": "\"login\"",
+						"property": "size",
+						"end-x": "1000",
+						"end-y": "816",
+						"time": "0.75",
+						"ease": "easeinoutbounce",
 						"destroy-on-complete": "no",
 						"loop": "no",
 						"ping-pong": "no"
@@ -96,6 +152,39 @@
 				}
 			],
 			"sid": 452856335101237
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "login",
+					"sid": 684154259585446,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"login\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Useremail",
+					"sid": 200396550223673,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "submit",
+					"sid": 943802818811912,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 959612907738523
 		},
 		{
 			"eventType": "comment",
@@ -2336,90 +2425,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-opacity",
-					"objectClass": "fader",
-					"sid": 677657504596703,
-					"parameters": {
-						"comparison": 5,
-						"opacity": "80"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "Useremail",
-					"sid": 501398625148417,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "emailDisplay",
-					"sid": 981815720985783,
-					"disabled": true,
-					"parameters": {
-						"text": "Useremail.Text"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "submit",
-					"sid": 189678173547343,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				}
-			],
-			"sid": 379630213876411
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-opacity",
-					"objectClass": "fader",
-					"sid": 282143591007239,
-					"parameters": {
-						"comparison": 2,
-						"opacity": "80"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "Useremail",
-					"sid": 154736835387925,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "emailDisplay",
-					"sid": 630346603049673,
-					"disabled": true,
-					"parameters": {
-						"text": "Useremail.Text"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "submit",
-					"sid": 368452412238003,
-					"parameters": {
-						"visibility": "visible"
-					}
-				}
-			],
-			"sid": 286699966311960
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
 					"sid": 388364154248751,
@@ -2461,6 +2466,11 @@
 					"parameters": {
 						"object": "submit"
 					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "submit",
+					"sid": 432758613708944
 				}
 			],
 			"actions": [
@@ -2493,6 +2503,23 @@
 					}
 				},
 				{
+					"id": "tween-two-properties",
+					"objectClass": "login",
+					"sid": 502810684716738,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "0",
+						"end-y": "0",
+						"time": "0.75",
+						"ease": "easeinsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
 					"id": "set-opacity",
 					"objectClass": "submit",
 					"sid": 788541149974437,
@@ -2501,52 +2528,9 @@
 					}
 				},
 				{
-					"id": "tween-one-property",
-					"objectClass": "login",
-					"sid": 536120649119994,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetWidth",
-						"end-value": "0",
-						"time": "2",
-						"ease": "easeinoutbounce",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-one-property",
-					"objectClass": "login",
-					"sid": 233978650078974,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetHeight",
-						"end-value": "0",
-						"time": "1",
-						"ease": "easeinoutback",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-one-property",
-					"objectClass": "fader",
-					"sid": 428218161202274,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetOpacity",
-						"end-value": "100",
-						"time": "3",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
+					"id": "destroy",
+					"objectClass": "Useremail",
+					"sid": 969629662257792
 				},
 				{
 					"id": "set-visible",
@@ -2584,14 +2568,27 @@
 					}
 				},
 				{
-					"id": "destroy",
-					"objectClass": "Useremail",
-					"sid": 409272308086945
+					"id": "tween-one-property",
+					"objectClass": "fader",
+					"sid": 633927017967408,
+					"disabled": true,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetOpacity",
+						"end-value": "100",
+						"time": "3",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
 				},
 				{
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 794376992160129,
+					"disabled": true,
 					"parameters": {
 						"seconds": "5"
 					}
@@ -2600,6 +2597,7 @@
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 886763283492553,
+					"disabled": true,
 					"parameters": {
 						"layout": "VideoOne"
 					}

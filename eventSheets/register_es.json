@@ -114,6 +114,78 @@
 					"parameters": {
 						"frame-number": "index"
 					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "parentemail",
+					"sid": 430454538002957,
+					"parameters": {
+						"property-name": "\"border\"",
+						"value": "\"0\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "parentemail",
+					"sid": 956069522269191,
+					"parameters": {
+						"property-name": "\"padding\"",
+						"value": "\"10px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "fullname",
+					"sid": 629818888644011,
+					"parameters": {
+						"property-name": "\"border\"",
+						"value": "\"0\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "fullname",
+					"sid": 170042049362366,
+					"parameters": {
+						"property-name": "\"padding\"",
+						"value": "\"10px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "nickname",
+					"sid": 672230039717760,
+					"parameters": {
+						"property-name": "\"border\"",
+						"value": "\"0\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "nickname",
+					"sid": 867268612463230,
+					"parameters": {
+						"property-name": "\"padding\"",
+						"value": "\"10px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "gender",
+					"sid": 191598822170702,
+					"parameters": {
+						"property-name": "\"border\"",
+						"value": "\"0\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "gender",
+					"sid": 484130514439702,
+					"parameters": {
+						"property-name": "\"padding\"",
+						"value": "\"10px\""
+					}
 				}
 			],
 			"sid": 946884135792480
@@ -2375,88 +2447,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-opacity",
-					"objectClass": "fader",
-					"sid": 459955273225096,
-					"parameters": {
-						"comparison": 5,
-						"opacity": "80"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "Useremail",
-					"sid": 146129958593511,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "emailDisplay",
-					"sid": 376045247576251,
-					"parameters": {
-						"text": "Useremail.Text"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "submit",
-					"sid": 896820290247371,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				}
-			],
-			"sid": 405954608284462
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-opacity",
-					"objectClass": "fader",
-					"sid": 683220188654617,
-					"parameters": {
-						"comparison": 2,
-						"opacity": "80"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "Useremail",
-					"sid": 467923295203932,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "emailDisplay",
-					"sid": 603705176487409,
-					"parameters": {
-						"text": "Useremail.Text"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "submit",
-					"sid": 864571131859375,
-					"parameters": {
-						"visibility": "visible"
-					}
-				}
-			],
-			"sid": 250970848025416
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
 					"sid": 480712515224713,
@@ -2579,6 +2569,23 @@
 					}
 				},
 				{
+					"id": "tween-two-properties",
+					"objectClass": "reg",
+					"sid": 991455580685445,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "0",
+						"end-y": "0",
+						"time": "0.75",
+						"ease": "easeinsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "emailDisplay",
 					"sid": 644918230320432,
@@ -2595,73 +2602,9 @@
 					}
 				},
 				{
-					"id": "tween-one-property",
-					"objectClass": "reg",
-					"sid": 336080276974321,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetWidth",
-						"end-value": "0",
-						"time": "3.5",
-						"ease": "easeinoutelastic",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-one-property",
-					"objectClass": "reg",
-					"sid": 347024477808758,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetHeight",
-						"end-value": "0",
-						"time": "0.4",
-						"ease": "noease",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-one-property",
-					"objectClass": "fader",
-					"sid": 575980800850948,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetOpacity",
-						"end-value": "100",
-						"time": "3",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
 					"id": "set-visible",
-					"objectClass": "bar1",
-					"sid": 877577155422420,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bar2",
-					"sid": 385397341840324,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bar3",
-					"sid": 989330302068367,
+					"objectClass": "LoadingBar",
+					"sid": 528503299320165,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -2706,9 +2649,27 @@
 					}
 				},
 				{
+					"id": "tween-one-property",
+					"objectClass": "fader",
+					"sid": 601648060910728,
+					"disabled": true,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetOpacity",
+						"end-value": "100",
+						"time": "3",
+						"ease": "easeinsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 441446372290080,
+					"disabled": true,
 					"parameters": {
 						"seconds": "5"
 					}

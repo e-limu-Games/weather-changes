@@ -183,6 +183,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "filechooser",
+			"name": "File chooser",
+			"author": "Scirra",
+			"version": "r308",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Tween",
 			"name": "Tween",
@@ -251,9 +259,9 @@
 			"a",
 			"b",
 			"c",
-			"Sprite3",
-			"Sprite4",
-			"Sprite5",
+			"Correct1",
+			"Correct2",
+			"Correct3",
 			"Particles",
 			"next",
 			"Particles2",
@@ -296,7 +304,8 @@
 			"over2",
 			"over3",
 			"over4",
-			"sad_wronganswer"
+			"sad_wronganswer",
+			"FileChooser"
 		],
 		"subfolders": [
 			{
@@ -433,17 +442,17 @@
 			"Variables",
 			"Global_Event_Sheet",
 			"Register_ES",
-			"SignIn",
+			"UserSignIn_ES",
 			"VideoOne_ES",
 			"Game1",
 			"loading",
 			"Activity_ES",
-			"Activity1",
-			"Activity2",
-			"Activity3",
-			"Activity4",
-			"Activity5",
-			"Activity6",
+			"Activity1_ES",
+			"Activity2_ES",
+			"Activity3_ES",
+			"Activity4_ES",
+			"Activity5_ES",
+			"Activity6_ES",
 			"ActivityEnd",
 			"VideoTwo_ES",
 			"Completed_ES",
@@ -1603,6 +1612,20 @@
 					],
 					"subfolders": [],
 					"name": "portugese"
+				},
+				{
+					"items": [
+						{
+							"name": "input.css",
+							"type": "text/css",
+							"sid": 865072554480081,
+							"file-info": {
+								"purpose": "stylesheet"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "css"
 				}
 			]
 		}
