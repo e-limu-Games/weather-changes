@@ -30,26 +30,14 @@
 			],
 			"actions": [
 				{
-					"id": "set-size",
-					"objectClass": "login",
-					"sid": 855277789178056,
-					"parameters": {
-						"width": "0",
-						"height": "0"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Useremail",
-					"sid": 471071477783053,
-					"parameters": {
-						"visibility": "invisible"
-					}
+					"id": "sign-out",
+					"objectClass": "FirebaseAuthBasic",
+					"sid": 269865369508243
 				},
 				{
 					"id": "set-css-style",
 					"objectClass": "Useremail",
-					"sid": 633108674570612,
+					"sid": 451768388357589,
 					"parameters": {
 						"property-name": "\"border\"",
 						"value": "\"0\""
@@ -58,10 +46,27 @@
 				{
 					"id": "set-css-style",
 					"objectClass": "Useremail",
-					"sid": 277371677758611,
+					"sid": 194544733380240,
 					"parameters": {
 						"property-name": "\"padding\"",
 						"value": "\"10px\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Useremail",
+					"sid": 590922388182352,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "login",
+					"sid": 855277789178056,
+					"parameters": {
+						"width": "0",
+						"height": "0"
 					}
 				},
 				{
@@ -144,11 +149,6 @@
 						"loop": "no",
 						"ping-pong": "no"
 					}
-				},
-				{
-					"id": "sign-out",
-					"objectClass": "FirebaseAuthBasic",
-					"sid": 586121580012606
 				}
 			],
 			"sid": 452856335101237
@@ -2616,11 +2616,29 @@
 			],
 			"actions": [
 				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 772500833883685,
+					"parameters": {
+						"variable": "ShowLRHomeLayer",
+						"value": "true"
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 173490917264942,
+					"sid": 364869505851964,
 					"parameters": {
 						"layout": "VideoOne"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 791630348318102,
+					"disabled": true,
+					"parameters": {
+						"layout": "Home"
 					}
 				}
 			],

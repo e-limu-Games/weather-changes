@@ -2,6 +2,10 @@
 	"name": "Completed_ES",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "LayoutSetUp"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -73,6 +77,38 @@
 						"destroy-on-complete": "no",
 						"loop": "no",
 						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "CleanlinessBtn",
+					"sid": 496422551480006,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "TimeMachineBtn",
+					"sid": 764905088560340,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "MathNinjaBtn",
+					"sid": 271469262204013,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "ShapesTriviaBtn",
+					"sid": 449236695826431,
+					"parameters": {
+						"opacity": "0"
 					}
 				}
 			],
@@ -213,7 +249,8 @@
 					}
 				}
 			],
-			"sid": 811596755046887
+			"sid": 811596755046887,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -283,9 +320,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 343825713987235,
+					"sid": 966524958531362,
 					"parameters": {
-						"layout": "Home"
+						"layout": "Activity"
 					}
 				}
 			],

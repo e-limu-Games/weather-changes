@@ -1,6 +1,10 @@
 {
-	"name": "ActivityEnd",
+	"name": "ActivityEnd_ES",
 	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "LayoutSetUp"
+		},
 		{
 			"eventType": "block",
 			"conditions": [
@@ -11,6 +15,22 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "CloudBackground",
+					"sid": 292719180292105,
+					"parameters": {
+						"y": "750"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 623965322120600,
+					"parameters": {
+						"seconds": "0.15"
+					}
+				},
 				{
 					"id": "tween-one-property",
 					"objectClass": "CloudBackground",
@@ -107,6 +127,7 @@
 					"id": "tween-one-property",
 					"objectClass": "logo",
 					"sid": 173865640565556,
+					"disabled": true,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"\"",
@@ -134,6 +155,7 @@
 					"id": "tween-two-properties",
 					"objectClass": "ActivityIntro2",
 					"sid": 794671689387200,
+					"disabled": true,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"\"",
@@ -224,7 +246,8 @@
 					}
 				}
 			],
-			"sid": 507496530277330
+			"sid": 507496530277330,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -370,13 +393,13 @@
 				{
 					"id": "tween-one-property",
 					"objectClass": "fader",
-					"sid": 537781736283886,
+					"sid": 775659762427016,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"fadeout\"",
 						"property": "offsetOpacity",
 						"end-value": "100",
-						"time": "4",
+						"time": "1",
 						"ease": "default",
 						"destroy-on-complete": "no",
 						"loop": "no",
@@ -386,9 +409,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 150944326235549,
+					"sid": 921767372672988,
 					"parameters": {
-						"seconds": "2"
+						"seconds": "0.5"
 					}
 				},
 				{

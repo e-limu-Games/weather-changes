@@ -1,30 +1,36 @@
 {
-	"name": "ShapesTriviaBtn",
+	"name": "ProfileBtn",
 	"plugin-id": "Sprite",
-	"sid": 214991426736894,
+	"sid": 743978614035131,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 520497760879753
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 428,
+						"height": 304,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7711503,
+						"imageSpriteId": 26463,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 172815379805387,
-				"name": "Animation 1",
+				"sid": 308752635453984,
+				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

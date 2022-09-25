@@ -40,6 +40,11 @@
 			],
 			"actions": [
 				{
+					"id": "sign-out",
+					"objectClass": "FirebaseAuthBasic",
+					"sid": 633229614392546
+				},
+				{
 					"id": "set-size",
 					"objectClass": "reg",
 					"sid": 915723951503457,
@@ -2837,11 +2842,29 @@
 			],
 			"actions": [
 				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 196083311947720,
+					"parameters": {
+						"variable": "ShowLRHomeLayer",
+						"value": "true"
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 670038376209177,
+					"sid": 691836018691847,
 					"parameters": {
 						"layout": "VideoOne"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 294129230989790,
+					"disabled": true,
+					"parameters": {
+						"layout": "Home"
 					}
 				}
 			],

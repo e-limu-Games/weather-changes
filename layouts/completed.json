@@ -42,6 +42,330 @@
 					}
 				},
 				{
+					"type": "completed",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 290,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 952,
+						"y": 550,
+						"width": 1865.1548109339344,
+						"height": 1059.1828562535209,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TimeMachineBtn",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 307,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 518.7532621264077,
+						"y": 863.7672672326182,
+						"width": 205.05552779020388,
+						"height": 176.9322369612562,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CleanlinessBtn",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 297,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 772.498701760044,
+						"y": 864.0175542949805,
+						"width": 202.86373438493115,
+						"height": 175.4663361292496,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "MathNinjaBtn",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 305,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1030.618739255388,
+						"y": 862.7619344037045,
+						"width": 204.53493699825344,
+						"height": 177.54846175641,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ShapesTriviaBtn",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 306,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1281.6427476508065,
+						"y": 862.3407378663145,
+						"width": 205.0877751708863,
+						"height": 173.86919060494427,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "over1",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 296,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 520.5801942730881,
+						"y": 924.9872640729045,
+						"width": 176,
+						"height": 46,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "over3",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 310,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1033.9138227794706,
+						"y": 925.6112266433109,
+						"width": 176,
+						"height": 46,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "over4",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 311,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1285.8890477805392,
+						"y": 924.4597030349536,
+						"width": 176,
+						"height": 46,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "over2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 309,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 773.9767037704324,
+						"y": 925.7646123148567,
+						"width": 176,
+						"height": 46,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 600305046242857,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Loading",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "PlayAgainBtn",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 294,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1051,
+						"y": 658,
+						"width": 666,
+						"height": 169,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "bar2",
 					"properties": {
 						"initially-visible": false,
@@ -83,8 +407,8 @@
 						}
 					},
 					"world": {
-						"x": 308,
-						"y": 774,
+						"x": 922,
+						"y": 566,
 						"width": 75,
 						"height": 220,
 						"originX": 0.5,
@@ -141,8 +465,8 @@
 						}
 					},
 					"world": {
-						"x": 193,
-						"y": 784,
+						"x": 807,
+						"y": 576,
 						"width": 70,
 						"height": 159,
 						"originX": 0.5,
@@ -199,286 +523,10 @@
 						}
 					},
 					"world": {
-						"x": 418,
-						"y": 772,
+						"x": 1032,
+						"y": 564,
 						"width": 75,
 						"height": 300,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "homebtn",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 295,
-					"instanceVariables": {},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": -650,
-						"y": 83,
-						"width": 0,
-						"height": 0,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
-			"sid": 600305046242857,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"isInitiallyInteractive": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				1,
-				1,
-				1,
-				1
-			],
-			"isTransparent": false,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"renderingMode": "3d",
-			"drawOrder": "z-order",
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"zElevation": 0,
-			"global": false
-		},
-		{
-			"name": "Language",
-			"overriden": 0,
-			"subLayers": [],
-			"instances": [],
-			"sid": 219642982663470,
-			"effectTypes": [],
-			"isInitiallyVisible": false,
-			"isInitiallyInteractive": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				1,
-				1,
-				1,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"renderingMode": "3d",
-			"drawOrder": "z-order",
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"zElevation": 0,
-			"global": false
-		},
-		{
-			"name": "Layer 0",
-			"overriden": 0,
-			"subLayers": [],
-			"instances": [
-				{
-					"type": "completed",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 290,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 960,
-						"y": 540,
-						"width": 2254,
-						"height": 1280,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "TimeMachineBtn",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 307,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 603,
-						"y": 968,
-						"width": 267,
-						"height": 242,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "CleanlinessBtn",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 297,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 909,
-						"y": 971,
-						"width": 257,
-						"height": 227,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "MathNinjaBtn",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 305,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1219,
-						"y": 972,
-						"width": 267,
-						"height": 227,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "ShapesTriviaBtn",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 306,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1522,
-						"y": 968,
-						"width": 257,
-						"height": 221,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "PlayAgainBtn",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 294,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1051,
-						"y": 658,
-						"width": 666,
-						"height": 169,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -521,114 +569,33 @@
 			"global": false
 		},
 		{
-			"name": "Layer 1",
+			"name": "Control",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "over1",
+					"type": "homebtn",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 296,
+					"uid": 295,
 					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 599.8417169749721,
-						"y": 1052.5413095036622,
-						"width": 176,
-						"height": 46,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "over3",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
 					},
-					"uid": 310,
-					"instanceVariables": {},
-					"behaviors": {},
 					"world": {
-						"x": 1221.841716974972,
-						"y": 1053.5413095036622,
-						"width": 176,
-						"height": 46,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "over4",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 311,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1526.841716974972,
-						"y": 1053.5413095036622,
-						"width": 176,
-						"height": 46,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "over2",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 309,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 906.8417169749721,
-						"y": 1052.5413095036622,
-						"width": 176,
-						"height": 46,
+						"x": 138,
+						"y": 86,
+						"width": 200,
+						"height": 140,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -656,6 +623,39 @@
 				0.3686274509803922,
 				0.3686274509803922,
 				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Language",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [],
+			"sid": 219642982663470,
+			"effectTypes": [],
+			"isInitiallyVisible": false,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
 				1
 			],
 			"isTransparent": true,

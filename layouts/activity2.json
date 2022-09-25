@@ -26,7 +26,7 @@
 					},
 					"world": {
 						"x": 960,
-						"y": 261,
+						"y": 282,
 						"width": 2102,
 						"height": 1662,
 						"originX": 0.5,
@@ -60,10 +60,10 @@
 						}
 					},
 					"world": {
-						"x": -650,
-						"y": 83,
-						"width": 0,
-						"height": 0,
+						"x": 120,
+						"y": 86,
+						"width": 200,
+						"height": 140,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -264,10 +264,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -842,
-						"y": 1080,
-						"width": 408,
-						"height": 238,
+						"x": 677.5252822026785,
+						"y": 589.6456980049404,
+						"width": 345.0534899943557,
+						"height": 204.38085545874668,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -293,10 +293,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -845,
-						"y": 1358,
-						"width": 408,
-						"height": 238,
+						"x": 1314.2773052122102,
+						"y": 593.4106254668044,
+						"width": 341.1194275672465,
+						"height": 203.3793919960234,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -995,75 +995,6 @@
 			"global": false
 		},
 		{
-			"name": "Hint",
-			"overriden": 0,
-			"subLayers": [],
-			"instances": [
-				{
-					"type": "Sprite11",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 284,
-					"instanceVariables": {},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 960,
-						"y": 540,
-						"width": 700,
-						"height": 700,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
-			"sid": 756705998826164,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"isInitiallyInteractive": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"renderingMode": "3d",
-			"drawOrder": "z-order",
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"zElevation": 0,
-			"global": false
-		},
-		{
 			"name": "Detectors",
 			"overriden": 0,
 			"subLayers": [],
@@ -1400,6 +1331,75 @@
 				}
 			],
 			"sid": 516245750379319,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Hint",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Sprite11",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 284,
+					"instanceVariables": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 960,
+						"y": 540,
+						"width": 700,
+						"height": 700,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 756705998826164,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,

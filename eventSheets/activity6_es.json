@@ -2,6 +2,10 @@
 	"name": "Activity6_ES",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "LayoutSetUp"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -11,6 +15,118 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "",
+					"background-color": [
+						1,
+						0,
+						0,
+						1
+					]
+				},
+				{
+					"id": "set-size",
+					"objectClass": "continue",
+					"sid": 973892811180056,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "tryagain",
+					"sid": 793457389813969,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "a",
+					"sid": 774573052374351,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "b",
+					"sid": 222658585466388,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "c",
+					"sid": 516679150143123,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "d",
+					"sid": 502723636061867,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "CloudBackground",
+					"sid": 472680826278038,
+					"parameters": {
+						"y": "750"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "logo",
+					"sid": 777478968252276,
+					"disabled": true,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "230",
+						"time": "1",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "next",
+					"sid": 465852475707151,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"next\"",
+						"property": "size",
+						"end-x": "200",
+						"end-y": "140",
+						"time": "1",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"type": "comment",
+					"text": "",
+					"background-color": [
+						1,
+						0,
+						0,
+						1
+					]
+				},
 				{
 					"id": "tween-one-property",
 					"objectClass": "CloudBackground",
@@ -118,39 +234,6 @@
 						"end-value": "100",
 						"time": "2",
 						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-one-property",
-					"objectClass": "logo",
-					"sid": 734150987926823,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetY",
-						"end-value": "230",
-						"time": "1",
-						"ease": "easeinoutback",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "next",
-					"sid": 860582742245311,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"next\"",
-						"property": "size",
-						"end-x": "400",
-						"end-y": "283",
-						"time": "1",
-						"ease": "easeinoutback",
 						"destroy-on-complete": "no",
 						"loop": "no",
 						"ping-pong": "no"
@@ -593,7 +676,8 @@
 					}
 				}
 			],
-			"sid": 165270401765709
+			"sid": 165270401765709,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -620,24 +704,8 @@
 			"actions": [
 				{
 					"id": "set-visible",
-					"objectClass": "bar1",
-					"sid": 175111893564732,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bar2",
-					"sid": 278910581207414,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bar3",
-					"sid": 796246925815863,
+					"objectClass": "LoadingBar",
+					"sid": 233860384408587,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -2027,13 +2095,13 @@
 				{
 					"id": "tween-two-properties",
 					"objectClass": "continue",
-					"sid": 132915869788133,
+					"sid": 431132529442404,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"next\"",
 						"property": "size",
-						"end-x": "400",
-						"end-y": "283",
+						"end-x": "200",
+						"end-y": "140",
 						"time": "1",
 						"ease": "easeinoutback",
 						"destroy-on-complete": "no",
@@ -2827,13 +2895,13 @@
 				{
 					"id": "tween-two-properties",
 					"objectClass": "tryagain",
-					"sid": 524168093195639,
+					"sid": 455456713704623,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"\"",
 						"property": "size",
-						"end-x": "300",
-						"end-y": "213",
+						"end-x": "200",
+						"end-y": "140",
 						"time": "1",
 						"ease": "easeinoutback",
 						"destroy-on-complete": "no",
@@ -2889,13 +2957,13 @@
 				{
 					"id": "tween-two-properties",
 					"objectClass": "next",
-					"sid": 214316385040616,
+					"sid": 517577058883508,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"next\"",
 						"property": "size",
-						"end-x": "300",
-						"end-y": "212",
+						"end-x": "200",
+						"end-y": "140",
 						"time": "1",
 						"ease": "easeinoutback",
 						"destroy-on-complete": "no",
@@ -3890,13 +3958,13 @@
 				{
 					"id": "tween-two-properties",
 					"objectClass": "continue",
-					"sid": 845901876137262,
+					"sid": 371785940390596,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"next\"",
 						"property": "size",
-						"end-x": "400",
-						"end-y": "283",
+						"end-x": "200",
+						"end-y": "140",
 						"time": "1",
 						"ease": "easeinoutback",
 						"destroy-on-complete": "no",
@@ -4137,13 +4205,13 @@
 				{
 					"id": "tween-two-properties",
 					"objectClass": "showanswer",
-					"sid": 266979779407620,
+					"sid": 586986551537192,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"\"",
 						"property": "size",
-						"end-x": "300",
-						"end-y": "213",
+						"end-x": "200",
+						"end-y": "140",
 						"time": "1",
 						"ease": "easeinoutback",
 						"destroy-on-complete": "no",
@@ -4475,7 +4543,8 @@
 					}
 				}
 			],
-			"sid": 301399376762181
+			"sid": 301399376762181,
+			"disabled": true
 		}
 	],
 	"sid": 730526633565585

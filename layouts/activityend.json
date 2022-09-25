@@ -25,10 +25,10 @@
 						}
 					},
 					"world": {
-						"x": 351,
-						"y": 991,
-						"width": 3522,
-						"height": 2000,
+						"x": 960,
+						"y": 261,
+						"width": 2102,
+						"height": 1662,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -60,10 +60,10 @@
 						}
 					},
 					"world": {
-						"x": 342,
-						"y": -156,
-						"width": 800,
-						"height": 285,
+						"x": 960,
+						"y": 90,
+						"width": 435,
+						"height": 155,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -76,6 +76,110 @@
 						"zElevation": 0
 					}
 				},
+				{
+					"type": "homebtn",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 390,
+					"instanceVariables": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": -506.5,
+						"y": 198,
+						"width": 287,
+						"height": 230,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ActivityIntro2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 384,
+					"instanceVariables": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 980,
+						"y": 620,
+						"width": 1298,
+						"height": 724,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 500524177927767,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Loading",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
 				{
 					"type": "bar2",
 					"properties": {
@@ -118,8 +222,8 @@
 						}
 					},
 					"world": {
-						"x": 308,
-						"y": 774,
+						"x": 960,
+						"y": 540,
 						"width": 75,
 						"height": 220,
 						"originX": 0.5,
@@ -176,8 +280,8 @@
 						}
 					},
 					"world": {
-						"x": 193,
-						"y": 784,
+						"x": 860,
+						"y": 540,
 						"width": 70,
 						"height": 159,
 						"originX": 0.5,
@@ -234,8 +338,8 @@
 						}
 					},
 					"world": {
-						"x": 418,
-						"y": 772,
+						"x": 1060,
+						"y": 540,
 						"width": 75,
 						"height": 300,
 						"originX": 0.5,
@@ -249,149 +353,9 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "fader",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 389,
-					"instanceVariables": {},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 351,
-						"y": 954,
-						"width": 2817,
-						"height": 1929,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "homebtn",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 390,
-					"instanceVariables": {},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": -650,
-						"y": 83,
-						"width": 0,
-						"height": 0,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "ActivityIntro2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 384,
-					"instanceVariables": {},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 357,
-						"y": 746,
-						"width": 0,
-						"height": 0,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "fader",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 391,
-					"instanceVariables": {},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 351,
-						"y": 991,
-						"width": 2817,
-						"height": 1999.9999999999998,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
-			"sid": 500524177927767,
+			"sid": 542395618705730,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -402,12 +366,12 @@
 				1
 			],
 			"backgroundColor": [
-				1,
-				1,
-				1,
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
 				1
 			],
-			"isTransparent": false,
+			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -456,11 +420,11 @@
 	"sid": 117723271157265,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 1708,
-	"height": 960,
+	"width": 3840,
+	"height": 2160,
 	"unboundedScrolling": true,
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "ActivityEnd"
+	"eventSheet": "ActivityEnd_ES"
 }

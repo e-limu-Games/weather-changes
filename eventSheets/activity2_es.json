@@ -16,6 +16,16 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "",
+					"background-color": [
+						1,
+						0,
+						0,
+						1
+					]
+				},
+				{
 					"id": "set-size",
 					"objectClass": "continue",
 					"sid": 586767106237628,
@@ -58,6 +68,58 @@
 					}
 				},
 				{
+					"id": "set-y",
+					"objectClass": "CloudBackground",
+					"sid": 219070036118201,
+					"parameters": {
+						"y": "750"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "next",
+					"sid": 250696442250525,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"next\"",
+						"property": "size",
+						"end-x": "200",
+						"end-y": "140",
+						"time": "1",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"type": "comment",
+					"text": "",
+					"background-color": [
+						1,
+						0,
+						0,
+						1
+					]
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "logo",
+					"sid": 982522775819887,
+					"disabled": true,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "230",
+						"time": "1",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
 					"id": "tween-one-property",
 					"objectClass": "CloudBackground",
 					"sid": 806146077778953,
@@ -92,12 +154,12 @@
 				{
 					"id": "tween-one-property",
 					"objectClass": "homebtn",
-					"sid": 444591888106904,
+					"sid": 549668960214013,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"\"",
 						"property": "offsetHeight",
-						"end-value": "142",
+						"end-value": "140",
 						"time": "1",
 						"ease": "easeinoutbounce",
 						"destroy-on-complete": "no",
@@ -124,12 +186,12 @@
 				{
 					"id": "tween-one-property",
 					"objectClass": "hint",
-					"sid": 324845308020300,
+					"sid": 101697828685724,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"\"",
 						"property": "offsetHeight",
-						"end-value": "142",
+						"end-value": "140",
 						"time": "1",
 						"ease": "easeinoutbounce",
 						"destroy-on-complete": "no",
@@ -164,40 +226,6 @@
 						"end-value": "100",
 						"time": "2",
 						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-one-property",
-					"objectClass": "logo",
-					"sid": 796681958081850,
-					"disabled": true,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetY",
-						"end-value": "230",
-						"time": "1",
-						"ease": "easeinoutback",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "next",
-					"sid": 738714028632334,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"next\"",
-						"property": "size",
-						"end-x": "200",
-						"end-y": "140",
-						"time": "1",
-						"ease": "easeinoutback",
 						"destroy-on-complete": "no",
 						"loop": "no",
 						"ping-pong": "no"
@@ -442,6 +470,16 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "",
+					"background-color": [
+						1,
+						0,
+						0,
+						1
+					]
+				},
+				{
 					"id": "play",
 					"objectClass": "Audio",
 					"sid": 486233049721118,
@@ -633,25 +671,19 @@
 			],
 			"actions": [
 				{
-					"id": "set-visible",
-					"objectClass": "bar1",
-					"sid": 279924580329923,
-					"parameters": {
-						"visibility": "visible"
-					}
+					"type": "comment",
+					"text": "",
+					"background-color": [
+						1,
+						0,
+						0,
+						1
+					]
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "bar2",
-					"sid": 209293192746944,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bar3",
-					"sid": 684083492560636,
+					"objectClass": "LoadingBar",
+					"sid": 100101591956057,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -2235,7 +2267,8 @@
 							}
 						}
 					],
-					"sid": 737694102543507
+					"sid": 737694102543507,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -2353,9 +2386,9 @@
 						{
 							"id": "set-animation-frame",
 							"objectClass": "Awindy",
-							"sid": 806471580586172,
+							"sid": 119362329183308,
 							"parameters": {
-								"frame-number": "1"
+								"frame-number": "5"
 							}
 						}
 					],
@@ -2467,9 +2500,9 @@
 						{
 							"id": "set-animation-frame",
 							"objectClass": "Arainy",
-							"sid": 308846017543540,
+							"sid": 436838625174495,
 							"parameters": {
-								"frame-number": "4"
+								"frame-number": "0"
 							}
 						}
 					],
@@ -3840,21 +3873,21 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 237732795782255,
+					"sid": 275957938608146,
 					"parameters": {
-						"seconds": "2"
+						"seconds": "1.25"
 					}
 				},
 				{
 					"id": "tween-one-property",
 					"objectClass": "Sprite11",
-					"sid": 583382632188588,
+					"sid": 726421373016778,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"\"",
 						"property": "offsetOpacity",
 						"end-value": "0",
-						"time": "1",
+						"time": "0.75",
 						"ease": "default",
 						"destroy-on-complete": "no",
 						"loop": "no",
@@ -3880,9 +3913,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 730505644179952,
+					"sid": 846203537670560,
 					"parameters": {
-						"layout": "Home"
+						"layout": "Activity"
 					}
 				},
 				{
@@ -3915,9 +3948,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 904125207114963,
+					"sid": 932191433289884,
 					"parameters": {
-						"layout": "Home"
+						"layout": "Activity"
 					}
 				},
 				{
@@ -3932,7 +3965,8 @@
 					}
 				}
 			],
-			"sid": 374590192446244
+			"sid": 374590192446244,
+			"disabled": true
 		}
 	],
 	"sid": 622414656087974

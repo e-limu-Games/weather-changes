@@ -402,6 +402,33 @@
 					"parameters": {
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Acalm",
+					"sid": 815166492158593,
+					"parameters": {
+						"width": "266",
+						"height": "80"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Awindy",
+					"sid": 422886091139659,
+					"parameters": {
+						"width": "245",
+						"height": "69"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Arainy",
+					"sid": 961358264016145,
+					"parameters": {
+						"width": "235",
+						"height": "70"
+					}
 				}
 			],
 			"sid": 583628794784637
@@ -2874,6 +2901,15 @@
 						"object": "Acalm",
 						"image-point-optional": "0"
 					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "calm",
+					"sid": 347651867754848,
+					"parameters": {
+						"width": "266",
+						"height": "80"
+					}
 				}
 			],
 			"sid": 455993266020969
@@ -2898,6 +2934,15 @@
 					"parameters": {
 						"object": "Awindy",
 						"image-point-optional": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "calm",
+					"sid": 541895131233673,
+					"parameters": {
+						"width": "245",
+						"height": "69"
 					}
 				}
 			],
@@ -2924,6 +2969,15 @@
 						"object": "Arainy",
 						"image-point-optional": "0"
 					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "calm",
+					"sid": 664762075321760,
+					"parameters": {
+						"width": "235",
+						"height": "70"
+					}
 				}
 			],
 			"sid": 623286102778256
@@ -2948,6 +3002,15 @@
 					"parameters": {
 						"object": "Acalm",
 						"image-point-optional": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "rainy",
+					"sid": 634725541037733,
+					"parameters": {
+						"width": "266",
+						"height": "80"
 					}
 				}
 			],
@@ -2974,6 +3037,15 @@
 						"object": "Awindy",
 						"image-point-optional": "0"
 					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "rainy",
+					"sid": 550613182922774,
+					"parameters": {
+						"width": "245",
+						"height": "69"
+					}
 				}
 			],
 			"sid": 858952428292994
@@ -2998,6 +3070,15 @@
 					"parameters": {
 						"object": "Arainy",
 						"image-point-optional": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "rainy",
+					"sid": 229325471307889,
+					"parameters": {
+						"width": "235",
+						"height": "70"
 					}
 				}
 			],
@@ -3024,6 +3105,15 @@
 						"object": "Acalm",
 						"image-point-optional": "0"
 					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "windy",
+					"sid": 818343261860547,
+					"parameters": {
+						"width": "256.333037",
+						"height": "70.120962"
+					}
 				}
 			],
 			"sid": 148828590484459
@@ -3048,6 +3138,15 @@
 					"parameters": {
 						"object": "Awindy",
 						"image-point-optional": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "windy",
+					"sid": 132583862844537,
+					"parameters": {
+						"width": "245",
+						"height": "69"
 					}
 				}
 			],
@@ -3074,6 +3173,15 @@
 						"object": "Arainy",
 						"image-point-optional": "0"
 					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "windy",
+					"sid": 360667003837398,
+					"parameters": {
+						"width": "235",
+						"height": "70"
+					}
 				}
 			],
 			"sid": 625128099492481
@@ -3098,6 +3206,15 @@
 					"parameters": {
 						"object": "Acalm",
 						"image-point-optional": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "cloudy",
+					"sid": 977333032897337,
+					"parameters": {
+						"width": "266",
+						"height": "80"
 					}
 				}
 			],
@@ -3124,6 +3241,15 @@
 						"object": "Awindy",
 						"image-point-optional": "0"
 					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "cloudy",
+					"sid": 734555849624564,
+					"parameters": {
+						"width": "245",
+						"height": "69"
+					}
 				}
 			],
 			"sid": 211948930112505
@@ -3148,6 +3274,15 @@
 					"parameters": {
 						"object": "Arainy",
 						"image-point-optional": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "cloudy",
+					"sid": 606398307873535,
+					"parameters": {
+						"width": "235",
+						"height": "70"
 					}
 				}
 			],
