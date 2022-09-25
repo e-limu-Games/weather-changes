@@ -460,14 +460,14 @@
 			"Activity1_ES",
 			"Activity2_ES",
 			"Activity3_ES",
-			"Activity4_ES",
 			"Activity5_ES",
 			"Activity6_ES",
 			"ActivityEnd_ES",
 			"VideoTwo_ES",
 			"Completed_ES",
 			"LayoutSetUp_ES",
-			"InAppFeedback_ES"
+			"InAppFeedback_ES",
+			"Activity4_ES"
 		],
 		"subfolders": []
 	},
