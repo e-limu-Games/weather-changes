@@ -3,7 +3,7 @@
 	"events": [
 		{
 			"eventType": "include",
-			"includeSheet": "LayoutSetUp"
+			"includeSheet": "LayoutSetUp_ES"
 		},
 		{
 			"eventType": "block",
@@ -3067,6 +3067,16 @@
 			"sid": 738256016130396
 		},
 		{
+			"eventType": "comment",
+			"text": "",
+			"background-color": [
+				1,
+				0.23921568627450981,
+				0.23921568627450981,
+				1
+			]
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -3080,12 +3090,21 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "calm",
-					"sid": 890390997701081,
+					"sid": 571493788814910,
 					"parameters": {
-						"object": "Acalm",
-						"image-point-optional": "0"
+						"x": "310.812213",
+						"y": "496.110718"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "calm",
+					"sid": 277419904396630,
+					"parameters": {
+						"width": "228.760448",
+						"height": "69.568069"
 					}
 				}
 			],
@@ -3105,12 +3124,21 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "calm",
-					"sid": 212646319648765,
+					"sid": 146814207663912,
 					"parameters": {
-						"object": "Awindy",
-						"image-point-optional": "0"
+						"x": "748.717571",
+						"y": "493.145246"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "calm",
+					"sid": 680404529113095,
+					"parameters": {
+						"width": "228.760448",
+						"height": "69.568069"
 					}
 				}
 			],
@@ -3130,16 +3158,69 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "calm",
-					"sid": 276935043476866,
+					"sid": 193908171837893,
 					"parameters": {
-						"object": "Arainy",
-						"image-point-optional": "0"
+						"x": "1146.557432",
+						"y": "494.691238"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "calm",
+					"sid": 543173041296667,
+					"parameters": {
+						"width": "228.760448",
+						"height": "69.568069"
 					}
 				}
 			],
 			"sid": 864301486402117
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "calm",
+					"sid": 749197273052749,
+					"parameters": {
+						"object": "Asnowy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "calm",
+					"sid": 913412134642399,
+					"parameters": {
+						"x": "1573.348447",
+						"y": "494.252267"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "calm",
+					"sid": 984921500696184,
+					"parameters": {
+						"width": "228.760448",
+						"height": "69.568069"
+					}
+				}
+			],
+			"sid": 695129107463501
+		},
+		{
+			"eventType": "comment",
+			"text": "",
+			"background-color": [
+				1,
+				0.23921568627450981,
+				0.23921568627450981,
+				1
+			]
 		},
 		{
 			"eventType": "block",
@@ -3155,12 +3236,21 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "rainy",
-					"sid": 130018188956456,
+					"sid": 800147447040945,
 					"parameters": {
-						"object": "Acalm",
-						"image-point-optional": "0"
+						"x": "309.878616",
+						"y": "499.522963"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "rainy",
+					"sid": 147911503601774,
+					"parameters": {
+						"width": "204.00877",
+						"height": "62.786817"
 					}
 				}
 			],
@@ -3180,12 +3270,21 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "rainy",
-					"sid": 523770085806482,
+					"sid": 133719377506337,
 					"parameters": {
-						"object": "Awindy",
-						"image-point-optional": "0"
+						"x": "749.55874",
+						"y": "497.602965"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "rainy",
+					"sid": 960429228861039,
+					"parameters": {
+						"width": "204.00877",
+						"height": "62.786817"
 					}
 				}
 			],
@@ -3205,16 +3304,69 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "rainy",
-					"sid": 286358785560191,
+					"sid": 396821591103354,
 					"parameters": {
-						"object": "Arainy",
-						"image-point-optional": "0"
+						"x": "1147.958693",
+						"y": "499.522963"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "rainy",
+					"sid": 843657152794178,
+					"parameters": {
+						"width": "204.00877",
+						"height": "62.786817"
 					}
 				}
 			],
 			"sid": 337224730514723
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "rainy",
+					"sid": 935051556516429,
+					"parameters": {
+						"object": "Asnowy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "rainy",
+					"sid": 512445125860377,
+					"parameters": {
+						"x": "1573.505776",
+						"y": "498.429418"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "rainy",
+					"sid": 700680453226414,
+					"parameters": {
+						"width": "204.00877",
+						"height": "62.786817"
+					}
+				}
+			],
+			"sid": 658104903037874
+		},
+		{
+			"eventType": "comment",
+			"text": "",
+			"background-color": [
+				1,
+				0.23921568627450981,
+				0.23921568627450981,
+				1
+			]
 		},
 		{
 			"eventType": "block",
@@ -3230,12 +3382,21 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "windy",
-					"sid": 397840385584859,
+					"sid": 900850958358270,
 					"parameters": {
-						"object": "Acalm",
-						"image-point-optional": "0"
+						"x": "313.381109",
+						"y": "500"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "windy",
+					"sid": 167134675615961,
+					"parameters": {
+						"width": "210.352087",
+						"height": "64.540783"
 					}
 				}
 			],
@@ -3255,12 +3416,21 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "windy",
-					"sid": 226049574917102,
+					"sid": 943764609166977,
 					"parameters": {
-						"object": "Awindy",
-						"image-point-optional": "0"
+						"x": "750.661877",
+						"y": "498.323765"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "windy",
+					"sid": 465238382681241,
+					"parameters": {
+						"width": "210.352087",
+						"height": "64.540783"
 					}
 				}
 			],
@@ -3280,16 +3450,69 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "windy",
-					"sid": 232385807498607,
+					"sid": 318234986881283,
 					"parameters": {
-						"object": "Arainy",
-						"image-point-optional": "0"
+						"x": "1151",
+						"y": "500"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "windy",
+					"sid": 834421630262735,
+					"parameters": {
+						"width": "210.352087",
+						"height": "64.540783"
 					}
 				}
 			],
 			"sid": 183151386909635
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "windy",
+					"sid": 212811306951607,
+					"parameters": {
+						"object": "Asnowy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "windy",
+					"sid": 289611952941049,
+					"parameters": {
+						"x": "1571.964201",
+						"y": "498.584702"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "windy",
+					"sid": 440607346796642,
+					"parameters": {
+						"width": "210.352087",
+						"height": "64.540783"
+					}
+				}
+			],
+			"sid": 177261208029305
+		},
+		{
+			"eventType": "comment",
+			"text": "",
+			"background-color": [
+				1,
+				0.23921568627450981,
+				0.23921568627450981,
+				1
+			]
 		},
 		{
 			"eventType": "block",
@@ -3305,12 +3528,21 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "cloudy",
-					"sid": 501269830091393,
+					"sid": 508101075125290,
 					"parameters": {
-						"object": "Acalm",
-						"image-point-optional": "0"
+						"x": "322.853583",
+						"y": "499.95388"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "cloudy",
+					"sid": 948496885455584,
+					"parameters": {
+						"width": "180.562271",
+						"height": "57.438473"
 					}
 				}
 			],
@@ -3330,12 +3562,21 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "cloudy",
-					"sid": 912119067605246,
+					"sid": 822403454301626,
 					"parameters": {
-						"object": "Awindy",
-						"image-point-optional": "0"
+						"x": "760.716301",
+						"y": "498.972004"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "cloudy",
+					"sid": 100104247188059,
+					"parameters": {
+						"width": "180.562271",
+						"height": "57.438473"
 					}
 				}
 			],
@@ -3355,12 +3596,21 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "cloudy",
-					"sid": 507532657960541,
+					"sid": 809153787353945,
 					"parameters": {
-						"object": "Arainy",
-						"image-point-optional": "0"
+						"x": "1159.663057",
+						"y": "500.425631"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "cloudy",
+					"sid": 882351585159192,
+					"parameters": {
+						"width": "180.562271",
+						"height": "57.438473"
 					}
 				}
 			],
@@ -3380,16 +3630,35 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "cloudy",
-					"sid": 332851945966351,
+					"sid": 174401056617292,
 					"parameters": {
-						"object": "Asnowy",
-						"image-point-optional": "0"
+						"x": "1586.332121",
+						"y": "500"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "cloudy",
+					"sid": 822040859753086,
+					"parameters": {
+						"width": "180.562271",
+						"height": "57.438473"
 					}
 				}
 			],
 			"sid": 199021028812980
+		},
+		{
+			"eventType": "comment",
+			"text": "",
+			"background-color": [
+				1,
+				0.23921568627450981,
+				0.23921568627450981,
+				1
+			]
 		},
 		{
 			"eventType": "block",
@@ -3405,12 +3674,21 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "snowy",
-					"sid": 215954548502574,
+					"sid": 568389031441814,
 					"parameters": {
-						"object": "Acalm",
-						"image-point-optional": "0"
+						"x": "318.173105",
+						"y": "505.022037"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "snowy",
+					"sid": 527458662134740,
+					"parameters": {
+						"width": "185.647292",
+						"height": "55.693573"
 					}
 				}
 			],
@@ -3430,12 +3708,21 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "snowy",
-					"sid": 970098837285618,
+					"sid": 239985334038922,
 					"parameters": {
-						"object": "Awindy",
-						"image-point-optional": "0"
+						"x": "757.408412",
+						"y": "503.081671"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "snowy",
+					"sid": 308077580110147,
+					"parameters": {
+						"width": "185.647292",
+						"height": "55.693573"
 					}
 				}
 			],
@@ -3455,12 +3742,21 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "snowy",
-					"sid": 405050452469800,
+					"sid": 776777024426640,
 					"parameters": {
-						"object": "Arainy",
-						"image-point-optional": "0"
+						"x": "1157.52576",
+						"y": "505.077359"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "snowy",
+					"sid": 604499514083519,
+					"parameters": {
+						"width": "185.647292",
+						"height": "55.693573"
 					}
 				}
 			],
@@ -3480,16 +3776,35 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "snowy",
-					"sid": 790161261053990,
+					"sid": 915681765941627,
 					"parameters": {
-						"object": "Asnowy",
-						"image-point-optional": "0"
+						"x": "1580.892776",
+						"y": "504.652992"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "snowy",
+					"sid": 633715557651573,
+					"parameters": {
+						"width": "185.647292",
+						"height": "55.693573"
 					}
 				}
 			],
 			"sid": 615328292967328
+		},
+		{
+			"eventType": "comment",
+			"text": "",
+			"background-color": [
+				1,
+				0.23921568627450981,
+				0.23921568627450981,
+				1
+			]
 		},
 		{
 			"eventType": "block",

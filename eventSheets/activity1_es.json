@@ -3,7 +3,7 @@
 	"events": [
 		{
 			"eventType": "include",
-			"includeSheet": "LayoutSetUp"
+			"includeSheet": "LayoutSetUp_ES"
 		},
 		{
 			"eventType": "variable",
@@ -2905,10 +2905,10 @@
 				{
 					"id": "set-size",
 					"objectClass": "calm",
-					"sid": 347651867754848,
+					"sid": 852727700052192,
 					"parameters": {
-						"width": "266",
-						"height": "80"
+						"width": "270",
+						"height": "83"
 					}
 				}
 			],
@@ -2939,7 +2939,17 @@
 				{
 					"id": "set-size",
 					"objectClass": "calm",
+					"sid": 448320474820128,
+					"parameters": {
+						"width": "270",
+						"height": "83"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "calm",
 					"sid": 541895131233673,
+					"disabled": true,
 					"parameters": {
 						"width": "245",
 						"height": "69"
@@ -2973,7 +2983,17 @@
 				{
 					"id": "set-size",
 					"objectClass": "calm",
+					"sid": 151681622223705,
+					"parameters": {
+						"width": "270",
+						"height": "83"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "calm",
 					"sid": 664762075321760,
+					"disabled": true,
 					"parameters": {
 						"width": "235",
 						"height": "70"
@@ -3007,10 +3027,10 @@
 				{
 					"id": "set-size",
 					"objectClass": "rainy",
-					"sid": 634725541037733,
+					"sid": 757415995551302,
 					"parameters": {
-						"width": "266",
-						"height": "80"
+						"width": "251",
+						"height": "77"
 					}
 				}
 			],
@@ -3042,9 +3062,19 @@
 					"id": "set-size",
 					"objectClass": "rainy",
 					"sid": 550613182922774,
+					"disabled": true,
 					"parameters": {
 						"width": "245",
 						"height": "69"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "rainy",
+					"sid": 942741619113770,
+					"parameters": {
+						"width": "240",
+						"height": "74"
 					}
 				}
 			],
@@ -3076,9 +3106,19 @@
 					"id": "set-size",
 					"objectClass": "rainy",
 					"sid": 229325471307889,
+					"disabled": true,
 					"parameters": {
 						"width": "235",
 						"height": "70"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "rainy",
+					"sid": 167381901054526,
+					"parameters": {
+						"width": "240",
+						"height": "74"
 					}
 				}
 			],
@@ -3109,10 +3149,10 @@
 				{
 					"id": "set-size",
 					"objectClass": "windy",
-					"sid": 818343261860547,
+					"sid": 764705575445913,
 					"parameters": {
-						"width": "256.333037",
-						"height": "70.120962"
+						"width": "264",
+						"height": "78"
 					}
 				}
 			],
@@ -3144,9 +3184,19 @@
 					"id": "set-size",
 					"objectClass": "windy",
 					"sid": 132583862844537,
+					"disabled": true,
 					"parameters": {
 						"width": "245",
 						"height": "69"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "windy",
+					"sid": 387149014253884,
+					"parameters": {
+						"width": "264",
+						"height": "78"
 					}
 				}
 			],
@@ -3178,9 +3228,19 @@
 					"id": "set-size",
 					"objectClass": "windy",
 					"sid": 360667003837398,
+					"disabled": true,
 					"parameters": {
 						"width": "235",
 						"height": "70"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "windy",
+					"sid": 316573694782187,
+					"parameters": {
+						"width": "264",
+						"height": "78"
 					}
 				}
 			],
@@ -3211,10 +3271,10 @@
 				{
 					"id": "set-size",
 					"objectClass": "cloudy",
-					"sid": 977333032897337,
+					"sid": 801827636506502,
 					"parameters": {
-						"width": "266",
-						"height": "80"
+						"width": "294",
+						"height": "94"
 					}
 				}
 			],
@@ -3246,9 +3306,19 @@
 					"id": "set-size",
 					"objectClass": "cloudy",
 					"sid": 734555849624564,
+					"disabled": true,
 					"parameters": {
 						"width": "245",
 						"height": "69"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "cloudy",
+					"sid": 973065736669853,
+					"parameters": {
+						"width": "294",
+						"height": "94"
 					}
 				}
 			],
@@ -3280,9 +3350,19 @@
 					"id": "set-size",
 					"objectClass": "cloudy",
 					"sid": 606398307873535,
+					"disabled": true,
 					"parameters": {
 						"width": "235",
 						"height": "70"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "cloudy",
+					"sid": 188536234416816,
+					"parameters": {
+						"width": "294",
+						"height": "94"
 					}
 				}
 			],

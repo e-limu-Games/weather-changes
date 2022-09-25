@@ -1,0 +1,14 @@
+{
+	"name": "feedback_iframe",
+	"plugin-id": "iframe",
+	"sid": 333794208694627,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 479519679017178
+		}
+	]
+}

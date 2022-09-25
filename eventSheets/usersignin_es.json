@@ -17,7 +17,7 @@
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "LayoutSetUp"
+			"includeSheet": "LayoutSetUp_ES"
 		},
 		{
 			"eventType": "block",
@@ -33,6 +33,32 @@
 					"id": "sign-out",
 					"objectClass": "FirebaseAuthBasic",
 					"sid": 269865369508243
+				},
+				{
+					"id": "set-y",
+					"objectClass": "logo",
+					"sid": 602284263388825,
+					"parameters": {
+						"y": "-100"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "MainButtons",
+					"sid": 687755493062715,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "login",
+					"sid": 784263783320369,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
 				},
 				{
 					"id": "set-css-style",
@@ -61,15 +87,6 @@
 					}
 				},
 				{
-					"id": "set-size",
-					"objectClass": "login",
-					"sid": 855277789178056,
-					"parameters": {
-						"width": "0",
-						"height": "0"
-					}
-				},
-				{
 					"id": "set-visible",
 					"objectClass": "submit",
 					"sid": 581238487401495,
@@ -87,14 +104,36 @@
 				},
 				{
 					"id": "tween-one-property",
-					"objectClass": "homebtn",
-					"sid": 811069656287371,
+					"objectClass": "fader",
+					"sid": 152807219462426,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"\"",
-						"property": "offsetHeight",
-						"end-value": "142",
+						"property": "offsetOpacity",
+						"end-value": "0",
 						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 595430449681870
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "logo",
+					"sid": 476746049414195,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "position",
+						"end-x": "960",
+						"end-y": "88",
+						"time": "0.75",
 						"ease": "easeinoutbounce",
 						"destroy-on-complete": "no",
 						"loop": "no",
@@ -102,36 +141,31 @@
 					}
 				},
 				{
-					"id": "tween-one-property",
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 558781689248726
+				},
+				{
+					"id": "tween-two-properties",
 					"objectClass": "homebtn",
-					"sid": 329308456129787,
+					"sid": 927172314968071,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"\"",
-						"property": "offsetWidth",
-						"end-value": "200",
-						"time": "1",
-						"ease": "easeinoutquad",
+						"property": "size",
+						"end-x": "200",
+						"end-y": "140",
+						"time": "0.5",
+						"ease": "easeinoutbounce",
 						"destroy-on-complete": "no",
 						"loop": "no",
 						"ping-pong": "no"
 					}
 				},
 				{
-					"id": "tween-one-property",
-					"objectClass": "fader",
-					"sid": 510844914098834,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetOpacity",
-						"end-value": "0",
-						"time": "4",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 740371954282463
 				},
 				{
 					"id": "tween-two-properties",
@@ -2620,9 +2654,23 @@
 					"objectClass": "System",
 					"sid": 772500833883685,
 					"parameters": {
-						"variable": "ShowLRHomeLayer",
+						"variable": "Logged",
 						"value": "true"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 708037486842981,
+					"parameters": {
+						"variable": "UserId",
+						"value": "FirebaseAuthBasic.email"
+					}
+				},
+				{
+					"type": "script",
+					"script": "alert(runtime.globalVars.UserId);",
+					"disabled": true
 				},
 				{
 					"id": "go-to-layout",

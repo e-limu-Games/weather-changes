@@ -27,11 +27,11 @@
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "LayoutSetUp"
+			"includeSheet": "LayoutSetUp_ES"
 		},
 		{
 			"eventType": "variable",
-			"name": "ShowLRHomeLayer",
+			"name": "Logged",
 			"type": "boolean",
 			"initialValue": "false",
 			"comment": "Boolean variable holding the true of false value if a user has signed in or not. Use for conditonal rendering on the Home Layout",
@@ -2434,7 +2434,7 @@
 					"objectClass": "System",
 					"sid": 143828636253722,
 					"parameters": {
-						"variable": "ShowLRHomeLayer"
+						"variable": "Logged"
 					}
 				}
 			],
@@ -2756,7 +2756,7 @@
 					"objectClass": "System",
 					"sid": 123007201690884,
 					"parameters": {
-						"variable": "ShowLRHomeLayer"
+						"variable": "Logged"
 					},
 					"isInverted": true
 				},
@@ -2964,7 +2964,7 @@
 					"objectClass": "System",
 					"sid": 958261221298501,
 					"parameters": {
-						"variable": "ShowLRHomeLayer",
+						"variable": "Logged",
 						"value": "true"
 					}
 				}

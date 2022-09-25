@@ -1,0 +1,555 @@
+{
+	"name": "InAppFeedback_ES",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "AppId",
+			"type": "string",
+			"initialValue": "-Muk25oviA-FA_2q9FDm",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 270258945964828
+		},
+		{
+			"eventType": "variable",
+			"name": "SurveyUrl",
+			"type": "string",
+			"initialValue": "https://iridescent-syrniki-fd6560.netlify.app",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 989779005078392
+		},
+		{
+			"eventType": "variable",
+			"name": "FeedbackAction",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 884980485390336
+		},
+		{
+			"eventType": "variable",
+			"name": "UserLastFeedbackId",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 723960394889343
+		},
+		{
+			"eventType": "variable",
+			"name": "FeedbackId",
+			"type": "number",
+			"initialValue": "-1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 248433864460096
+		},
+		{
+			"eventType": "variable",
+			"name": "InFeedback",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 562534645780936
+		},
+		{
+			"eventType": "variable",
+			"name": "UserId",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 839586244725773
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 696089900987960
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "window.onmessage = function(event) {\n\truntime.globalVars.FeedbackAction = event.data;\n}"
+				},
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 476036173108946,
+					"parameters": {
+						"key": "\"tm_feedbackId_\"&FirebaseAuthBasic.userID"
+					}
+				}
+			],
+			"sid": 293300407497922
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 121178013285537,
+					"parameters": {
+						"object": "FeedbackBtn"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 856838560831890,
+					"parameters": {
+						"seconds": "0.15"
+					}
+				},
+				{
+					"type": "script",
+					"script": "alert(\"Feedback!\");"
+				},
+				{
+					"callFunction": "Popup_Survey",
+					"sid": 891984037126714
+				}
+			],
+			"sid": 907825616024808
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 906039462393662,
+					"parameters": {
+						"variable": "FeedbackAction",
+						"comparison": 0,
+						"value": "\"_CLOSE_\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "CloseFeedbackIframe",
+					"sid": 713960372826969
+				}
+			],
+			"sid": 466669513072586
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 514341828864697,
+					"parameters": {
+						"first-value": "LayoutName",
+						"comparison": 0,
+						"second-value": "\"ActivityEnd\""
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 918394054141082,
+					"parameters": {
+						"first-value": "UserLastFeedbackId",
+						"comparison": 1,
+						"second-value": "FeedbackId"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 635111444962202
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Popup_Survey",
+					"sid": 331647984528509
+				}
+			],
+			"sid": 763838928437668
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 354010655876590,
+					"parameters": {
+						"first-value": "LayoutName",
+						"comparison": 0,
+						"second-value": "\"ActivityEnd\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 101551787249233,
+					"parameters": {
+						"variable": "UserLastFeedbackId",
+						"value": "int(LocalStorage.ItemValue)"
+					}
+				}
+			],
+			"sid": 554377903772490,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 914273607285312,
+							"parameters": {
+								"variable": "FeedbackAction",
+								"comparison": 0,
+								"value": "\"_DONE_\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "HasResponded",
+							"sid": 896432433515604
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 459107078228742
+						},
+						{
+							"callFunction": "CloseFeedbackIframe",
+							"sid": 833851410595358
+						}
+					],
+					"sid": 833281510427039
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 853551428422156,
+							"parameters": {
+								"key": "\"tm_feedbackId_\"&FirebaseAuthBasic.userID"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 495087175455523,
+							"parameters": {
+								"variable": "UserLastFeedbackId",
+								"value": "int(LocalStorage.ItemValue)"
+							}
+						}
+					],
+					"sid": 435402265183363
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 946957081308627,
+					"parameters": {
+						"first-value": "LayoutName",
+						"comparison": 0,
+						"second-value": "\"ActivityEnd\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 309620825743725,
+					"parameters": {
+						"variable": "UserLastFeedbackId",
+						"value": "int(LocalStorage.ItemValue)"
+					}
+				}
+			],
+			"sid": 495591883830201,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 958521885411924,
+							"parameters": {
+								"variable": "FeedbackAction",
+								"comparison": 0,
+								"value": "\"_DONE_\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "CloseFeedbackIframe",
+							"sid": 646164662025606
+						}
+					],
+					"sid": 120701129430879
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 789080321751038,
+					"parameters": {
+						"variable": "Logged"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 766500767555305,
+					"parameters": {
+						"variable": "InFeedback"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "FeedbackBtn",
+					"sid": 894108163460690,
+					"parameters": {
+						"x": "1796",
+						"y": "89"
+					}
+				}
+			],
+			"sid": 492376994038397
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 221647811834152,
+					"parameters": {
+						"variable": "Logged"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 430091235297750,
+					"parameters": {
+						"variable": "InFeedback"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "FeedbackBtn",
+					"sid": 123920106919621,
+					"parameters": {
+						"x": "-500",
+						"y": "-500"
+					}
+				}
+			],
+			"sid": 843465199150766
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 997977945714467,
+					"parameters": {
+						"variable": "Logged"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "FeedbackBtn",
+					"sid": 847472829258836,
+					"parameters": {
+						"x": "-500",
+						"y": "-500"
+					}
+				}
+			],
+			"sid": 709346612376296
+		},
+		{
+			"functionName": "Popup_Survey",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 527648954074870,
+					"parameters": {
+						"variable": "InFeedback",
+						"value": "true"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "FeedbackBtn",
+					"sid": 381663223097759,
+					"parameters": {
+						"object": "feedback_iframe",
+						"layer": "\"loading\"",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "feedback_iframe",
+					"sid": 637918110965224,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "LayoutWidth",
+						"end-y": "LayoutHeight",
+						"time": "0.25",
+						"ease": "easeinoutelastic",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "feedback_iframe",
+					"sid": 271896148392348,
+					"parameters": {
+						"x": "0",
+						"y": "0"
+					}
+				},
+				{
+					"id": "navigate-url",
+					"objectClass": "feedback_iframe",
+					"sid": 188491900711942,
+					"parameters": {
+						"url": "SurveyUrl&\"?appId=\"&AppId&\"&userId=\"&UserId"
+					}
+				}
+			],
+			"sid": 874710170345378
+		},
+		{
+			"functionName": "HasResponded",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 650883023818385,
+					"parameters": {
+						"key": "\"tm_feedbackId_\"&FirebaseAuthBasic.userID",
+						"value": "FeedbackId"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 762156076848931
+				}
+			],
+			"sid": 606209969046104
+		},
+		{
+			"functionName": "CloseFeedbackIframe",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "feedback_iframe",
+					"sid": 460262082472818
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 975804519485988,
+					"parameters": {
+						"variable": "FeedbackAction",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 428511725646502,
+					"parameters": {
+						"variable": "InFeedback",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 804306726059013
+		}
+	],
+	"sid": 564162272047226
+}

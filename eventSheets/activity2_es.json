@@ -3,7 +3,7 @@
 	"events": [
 		{
 			"eventType": "include",
-			"includeSheet": "LayoutSetUp"
+			"includeSheet": "LayoutSetUp_ES"
 		},
 		{
 			"eventType": "block",
@@ -2795,29 +2795,48 @@
 			"sid": 354072879879455
 		},
 		{
+			"eventType": "comment",
+			"text": "",
+			"background-color": [
+				1,
+				0.23921568627450981,
+				0.23921568627450981,
+				1
+			]
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
 					"id": "is-overlapping-another-object",
 					"objectClass": "calm",
-					"sid": 331929262788650,
+					"sid": 176878774111939,
 					"parameters": {
-						"object": "Acalm"
+						"object": "Arainy"
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "calm",
-					"sid": 388228597108790,
+					"sid": 892237180479634,
 					"parameters": {
-						"object": "Acalm",
-						"image-point-optional": "0"
+						"x": "637.972668",
+						"y": "419.437655"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "calm",
+					"sid": 879248830006076,
+					"parameters": {
+						"width": "261.802201",
+						"height": "85.266048"
 					}
 				}
 			],
-			"sid": 787400734707028
+			"sid": 571155378127706
 		},
 		{
 			"eventType": "block",
@@ -2833,24 +2852,43 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "calm",
-					"sid": 564207047603611,
+					"sid": 631075439267836,
 					"parameters": {
-						"object": "Awindy",
-						"image-point-optional": "0"
+						"x": "1293.510772",
+						"y": "423.184068"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "calm",
+					"sid": 102211606945637,
+					"parameters": {
+						"width": "268.166236",
+						"height": "77.992881"
 					}
 				}
 			],
 			"sid": 703206223667052
 		},
 		{
+			"eventType": "comment",
+			"text": "",
+			"background-color": [
+				1,
+				0.23921568627450981,
+				0.23921568627450981,
+				1
+			]
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
 					"id": "is-overlapping-another-object",
-					"objectClass": "calm",
-					"sid": 858433187110759,
+					"objectClass": "rainy",
+					"sid": 462840651108620,
 					"parameters": {
 						"object": "Arainy"
 					}
@@ -2858,41 +2896,25 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
-					"objectClass": "calm",
-					"sid": 341153751932186,
-					"parameters": {
-						"object": "Arainy",
-						"image-point-optional": "0"
-					}
-				}
-			],
-			"sid": 895617800729639
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
+					"id": "set-position",
 					"objectClass": "rainy",
-					"sid": 814746551567851,
+					"sid": 763033999306968,
 					"parameters": {
-						"object": "Acalm"
+						"x": "634.248296",
+						"y": "423.094401"
 					}
-				}
-			],
-			"actions": [
+				},
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-size",
 					"objectClass": "rainy",
-					"sid": 704661812979232,
+					"sid": 206019349653505,
 					"parameters": {
-						"object": "Acalm",
-						"image-point-optional": "0"
+						"width": "243.845621",
+						"height": " 70.670539"
 					}
 				}
 			],
-			"sid": 724122330323994
+			"sid": 604457083306520
 		},
 		{
 			"eventType": "block",
@@ -2908,24 +2930,43 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "rainy",
-					"sid": 710347504867565,
+					"sid": 812302838074398,
 					"parameters": {
-						"object": "Awindy",
-						"image-point-optional": "0"
+						"x": "1293.2804",
+						"y": "431.540835"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "rainy",
+					"sid": 760199959559534,
+					"parameters": {
+						"width": "245.638642",
+						"height": "74"
 					}
 				}
 			],
 			"sid": 245901174562174
 		},
 		{
+			"eventType": "comment",
+			"text": "",
+			"background-color": [
+				1,
+				0.23921568627450981,
+				0.23921568627450981,
+				1
+			]
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
 					"id": "is-overlapping-another-object",
-					"objectClass": "rainy",
-					"sid": 274681765734549,
+					"objectClass": "windy",
+					"sid": 391038916306573,
 					"parameters": {
 						"object": "Arainy"
 					}
@@ -2933,41 +2974,25 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
-					"objectClass": "rainy",
-					"sid": 844839266714332,
-					"parameters": {
-						"object": "Arainy",
-						"image-point-optional": "0"
-					}
-				}
-			],
-			"sid": 806705599749950
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
+					"id": "set-position",
 					"objectClass": "windy",
-					"sid": 998682649522888,
+					"sid": 485070556315845,
 					"parameters": {
-						"object": "Acalm"
+						"x": "638.82305",
+						"y": "424.509169"
 					}
-				}
-			],
-			"actions": [
+				},
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-size",
 					"objectClass": "windy",
-					"sid": 375257561137577,
+					"sid": 341891010148082,
 					"parameters": {
-						"object": "Acalm",
-						"image-point-optional": "0"
+						"width": "237.310492",
+						"height": "71.607937"
 					}
 				}
 			],
-			"sid": 821969524807040
+			"sid": 140344544432736
 		},
 		{
 			"eventType": "block",
@@ -2983,24 +3008,43 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "windy",
-					"sid": 206150031584283,
+					"sid": 489779753052666,
 					"parameters": {
-						"object": "Awindy",
-						"image-point-optional": "0"
+						"x": "1296.389852",
+						"y": "430.091371"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "windy",
+					"sid": 113856240186085,
+					"parameters": {
+						"width": "247.644701",
+						"height": "71.607937"
 					}
 				}
 			],
 			"sid": 298884002802773
 		},
 		{
+			"eventType": "comment",
+			"text": "",
+			"background-color": [
+				1,
+				0.23921568627450981,
+				0.23921568627450981,
+				1
+			]
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
 					"id": "is-overlapping-another-object",
-					"objectClass": "windy",
-					"sid": 767616842371082,
+					"objectClass": "cloudy",
+					"sid": 795027302495946,
 					"parameters": {
 						"object": "Arainy"
 					}
@@ -3008,41 +3052,25 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
-					"objectClass": "windy",
-					"sid": 943659026337135,
-					"parameters": {
-						"object": "Arainy",
-						"image-point-optional": "0"
-					}
-				}
-			],
-			"sid": 953447154114723
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
+					"id": "set-position",
 					"objectClass": "cloudy",
-					"sid": 748922708286652,
+					"sid": 831709068228591,
 					"parameters": {
-						"object": "Acalm"
+						"x": "654.728359",
+						"y": "424.454256"
 					}
-				}
-			],
-			"actions": [
+				},
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-size",
 					"objectClass": "cloudy",
-					"sid": 971565461970258,
+					"sid": 884851479551549,
 					"parameters": {
-						"object": "Acalm",
-						"image-point-optional": "0"
+						"width": "277.880036",
+						"height": "87.665768"
 					}
 				}
 			],
-			"sid": 590271809333281
+			"sid": 620289243409773
 		},
 		{
 			"eventType": "block",
@@ -3058,41 +3086,35 @@
 			],
 			"actions": [
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-position",
 					"objectClass": "cloudy",
-					"sid": 521781735898205,
+					"sid": 128662759213601,
 					"parameters": {
-						"object": "Awindy",
-						"image-point-optional": "0"
+						"x": "1308",
+						"y": "430.064526"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "cloudy",
+					"sid": 649054733055330,
+					"parameters": {
+						"width": "277.880036",
+						"height": "80.179146"
 					}
 				}
 			],
 			"sid": 380120512649297
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "cloudy",
-					"sid": 975761725863303,
-					"parameters": {
-						"object": "Arainy"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position-to-another-object",
-					"objectClass": "cloudy",
-					"sid": 566062458084011,
-					"parameters": {
-						"object": "Arainy",
-						"image-point-optional": "0"
-					}
-				}
-			],
-			"sid": 550382746825914
+			"eventType": "comment",
+			"text": "",
+			"background-color": [
+				1,
+				0.23921568627450981,
+				0.23921568627450981,
+				1
+			]
 		},
 		{
 			"eventType": "block",

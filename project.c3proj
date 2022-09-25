@@ -120,6 +120,14 @@
 		},
 		{
 			"type": "plugin",
+			"id": "iframe",
+			"name": "iframe",
+			"author": "Scirra",
+			"version": "r308.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "TextBox",
 			"name": "Text input",
 			"author": "Scirra",
@@ -138,14 +146,6 @@
 			"type": "plugin",
 			"id": "Particles",
 			"name": "Particles",
-			"author": "Scirra",
-			"version": "r308.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "iframe",
-			"name": "iframe",
 			"author": "Scirra",
 			"version": "r308.2",
 			"bundled": false
@@ -280,7 +280,6 @@
 			"Asnowy",
 			"snowy",
 			"ActivityIntro2",
-			"iframe",
 			"showanswer",
 			"Sprite8",
 			"Sprite9",
@@ -308,8 +307,7 @@
 			"FileChooser",
 			"GetStartedBtn",
 			"Intro",
-			"ProfileBtn",
-			"FeedbackBtn"
+			"ProfileBtn"
 		],
 		"subfolders": [
 			{
@@ -405,6 +403,14 @@
 				],
 				"subfolders": [],
 				"name": "Symbol"
+			},
+			{
+				"items": [
+					"feedback_iframe",
+					"FeedbackBtn"
+				],
+				"subfolders": [],
+				"name": "InAppFeedback"
 			}
 		]
 	},
@@ -460,7 +466,8 @@
 			"ActivityEnd_ES",
 			"VideoTwo_ES",
 			"Completed_ES",
-			"LayoutSetUp"
+			"LayoutSetUp_ES",
+			"InAppFeedback_ES"
 		],
 		"subfolders": []
 	},

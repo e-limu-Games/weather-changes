@@ -1,5 +1,5 @@
 {
-	"name": "LayoutSetUp",
+	"name": "LayoutSetUp_ES",
 	"events": [
 		{
 			"eventType": "block",
@@ -50,7 +50,24 @@
 				{
 					"id": "every-tick",
 					"objectClass": "System",
-					"sid": 559142914464110
+					"sid": 214000835231477
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 387001507521983,
+					"disabled": true
+				},
+				{
+					"id": "for",
+					"objectClass": "System",
+					"sid": 573386229440827,
+					"disabled": true,
+					"parameters": {
+						"name": "\"\"",
+						"start-index": "1",
+						"end-index": "10"
+					}
 				}
 			],
 			"actions": [

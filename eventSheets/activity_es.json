@@ -3,7 +3,7 @@
 	"events": [
 		{
 			"eventType": "include",
-			"includeSheet": "LayoutSetUp"
+			"includeSheet": "LayoutSetUp_ES"
 		},
 		{
 			"eventType": "block",
@@ -44,8 +44,8 @@
 				},
 				{
 					"id": "set-size",
-					"objectClass": "homebtn",
-					"sid": 184128842396678,
+					"objectClass": "MainButtons",
+					"sid": 470368733841740,
 					"parameters": {
 						"width": "0",
 						"height": "0"
@@ -190,6 +190,28 @@
 						"end-y": "788",
 						"time": "0.7",
 						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 774022922441824
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "FeedbackBtn",
+					"sid": 193640889188926,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "200",
+						"end-y": "142",
+						"time": "0.75",
+						"ease": "easeinoutbounce",
 						"destroy-on-complete": "no",
 						"loop": "no",
 						"ping-pong": "no"

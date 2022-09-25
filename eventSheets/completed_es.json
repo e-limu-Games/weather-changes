@@ -3,7 +3,11 @@
 	"events": [
 		{
 			"eventType": "include",
-			"includeSheet": "LayoutSetUp"
+			"includeSheet": "LayoutSetUp_ES"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "InAppFeedback_ES"
 		},
 		{
 			"eventType": "block",
