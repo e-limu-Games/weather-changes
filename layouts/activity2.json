@@ -166,9 +166,9 @@
 					},
 					"world": {
 						"x": 960,
-						"y": 150,
-						"width": 480,
-						"height": 171,
+						"y": 152,
+						"width": 370,
+						"height": 132,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -237,8 +237,8 @@
 					"world": {
 						"x": 960,
 						"y": 300,
-						"width": 850,
-						"height": 129,
+						"width": 686,
+						"height": 104,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1170,7 +1170,7 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
-						"initial-frame": 4,
+						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -1190,10 +1190,10 @@
 						}
 					},
 					"world": {
-						"x": 634.2482964867762,
-						"y": 423.09440112887444,
-						"width": 231.5225974455599,
-						"height": 74.03934701860922,
+						"x": 652.0843566448268,
+						"y": 833.0035678013329,
+						"width": 179.61045905550557,
+						"height": 66.34139502623844,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1272,10 +1272,10 @@
 						}
 					},
 					"world": {
-						"x": 877,
-						"y": 912,
-						"width": 202.8129175581535,
-						"height": 73.4975508427628,
+						"x": 821.0945364137071,
+						"y": 927.6402060132957,
+						"width": 181.51554623189682,
+						"height": 70.16987060931793,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1313,10 +1313,10 @@
 						}
 					},
 					"world": {
-						"x": 1083.4733771764377,
-						"y": 915.8130218952382,
-						"width": 221.67668163720225,
-						"height": 80.03188541166391,
+						"x": 1051.5275296411005,
+						"y": 931.7859875537165,
+						"width": 173.75761709852952,
+						"height": 64.05887786237612,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1608,6 +1608,75 @@
 				}
 			],
 			"sid": 985250955449824,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Fader",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "fader",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 232,
+					"instanceVariables": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 963.5,
+						"y": 539,
+						"width": 2008,
+						"height": 1146,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 429317655509323,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,

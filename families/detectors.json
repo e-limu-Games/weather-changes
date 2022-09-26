@@ -1,0 +1,14 @@
+{
+	"name": "Detectors",
+	"plugin-id": "Sprite",
+	"sid": 544792814106100,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"a",
+		"b",
+		"c",
+		"d"
+	]
+}

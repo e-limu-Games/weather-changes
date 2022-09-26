@@ -419,7 +419,9 @@
 	"families": {
 		"items": [
 			"LoadingBar",
-			"MainButtons"
+			"MainButtons",
+			"Detectors",
+			"Draggables"
 		],
 		"subfolders": []
 	},

@@ -1,0 +1,21 @@
+{
+	"name": "Draggables",
+	"plugin-id": "Sprite",
+	"sid": 407853264570509,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 224690384977599
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"rainy",
+		"calm",
+		"cloudy",
+		"windy",
+		"snowy"
+	]
+}

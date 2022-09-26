@@ -20,117 +20,111 @@
 					"text": "",
 					"background-color": [
 						1,
-						0,
-						0,
+						0.4,
+						0.4,
 						1
 					]
-				},
-				{
-					"id": "set-size",
-					"objectClass": "continue",
-					"sid": 973892811180056,
-					"parameters": {
-						"width": "0",
-						"height": "0"
-					}
-				},
-				{
-					"id": "set-size",
-					"objectClass": "tryagain",
-					"sid": 793457389813969,
-					"parameters": {
-						"width": "0",
-						"height": "0"
-					}
-				},
-				{
-					"id": "set-opacity",
-					"objectClass": "a",
-					"sid": 774573052374351,
-					"parameters": {
-						"opacity": "0"
-					}
-				},
-				{
-					"id": "set-opacity",
-					"objectClass": "b",
-					"sid": 222658585466388,
-					"parameters": {
-						"opacity": "0"
-					}
-				},
-				{
-					"id": "set-opacity",
-					"objectClass": "c",
-					"sid": 516679150143123,
-					"parameters": {
-						"opacity": "0"
-					}
-				},
-				{
-					"id": "set-opacity",
-					"objectClass": "d",
-					"sid": 502723636061867,
-					"parameters": {
-						"opacity": "0"
-					}
 				},
 				{
 					"id": "set-y",
 					"objectClass": "CloudBackground",
-					"sid": 472680826278038,
+					"sid": 811369984151353,
 					"parameters": {
-						"y": "750"
+						"y": "780"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "MainButtons",
+					"sid": 280705801676086,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Detectors",
+					"sid": 831015465866416,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "bars",
+					"sid": 694196470245650,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "instruction",
+					"sid": 440421359825627,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "q1",
+					"sid": 527854076845857,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "logo",
+					"sid": 617247045361313,
+					"parameters": {
+						"y": "-100"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Draggables",
+					"sid": 309075603574487,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 451768178591697,
+					"parameters": {
+						"seconds": "0.15"
 					}
 				},
 				{
 					"id": "tween-one-property",
-					"objectClass": "logo",
-					"sid": 777478968252276,
-					"disabled": true,
+					"objectClass": "fader",
+					"sid": 615417769420104,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"\"",
-						"property": "offsetY",
-						"end-value": "230",
+						"property": "offsetOpacity",
+						"end-value": "0",
 						"time": "1",
-						"ease": "easeinoutback",
+						"ease": "default",
 						"destroy-on-complete": "no",
 						"loop": "no",
 						"ping-pong": "no"
 					}
 				},
 				{
-					"id": "tween-two-properties",
-					"objectClass": "next",
-					"sid": 465852475707151,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"next\"",
-						"property": "size",
-						"end-x": "200",
-						"end-y": "140",
-						"time": "1",
-						"ease": "easeinoutback",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"type": "comment",
-					"text": "",
-					"background-color": [
-						1,
-						0,
-						0,
-						1
-					]
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 992449536696660
 				},
 				{
 					"id": "tween-one-property",
 					"objectClass": "CloudBackground",
-					"sid": 991358105036171,
+					"sid": 859949763641965,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"scene1\"",
@@ -144,31 +138,20 @@
 					}
 				},
 				{
-					"id": "tween-one-property",
-					"objectClass": "fader",
-					"sid": 372870276519350,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetOpacity",
-						"end-value": "0",
-						"time": "2",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 650222827190942
 				},
 				{
 					"id": "tween-one-property",
-					"objectClass": "homebtn",
-					"sid": 169286926987893,
+					"objectClass": "logo",
+					"sid": 955799519500806,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"\"",
-						"property": "offsetHeight",
-						"end-value": "142",
-						"time": "1",
+						"property": "offsetY",
+						"end-value": "152",
+						"time": "0.5",
 						"ease": "easeinoutbounce",
 						"destroy-on-complete": "no",
 						"loop": "no",
@@ -176,68 +159,139 @@
 					}
 				},
 				{
-					"id": "tween-one-property",
-					"objectClass": "homebtn",
-					"sid": 732663538579552,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetWidth",
-						"end-value": "200",
-						"time": "1",
-						"ease": "easeinoutquad",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-one-property",
-					"objectClass": "hint",
-					"sid": 444133947166950,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetHeight",
-						"end-value": "142",
-						"time": "1",
-						"ease": "easeinoutbounce",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-one-property",
-					"objectClass": "hint",
-					"sid": 817766027446953,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetWidth",
-						"end-value": "200",
-						"time": "1",
-						"ease": "easeinoutquad",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 632672758982318
 				},
 				{
 					"id": "tween-one-property",
 					"objectClass": "bars",
-					"sid": 811759320550793,
+					"sid": 858078263094495,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"\"",
 						"property": "offsetOpacity",
 						"end-value": "100",
-						"time": "2",
+						"time": "0.5",
 						"ease": "default",
 						"destroy-on-complete": "no",
 						"loop": "no",
 						"ping-pong": "no"
 					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "instruction",
+					"sid": 368619410649734,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetOpacity",
+						"end-value": "100",
+						"time": "0.5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 565184899395774
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "homebtn",
+					"sid": 375019462546453,
+					"disabled": true,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "200",
+						"end-y": "140",
+						"time": "0.5",
+						"ease": "easeinoutbounce",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "hint",
+					"sid": 663139068556545,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "200",
+						"end-y": "140",
+						"time": "0.5",
+						"ease": "easeinoutbounce",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "next",
+					"sid": 620138119119077,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "200",
+						"end-y": "140",
+						"time": "0.5",
+						"ease": "easeinoutbounce",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 229384733097328
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "q1",
+					"sid": 952848035101439,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "1749.552",
+						"end-y": "401.256983",
+						"time": "0.5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 948062884750150
+				},
+				{
+					"callFunction": "PopOutDraggables",
+					"sid": 743158992043886
+				},
+				{
+					"type": "comment",
+					"text": "",
+					"background-color": [
+						1,
+						0.4,
+						0.4,
+						1
+					]
 				},
 				{
 					"id": "set-animation-frame",
@@ -499,91 +553,6 @@
 						"end-x": "2",
 						"end-y": "2",
 						"time": "1",
-						"ease": "easeinoutelastic",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "calm",
-					"sid": 509493476895329,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "scale",
-						"end-x": "2",
-						"end-y": "2",
-						"time": "2",
-						"ease": "easeinoutquad",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "cloudy",
-					"sid": 685399057054727,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "scale",
-						"end-x": "2",
-						"end-y": "2",
-						"time": "1.7",
-						"ease": "easeinoutquint",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "windy",
-					"sid": 951909301176989,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "scale",
-						"end-x": "2",
-						"end-y": "2",
-						"time": "1.5",
-						"ease": "easeinoutelastic",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "rainy",
-					"sid": 290640109111526,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "scale",
-						"end-x": "2",
-						"end-y": "2",
-						"time": "2.2",
-						"ease": "easeinoutelastic",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "snowy",
-					"sid": 684392720323651,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "scale",
-						"end-x": "2",
-						"end-y": "2",
-						"time": "2.2",
 						"ease": "easeinoutelastic",
 						"destroy-on-complete": "no",
 						"loop": "no",
@@ -2857,6 +2826,29 @@
 						}
 					],
 					"sid": 681089239285159
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 100131381744154,
+							"parameters": {
+								"variable": "CountAnswer",
+								"comparison": 5,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Draggables",
+							"sid": 897134867473431
+						}
+					],
+					"sid": 933189710711303
 				}
 			]
 		},

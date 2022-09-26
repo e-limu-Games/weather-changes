@@ -6,10 +6,6 @@
 			"includeSheet": "LayoutSetUp_ES"
 		},
 		{
-			"eventType": "include",
-			"includeSheet": "InAppFeedback_ES"
-		},
-		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -25,6 +21,23 @@
 					"sid": 292719180292105,
 					"parameters": {
 						"y": "750"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "ActivityIntro2",
+					"sid": 419466580050942,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "logo",
+					"sid": 403008490341547,
+					"parameters": {
+						"y": "-100"
 					}
 				},
 				{
@@ -94,6 +107,49 @@
 						"end-value": "200",
 						"time": "1",
 						"ease": "easeinoutquad",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 424224466591045
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "logo",
+					"sid": 348054477367276,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "90",
+						"time": "0.5",
+						"ease": "easeinoutbounce",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 898965227313628
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "ActivityIntro2",
+					"sid": 876240868330067,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "1298",
+						"end-y": "724",
+						"time": "1",
+						"ease": "easeinoutbounce",
 						"destroy-on-complete": "no",
 						"loop": "no",
 						"ping-pong": "no"

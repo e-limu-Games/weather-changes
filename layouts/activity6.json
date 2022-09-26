@@ -792,9 +792,9 @@
 					},
 					"world": {
 						"x": 960,
-						"y": 150,
-						"width": 480,
-						"height": 171,
+						"y": 152,
+						"width": 370,
+						"height": 132,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -828,8 +828,8 @@
 					"world": {
 						"x": 960,
 						"y": 300,
-						"width": 850,
-						"height": 129,
+						"width": 686,
+						"height": 104,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1054,7 +1054,7 @@
 							1,
 							1,
 							1,
-							1
+							0.2
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -1116,7 +1116,7 @@
 							1,
 							1,
 							1,
-							1
+							0.2
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -1145,7 +1145,7 @@
 							1,
 							1,
 							1,
-							1
+							0.2
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -1190,7 +1190,7 @@
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
-						"initial-frame": 0,
+						"initial-frame": 4,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -1204,10 +1204,10 @@
 						}
 					},
 					"world": {
-						"x": 319.5,
-						"y": 450.5,
-						"width": 313,
-						"height": 96.99999999999999,
+						"x": 321.4495927493847,
+						"y": 455.91314934944,
+						"width": 287.1512314815757,
+						"height": 86.17370130111998,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1225,7 +1225,7 @@
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
-						"initial-frame": 0,
+						"initial-frame": 4,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -1239,10 +1239,10 @@
 						}
 					},
 					"world": {
-						"x": 927,
-						"y": 452.5,
-						"width": 314,
-						"height": 96.99999999999999,
+						"x": 947.3793305140495,
+						"y": 453.22495128439067,
+						"width": 367.1575789609615,
+						"height": 113.45477380679773,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1260,7 +1260,7 @@
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
-						"initial-frame": 0,
+						"initial-frame": 5,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -1274,10 +1274,10 @@
 						}
 					},
 					"world": {
-						"x": 1529.7419461436416,
-						"y": 457.69819225621166,
-						"width": 290.7054496847395,
-						"height": 81.81792891613037,
+						"x": 1541.37892369888,
+						"y": 465.53874977071297,
+						"width": 269.52030387897423,
+						"height": 71.1515572916432,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1295,7 +1295,7 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
-						"initial-frame": 8,
+						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -1315,10 +1315,10 @@
 						}
 					},
 					"world": {
-						"x": 1539.174946748569,
-						"y": 463.5019539805737,
-						"width": 250.89585663615006,
-						"height": 75.78072763208479,
+						"x": 1237.0459166056623,
+						"y": 888.6070031004901,
+						"width": 156.29457631614986,
+						"height": 60.32163490156903,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1356,8 +1356,8 @@
 						}
 					},
 					"world": {
-						"x": 1063.1584611218404,
-						"y": 895.702180932951,
+						"x": 1061.0755594529771,
+						"y": 959.4400935598634,
 						"width": 175.67059223183534,
 						"height": 70.50582330058161,
 						"originX": 0.5,
@@ -1397,8 +1397,8 @@
 						}
 					},
 					"world": {
-						"x": 835.9083648385658,
-						"y": 956.9770909559894,
+						"x": 851.2663623889886,
+						"y": 959.2808220054837,
 						"width": 160.22483182675435,
 						"height": 58.47203643467326,
 						"originX": 0.5,
@@ -1438,10 +1438,10 @@
 						}
 					},
 					"world": {
-						"x": 683.0023005605979,
-						"y": 885.5027101588882,
-						"width": 144.09891667857212,
-						"height": 50.6885632586695,
+						"x": 682.2343740995198,
+						"y": 876.2878342946505,
+						"width": 156.294576,
+						"height": 60.321635,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1799,41 +1799,6 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "fader",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 534,
-					"instanceVariables": {},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 351,
-						"y": 954,
-						"width": 2817,
-						"height": 1929,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 838524019387088,
@@ -1850,6 +1815,75 @@
 				1,
 				1,
 				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Fader",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "fader",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 269,
+					"instanceVariables": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 961.5,
+						"y": 544,
+						"width": 1980,
+						"height": 1132,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 543287604686563,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
 				1
 			],
 			"isTransparent": true,
