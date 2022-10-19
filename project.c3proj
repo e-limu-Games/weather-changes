@@ -294,7 +294,7 @@
 			"completed",
 			"PlayAgainBtn",
 			"CleanlinessBtn",
-			"thumbsup_rightanswer",
+			"CorrectMascot",
 			"MathNinjaBtn",
 			"ShapesTriviaBtn",
 			"TimeMachineBtn",
@@ -303,11 +303,13 @@
 			"over2",
 			"over3",
 			"over4",
-			"sad_wronganswer",
+			"WrongMascot",
 			"FileChooser",
 			"GetStartedBtn",
 			"Intro",
-			"ProfileBtn"
+			"ProfileBtn",
+			"TryAgainText",
+			"CorrectText"
 		],
 		"subfolders": [
 			{

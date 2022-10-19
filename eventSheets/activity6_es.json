@@ -26,6 +26,15 @@
 					]
 				},
 				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 652795385383127,
+					"parameters": {
+						"layer": "\"Mascot\"",
+						"visibility": "invisible"
+					}
+				},
+				{
 					"id": "set-y",
 					"objectClass": "CloudBackground",
 					"sid": 811369984151353,
@@ -204,7 +213,6 @@
 					"id": "tween-two-properties",
 					"objectClass": "homebtn",
 					"sid": 375019462546453,
-					"disabled": true,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"\"",
@@ -239,6 +247,23 @@
 					"id": "tween-two-properties",
 					"objectClass": "next",
 					"sid": 620138119119077,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "200",
+						"end-y": "140",
+						"time": "0.5",
+						"ease": "easeinoutbounce",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "audiobtn",
+					"sid": 331092925281529,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"\"",
@@ -436,31 +461,6 @@
 					"parameters": {
 						"frame-number": "2"
 					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "Sprite6",
-					"sid": 619124897660952,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "scale",
-						"end-x": "1.5",
-						"end-y": "1.5",
-						"time": "0.5",
-						"ease": "easeinoutback",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "start-animation",
-					"objectClass": "sad_wronganswer",
-					"sid": 855101467482368,
-					"parameters": {
-						"from": "beginning"
-					}
 				}
 			],
 			"sid": 511815321772457
@@ -506,147 +506,6 @@
 				}
 			],
 			"sid": 861917630630677
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-tweens-finished",
-					"objectClass": "CloudBackground",
-					"sid": 660283247085230,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"scene1\""
-					}
-				},
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 697772506055233,
-					"parameters": {
-						"variable": "tryCount",
-						"comparison": 2,
-						"value": "1"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 739610625261752,
-					"parameters": {
-						"audio-file": "startsound",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "q1",
-					"sid": 848063313830430,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "scale",
-						"end-x": "2",
-						"end-y": "2",
-						"time": "1",
-						"ease": "easeinoutelastic",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "logo",
-					"sid": 222343732818567,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "scale",
-						"end-x": "0.3",
-						"end-y": "0.3",
-						"time": "0.5",
-						"ease": "easeinoutelastic",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "Acalm",
-					"sid": 386574862250876,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "scale",
-						"end-x": "2",
-						"end-y": "2",
-						"time": "1",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "Awindy",
-					"sid": 740800267296328,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "scale",
-						"end-x": "2",
-						"end-y": "2",
-						"time": "1",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "Arainy",
-					"sid": 884109963883517,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "scale",
-						"end-x": "2",
-						"end-y": "2",
-						"time": "1",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "Asnowy",
-					"sid": 592970524919407,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "scale",
-						"end-x": "2",
-						"end-y": "2",
-						"time": "1",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				}
-			],
-			"sid": 165270401765709,
-			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -2212,7 +2071,7 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "thumbsup_rightanswer",
+					"objectClass": "CorrectMascot",
 					"sid": 981692964686958,
 					"parameters": {
 						"visibility": "visible"
@@ -2220,7 +2079,7 @@
 				},
 				{
 					"id": "start-animation",
-					"objectClass": "thumbsup_rightanswer",
+					"objectClass": "CorrectMascot",
 					"sid": 927065962562179,
 					"parameters": {
 						"from": "beginning"
@@ -2269,9 +2128,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-touched-object",
+					"id": "on-tap-object",
 					"objectClass": "Touch",
-					"sid": 731891615745644,
+					"sid": 642717735693071,
 					"parameters": {
 						"object": "next"
 					}
@@ -2294,30 +2153,6 @@
 			],
 			"actions": [
 				{
-					"id": "tween-one-property",
-					"objectClass": "Sprite6",
-					"sid": 882898162821709,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetOpacity",
-						"end-value": "100",
-						"time": "2",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "set-animation-frame",
-					"objectClass": "Sprite6",
-					"sid": 910030356329385,
-					"parameters": {
-						"frame-number": "1"
-					}
-				},
-				{
 					"id": "play",
 					"objectClass": "Audio",
 					"sid": 369353860315167,
@@ -2329,17 +2164,8 @@
 					}
 				},
 				{
-					"id": "move-to-top",
-					"objectClass": "Sprite6",
-					"sid": 368309759392002
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Sprite6",
-					"sid": 892651764924348,
-					"parameters": {
-						"visibility": "visible"
-					}
+					"callFunction": "DisableDraggables",
+					"sid": 608406635594592
 				}
 			],
 			"sid": 444335722632364,
@@ -2801,12 +2627,22 @@
 					"sid": 253574253900519
 				},
 				{
+					"eventType": "comment",
+					"text": "",
+					"background-color": [
+						0.3686274509803922,
+						1,
+						0.1411764705882353,
+						1
+					]
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 972203251094162,
+							"sid": 514771663036836,
 							"parameters": {
 								"variable": "CountAnswer",
 								"comparison": 2,
@@ -2818,14 +2654,101 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 618205812165357,
+							"sid": 751126776488828,
 							"parameters": {
 								"variable": "tryCount",
 								"value": "1"
 							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 509436602608626,
+							"parameters": {
+								"layer": "\"Mascot\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "CorrectMascot",
+							"sid": 982512630335282,
+							"parameters": {
+								"opacity": "0"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "CorrectText",
+							"sid": 743410366120776,
+							"parameters": {
+								"opacity": "0"
+							}
+						},
+						{
+							"id": "move-to-top",
+							"objectClass": "WrongMascot",
+							"sid": 722324166026868
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "TryAgainText",
+							"sid": 690675674608332,
+							"parameters": {
+								"opacity": "100"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "WrongMascot",
+							"sid": 507664534625543,
+							"parameters": {
+								"opacity": "100"
+							}
 						}
 					],
-					"sid": 681089239285159
+					"sid": 728864848012983,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 557782566355915,
+									"parameters": {
+										"variable": "HowManyTry",
+										"comparison": 2,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 143798568028791,
+									"parameters": {
+										"audio-file": "Retry Sound_high",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 669083500414399
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "",
+					"background-color": [
+						0.30196078431372547,
+						0.996078431372549,
+						0.3843137254901961,
+						1
+					]
 				},
 				{
 					"eventType": "block",
@@ -2833,7 +2756,7 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 100131381744154,
+							"sid": 204122379484659,
 							"parameters": {
 								"variable": "CountAnswer",
 								"comparison": 5,
@@ -2843,12 +2766,122 @@
 					],
 					"actions": [
 						{
-							"id": "destroy",
-							"objectClass": "Draggables",
-							"sid": 897134867473431
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 472985164769626,
+							"parameters": {
+								"layer": "\"Mascot\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "WrongMascot",
+							"sid": 724474525577579,
+							"parameters": {
+								"opacity": "0"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "TryAgainText",
+							"sid": 976084383666797,
+							"parameters": {
+								"opacity": "0"
+							}
+						},
+						{
+							"id": "move-to-top",
+							"objectClass": "CorrectMascot",
+							"sid": 685206399135749
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "CorrectMascot",
+							"sid": 650995197621968,
+							"parameters": {
+								"opacity": "100"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "CorrectText",
+							"sid": 559006617533437,
+							"parameters": {
+								"opacity": "100"
+							}
 						}
 					],
-					"sid": 933189710711303
+					"sid": 717072469431173
+				},
+				{
+					"eventType": "comment",
+					"text": "",
+					"background-color": [
+						0.30196078431372547,
+						0.996078431372549,
+						0.44313725490196076,
+						1
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 935279468202290,
+							"parameters": {
+								"variable": "HowManyTry",
+								"comparison": 5,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "tryagain",
+							"sid": 716241824930491
+						},
+						{
+							"id": "destroy",
+							"objectClass": "next",
+							"sid": 771216096408701
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 575412570962708,
+							"parameters": {
+								"layer": "\"Mascot\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "showanswer",
+							"sid": 847919298108629,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "200",
+								"end-y": "140",
+								"time": "0.5",
+								"ease": "easeinoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 326532974056482
+						}
+					],
+					"sid": 153058520351721
 				}
 			]
 		},
@@ -2908,17 +2941,6 @@
 					"parameters": {
 						"variable": "tryCount",
 						"value": "1"
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 664867020571953,
-					"parameters": {
-						"audio-file": "Retry Sound_high",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
 					}
 				}
 			],
@@ -2990,10 +3012,11 @@
 					}
 				},
 				{
-					"id": "set-visible",
-					"objectClass": "Sprite6",
-					"sid": 355365425557510,
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 320584368021260,
 					"parameters": {
+						"layer": "\"Mascot\"",
 						"visibility": "invisible"
 					}
 				}
@@ -3045,40 +3068,6 @@
 				}
 			],
 			"sid": 747615883826152
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 330869878383796,
-					"parameters": {
-						"variable": "tryCount",
-						"comparison": 4,
-						"value": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation-frame",
-					"objectClass": "Sprite6",
-					"sid": 467196612380170,
-					"parameters": {
-						"frame-number": "1"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "sad_wronganswer",
-					"sid": 902563949582272,
-					"parameters": {
-						"visibility": "visible"
-					}
-				}
-			],
-			"sid": 790191982016980
 		},
 		{
 			"eventType": "comment",
@@ -4079,7 +4068,7 @@
 				},
 				{
 					"id": "set-animation-frame",
-					"objectClass": "sad_wronganswer",
+					"objectClass": "WrongMascot",
 					"sid": 730153866358531,
 					"parameters": {
 						"frame-number": "0"
@@ -4087,7 +4076,7 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "sad_wronganswer",
+					"objectClass": "WrongMascot",
 					"sid": 135796000819635,
 					"parameters": {
 						"visibility": "invisible"
@@ -4095,7 +4084,7 @@
 				},
 				{
 					"id": "start-animation",
-					"objectClass": "sad_wronganswer",
+					"objectClass": "WrongMascot",
 					"sid": 617056485335800,
 					"parameters": {
 						"from": "beginning"
@@ -4103,125 +4092,6 @@
 				}
 			],
 			"sid": 352536806716279
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 413998806984615,
-					"parameters": {
-						"variable": "HowManyTry",
-						"comparison": 4,
-						"value": "1"
-					}
-				},
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 457092385234959
-				}
-			],
-			"actions": [
-				{
-					"id": "spawn-another-object",
-					"objectClass": "tryagain",
-					"sid": 182428754950282,
-					"parameters": {
-						"object": "showanswer",
-						"layer": "0",
-						"image-point": "0",
-						"create-hierarchy": false
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "tryagain",
-					"sid": 478466334218214,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "size",
-						"end-x": "0",
-						"end-y": "0",
-						"time": "1",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "showanswer",
-					"sid": 586986551537192,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "size",
-						"end-x": "200",
-						"end-y": "140",
-						"time": "1",
-						"ease": "easeinoutback",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "tryagain",
-					"sid": 478214825196695
-				},
-				{
-					"id": "destroy",
-					"objectClass": "next",
-					"sid": 621244452787769
-				}
-			],
-			"sid": 841962380319390
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 332981629817959
-				}
-			],
-			"actions": [
-				{
-					"id": "stop-all",
-					"objectClass": "Audio",
-					"sid": 805591614271985
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 806245073433710,
-					"parameters": {
-						"audio-file": "Button",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 314348663878839,
-					"parameters": {
-						"audio-file": "Activity 6 Identifying Weather Symbols_high",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
-					}
-				}
-			],
-			"sid": 962196456898616,
-			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -4441,9 +4311,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 751132285543705,
+					"sid": 877565219205196,
 					"parameters": {
-						"layout": "Home"
+						"layout": "Activity"
 					}
 				},
 				{
@@ -4464,37 +4334,84 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-touched-object",
-					"objectClass": "Touch",
-					"sid": 962908320144326,
-					"parameters": {
-						"object": "homebtn2"
-					}
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 563877840049343
 				}
 			],
 			"actions": [
 				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 519888481153429,
-					"parameters": {
-						"layout": "Home"
-					}
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 764063785390057
 				},
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 452464170934815,
+					"sid": 185598705114962,
 					"parameters": {
 						"audio-file": "Button",
 						"loop": "not-looping",
 						"volume": "0",
 						"tag-optional": "\"\""
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 689810739585199,
+					"parameters": {
+						"audio-file": "Activity 6 Identifying Weather Symbols_high",
+						"loop": "not-looping",
+						"volume": "20",
+						"tag-optional": "\"\""
+					}
 				}
 			],
-			"sid": 301399376762181,
-			"disabled": true
+			"sid": 141148280938070
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 532889790885512,
+					"parameters": {
+						"object": "audiobtn"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 720279968531725
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 300829790154661,
+					"parameters": {
+						"audio-file": "Button",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 808299517228062,
+					"parameters": {
+						"audio-file": "Activity 6 Identifying Weather Symbols_high",
+						"loop": "not-looping",
+						"volume": "20",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 250660770173716
 		}
 	],
 	"sid": 730526633565585

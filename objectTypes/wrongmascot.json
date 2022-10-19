@@ -1,5 +1,5 @@
 {
-	"name": "sad_wronganswer",
+	"name": "WrongMascot",
 	"plugin-id": "Sprite",
 	"sid": 467297539261058,
 	"isGlobal": false,
@@ -593,7 +593,7 @@
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 10
 			}
 		],
 		"subfolders": []

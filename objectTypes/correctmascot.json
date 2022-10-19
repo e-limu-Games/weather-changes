@@ -1,5 +1,5 @@
 {
-	"name": "thumbsup_rightanswer",
+	"name": "CorrectMascot",
 	"plugin-id": "Sprite",
 	"sid": 968285514910119,
 	"isGlobal": false,
@@ -589,11 +589,11 @@
 				],
 				"sid": 987145184122108,
 				"name": "Default",
-				"isLooping": false,
+				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 10
 			}
 		],
 		"subfolders": []
