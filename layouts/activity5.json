@@ -616,7 +616,7 @@
 					}
 				},
 				{
-					"type": "Sprite7",
+					"type": "Correct4",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1542,7 +1542,7 @@
 				{
 					"type": "WrongMascot",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Default",
 						"initial-frame": 0,
 						"enable-collisions": true,

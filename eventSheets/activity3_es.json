@@ -309,6 +309,33 @@
 					"sid": 172499518225504
 				},
 				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 721152106357236
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 943736232038136,
+					"parameters": {
+						"audio-file": "Button",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 672412561955376,
+					"parameters": {
+						"audio-file": "Activity 3-6 Intro",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"audio\""
+					}
+				},
+				{
 					"type": "comment",
 					"text": "",
 					"background-color": [
@@ -463,33 +490,6 @@
 					}
 				},
 				{
-					"id": "tween-two-properties",
-					"objectClass": "Sprite6",
-					"sid": 977542476617559,
-					"disabled": true,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "scale",
-						"end-x": "1.5",
-						"end-y": "1.5",
-						"time": "0.5",
-						"ease": "easeinoutback",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "start-animation",
-					"objectClass": "WrongMascot",
-					"sid": 225833048917941,
-					"disabled": true,
-					"parameters": {
-						"from": "beginning"
-					}
-				},
-				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 796361108902978,
@@ -505,9 +505,49 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 726721431422205
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 439105579252770
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 866878791702016,
+					"parameters": {
+						"audio-file": "Button",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 155598202515282,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-any-touch-start",
 					"objectClass": "Touch",
 					"sid": 237916953385502
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Audio",
+					"sid": 364411814023458,
+					"disabled": true,
+					"parameters": {
+						"tag": "\"audio\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -542,147 +582,6 @@
 				}
 			],
 			"sid": 415142532252649
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-tweens-finished",
-					"objectClass": "CloudBackground",
-					"sid": 989801081478826,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"scene1\""
-					}
-				},
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 372947168080357,
-					"parameters": {
-						"variable": "tryCount",
-						"comparison": 2,
-						"value": "1"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 558969138658715,
-					"parameters": {
-						"audio-file": "startsound",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "q1",
-					"sid": 837232564119033,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "scale",
-						"end-x": "2",
-						"end-y": "2",
-						"time": "1",
-						"ease": "easeinoutelastic",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "logo",
-					"sid": 771194976198814,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "scale",
-						"end-x": "0.3",
-						"end-y": "0.3",
-						"time": "0.5",
-						"ease": "easeinoutelastic",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "Acalm",
-					"sid": 483770834466851,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "scale",
-						"end-x": "2",
-						"end-y": "2",
-						"time": "1",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "Awindy",
-					"sid": 546585667796361,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "scale",
-						"end-x": "2",
-						"end-y": "2",
-						"time": "1",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "Arainy",
-					"sid": 178191811331886,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "scale",
-						"end-x": "2",
-						"end-y": "2",
-						"time": "1",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "Asnowy",
-					"sid": 500946808815938,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "scale",
-						"end-x": "2",
-						"end-y": "2",
-						"time": "1",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				}
-			],
-			"sid": 292210069548262,
-			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -2215,41 +2114,6 @@
 					}
 				},
 				{
-					"id": "tween-one-property",
-					"objectClass": "Sprite6",
-					"sid": 809984390169009,
-					"disabled": true,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetOpacity",
-						"end-value": "100",
-						"time": "2",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "set-animation-frame",
-					"objectClass": "Sprite6",
-					"sid": 544500075561657,
-					"disabled": true,
-					"parameters": {
-						"frame-number": "0"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Sprite6",
-					"sid": 947153158997653,
-					"disabled": true,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
 					"id": "play",
 					"objectClass": "Audio",
 					"sid": 410666960299396,
@@ -2264,24 +2128,6 @@
 					"id": "destroy",
 					"objectClass": "rainy",
 					"sid": 115514502555141
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "CorrectMascot",
-					"sid": 842244598083117,
-					"disabled": true,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "start-animation",
-					"objectClass": "CorrectMascot",
-					"sid": 224537803271611,
-					"disabled": true,
-					"parameters": {
-						"from": "beginning"
-					}
 				}
 			],
 			"sid": 730085983191837
@@ -2836,7 +2682,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "Sprite7",
+							"objectClass": "Correct4",
 							"sid": 409986998162492,
 							"parameters": {
 								"visibility": "visible"
@@ -2854,34 +2700,6 @@
 					"sid": 180854732295986
 				},
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 306955268479583,
-							"parameters": {
-								"variable": "CountAnswer",
-								"comparison": 2,
-								"value": "4"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 874795502953751,
-							"parameters": {
-								"variable": "tryCount",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 908374085964638,
-					"disabled": true
-				},
-				{
 					"eventType": "comment",
 					"text": "",
 					"background-color": [
@@ -2897,11 +2715,11 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 126712637124183,
+							"sid": 621866022912812,
 							"parameters": {
 								"variable": "CountAnswer",
 								"comparison": 2,
-								"value": "3"
+								"value": "4"
 							}
 						}
 					],
@@ -2936,6 +2754,14 @@
 							"id": "set-opacity",
 							"objectClass": "CorrectText",
 							"sid": 865030547942376,
+							"parameters": {
+								"opacity": "0"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "Incorrect",
+							"sid": 410407041986066,
 							"parameters": {
 								"opacity": "0"
 							}
@@ -3021,6 +2847,16 @@
 					],
 					"actions": [
 						{
+							"id": "destroy",
+							"objectClass": "showanswer",
+							"sid": 198598883919162
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Draggables",
+							"sid": 805339612071436
+						},
+						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
 							"sid": 337056271569225,
@@ -3046,6 +2882,14 @@
 							}
 						},
 						{
+							"id": "set-opacity",
+							"objectClass": "Incorrect",
+							"sid": 448424925150231,
+							"parameters": {
+								"opacity": "0"
+							}
+						},
+						{
 							"id": "move-to-top",
 							"objectClass": "CorrectMascot",
 							"sid": 651558258235045
@@ -3064,14 +2908,6 @@
 							"sid": 636283011515815,
 							"parameters": {
 								"opacity": "100"
-							}
-						},
-						{
-							"id": "start-animation",
-							"objectClass": "CorrectMascot",
-							"sid": 542352408595068,
-							"parameters": {
-								"from": "beginning"
 							}
 						}
 					],
@@ -3142,6 +2978,62 @@
 							"id": "stop-all",
 							"objectClass": "Audio",
 							"sid": 623458794453225
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 715418248439732,
+							"parameters": {
+								"audio-file": "Incorrect_high",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "CorrectMascot",
+							"sid": 428791867831554,
+							"parameters": {
+								"opacity": "0"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "CorrectText",
+							"sid": 370397486924197,
+							"parameters": {
+								"opacity": "0"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "TryAgainText",
+							"sid": 103609545734274,
+							"parameters": {
+								"opacity": "0"
+							}
+						},
+						{
+							"id": "move-to-top",
+							"objectClass": "WrongMascot",
+							"sid": 359829029238055
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "WrongMascot",
+							"sid": 934025211202286,
+							"parameters": {
+								"opacity": "100"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "Incorrect",
+							"sid": 461696032840983,
+							"parameters": {
+								"opacity": "100"
+							}
 						}
 					],
 					"sid": 519515315940294
@@ -3225,6 +3117,7 @@
 					"id": "play",
 					"objectClass": "Audio",
 					"sid": 369250526117173,
+					"disabled": true,
 					"parameters": {
 						"audio-file": "Retry Sound_high",
 						"loop": "not-looping",
@@ -4495,7 +4388,7 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "Sprite7",
+					"objectClass": "Correct4",
 					"sid": 204277343669342,
 					"parameters": {
 						"visibility": "invisible"
@@ -4864,56 +4757,16 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 515838692469043,
+					"sid": 544379282256114,
 					"parameters": {
-						"audio-file": "Activity 3 Identifying Weather Symbols_high",
+						"audio-file": "Activity 3-6 Intro",
 						"loop": "not-looping",
-						"volume": "20",
-						"tag-optional": "\"\""
+						"volume": "0",
+						"tag-optional": "\"audio\""
 					}
 				}
 			],
 			"sid": 991476335255182
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 675710566422805
-				}
-			],
-			"actions": [
-				{
-					"id": "stop-all",
-					"objectClass": "Audio",
-					"sid": 416048388275340
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 174534031978468,
-					"parameters": {
-						"audio-file": "Button",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 935686285752473,
-					"parameters": {
-						"audio-file": "Activity 3 Identifying Weather Symbols_high",
-						"loop": "not-looping",
-						"volume": "20",
-						"tag-optional": "\"\""
-					}
-				}
-			],
-			"sid": 614621495076501
 		}
 	],
 	"sid": 687425796139091

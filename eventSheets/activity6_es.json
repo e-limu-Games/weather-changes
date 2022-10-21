@@ -309,6 +309,33 @@
 					"sid": 743158992043886
 				},
 				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 241173771889804
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 416741394496472,
+					"parameters": {
+						"audio-file": "Button",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 558716219266305,
+					"parameters": {
+						"audio-file": "Activity 3-6 Intro",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"audio\""
+					}
+				},
+				{
 					"type": "comment",
 					"text": "",
 					"background-color": [
@@ -469,9 +496,49 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 655971688966725
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 278679674598482
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 695484072731220,
+					"parameters": {
+						"audio-file": "Button",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 822160410368903,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-any-touch-start",
 					"objectClass": "Touch",
 					"sid": 998424923267549
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Audio",
+					"sid": 606966137503748,
+					"disabled": true,
+					"parameters": {
+						"tag": "\"audio\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -2381,8 +2448,8 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "Correct3",
-							"sid": 564010429817347,
+							"objectClass": "Correct4",
+							"sid": 618661795611297,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -2397,120 +2464,6 @@
 						}
 					],
 					"sid": 285158570703958
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "windy",
-							"sid": 150444016538624,
-							"parameters": {
-								"object": "c"
-							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 998660451167304,
-							"parameters": {
-								"variable": "tryCount",
-								"comparison": 2,
-								"value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 929711984175748,
-							"parameters": {
-								"variable": "CountAnswer",
-								"value": "1"
-							}
-						},
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 773927774424819,
-							"parameters": {
-								"audio-file": "pop5",
-								"loop": "not-looping",
-								"volume": "0",
-								"tag-optional": "\"\""
-							}
-						},
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 424622951360878,
-							"parameters": {
-								"audio-file": "startsound",
-								"loop": "not-looping",
-								"volume": "0",
-								"tag-optional": "\"\""
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "Arainy",
-							"sid": 746169358725818,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "windy",
-							"sid": 847140893050573,
-							"parameters": {
-								"object": "Particles",
-								"layer": "0",
-								"image-point": "0",
-								"create-hierarchy": false
-							}
-						},
-						{
-							"id": "tween-two-properties",
-							"objectClass": "Particles",
-							"sid": 710361456720133,
-							"behaviorType": "Tween",
-							"parameters": {
-								"tags": "\"\"",
-								"property": "position",
-								"end-x": "-157",
-								"end-y": "25",
-								"time": "0.5",
-								"ease": "default",
-								"destroy-on-complete": "no",
-								"loop": "no",
-								"ping-pong": "no"
-							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "windy",
-							"sid": 149884712479175
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "Correct3",
-							"sid": 510057230881616,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "Arainy",
-							"sid": 361500265559105,
-							"parameters": {
-								"frame-number": "3"
-							}
-						}
-					],
-					"sid": 317827072835594
 				},
 				{
 					"eventType": "block",
@@ -2609,8 +2562,8 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "Sprite7",
-							"sid": 827822410257471,
+							"objectClass": "Correct3",
+							"sid": 401612428664224,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -2681,6 +2634,14 @@
 							"id": "set-opacity",
 							"objectClass": "CorrectText",
 							"sid": 743410366120776,
+							"parameters": {
+								"opacity": "0"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "Incorrect",
+							"sid": 970507504789130,
 							"parameters": {
 								"opacity": "0"
 							}
@@ -2766,6 +2727,11 @@
 					],
 					"actions": [
 						{
+							"id": "destroy",
+							"objectClass": "showanswer",
+							"sid": 292818036489353
+						},
+						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
 							"sid": 472985164769626,
@@ -2791,6 +2757,14 @@
 							}
 						},
 						{
+							"id": "set-opacity",
+							"objectClass": "Incorrect",
+							"sid": 937489379186492,
+							"parameters": {
+								"opacity": "0"
+							}
+						},
+						{
 							"id": "move-to-top",
 							"objectClass": "CorrectMascot",
 							"sid": 685206399135749
@@ -2810,6 +2784,11 @@
 							"parameters": {
 								"opacity": "100"
 							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Draggables",
+							"sid": 409581778579927
 						}
 					],
 					"sid": 717072469431173
@@ -2879,6 +2858,62 @@
 							"id": "stop-all",
 							"objectClass": "Audio",
 							"sid": 326532974056482
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 328416112460485,
+							"parameters": {
+								"audio-file": "Incorrect_high",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "CorrectMascot",
+							"sid": 925611132441133,
+							"parameters": {
+								"opacity": "0"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "CorrectText",
+							"sid": 823761823443902,
+							"parameters": {
+								"opacity": "0"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "TryAgainText",
+							"sid": 286692129320650,
+							"parameters": {
+								"opacity": "0"
+							}
+						},
+						{
+							"id": "move-to-top",
+							"objectClass": "WrongMascot",
+							"sid": 590413610836007
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "WrongMascot",
+							"sid": 240438577723518,
+							"parameters": {
+								"opacity": "100"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "Incorrect",
+							"sid": 920238373119302,
+							"parameters": {
+								"opacity": "100"
+							}
 						}
 					],
 					"sid": 153058520351721
@@ -3019,6 +3054,10 @@
 						"layer": "\"Mascot\"",
 						"visibility": "invisible"
 					}
+				},
+				{
+					"callFunction": "EnableDraggables",
+					"sid": 665196922799697
 				}
 			],
 			"sid": 647934943716364
@@ -3847,7 +3886,7 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "Sprite7",
+					"objectClass": "Correct4",
 					"sid": 655658479919574,
 					"parameters": {
 						"visibility": "visible"
@@ -4334,46 +4373,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 563877840049343
-				}
-			],
-			"actions": [
-				{
-					"id": "stop-all",
-					"objectClass": "Audio",
-					"sid": 764063785390057
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 185598705114962,
-					"parameters": {
-						"audio-file": "Button",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 689810739585199,
-					"parameters": {
-						"audio-file": "Activity 6 Identifying Weather Symbols_high",
-						"loop": "not-looping",
-						"volume": "20",
-						"tag-optional": "\"\""
-					}
-				}
-			],
-			"sid": 141148280938070
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
 					"sid": 532889790885512,
@@ -4402,12 +4401,12 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 808299517228062,
+					"sid": 158069388548372,
 					"parameters": {
-						"audio-file": "Activity 6 Identifying Weather Symbols_high",
+						"audio-file": "Activity 3-6 Intro",
 						"loop": "not-looping",
-						"volume": "20",
-						"tag-optional": "\"\""
+						"volume": "0",
+						"tag-optional": "\"audio\""
 					}
 				}
 			],

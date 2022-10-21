@@ -275,7 +275,7 @@
 			"Sprite6",
 			"tryagain",
 			"continue",
-			"Sprite7",
+			"Correct4",
 			"d",
 			"Asnowy",
 			"snowy",
@@ -309,7 +309,8 @@
 			"Intro",
 			"ProfileBtn",
 			"TryAgainText",
-			"CorrectText"
+			"CorrectText",
+			"Incorrect"
 		],
 		"subfolders": [
 			{
@@ -579,7 +580,7 @@
 					}
 				},
 				{
-					"name": "Activity 1 Identifying Weather Conditions_high.webm",
+					"name": "Activity 1-2 Intro.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 658196605351015,
 					"file-info": {
@@ -731,41 +732,25 @@
 					}
 				},
 				{
-					"name": "Activity 6 Identifying Weather Symbols_high.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 215157838204284,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "Activity 5 Identifying Weather Symbols_high.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 373030909944794,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "Activity 4 Identifying Weather Symbols_high.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 990594860315309,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "Activity 3 Identifying Weather Symbols_high.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 701071985308529,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
 					"name": "Activity end screen_high.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 672733126718129,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Incorrect_high.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 564872708505911,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Activity 3-6 Intro.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 536313035044215,
 					"file-info": {
 						"purpose": "none"
 					}
