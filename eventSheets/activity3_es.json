@@ -2197,6 +2197,15 @@
 			],
 			"actions": [
 				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 364688786385172,
+					"parameters": {
+						"variable": "HowManyTry",
+						"value": "1"
+					}
+				},
+				{
 					"callFunction": "DisableDraggables",
 					"sid": 800955030675197
 				},
@@ -2796,10 +2805,10 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 934259892819571,
+									"sid": 343802249078650,
 									"parameters": {
 										"variable": "HowManyTry",
-										"comparison": 2,
+										"comparison": 3,
 										"value": "2"
 									}
 								}
@@ -2929,12 +2938,23 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 375745872718474,
+							"sid": 733245381361741,
 							"parameters": {
 								"variable": "HowManyTry",
-								"comparison": 5,
+								"comparison": 4,
 								"value": "2"
 							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 615065194219385,
+							"parameters": {
+								"variable": "CountAnswer",
+								"comparison": 5,
+								"value": "4"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -4458,15 +4478,6 @@
 						"destroy-on-complete": "no",
 						"loop": "no",
 						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 337849887720566,
-					"parameters": {
-						"variable": "HowManyTry",
-						"value": "1"
 					}
 				}
 			],

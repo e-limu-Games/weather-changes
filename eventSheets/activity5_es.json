@@ -2164,30 +2164,6 @@
 			],
 			"actions": [
 				{
-					"id": "tween-one-property",
-					"objectClass": "Sprite6",
-					"sid": 214336070789659,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetOpacity",
-						"end-value": "100",
-						"time": "2",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "set-animation-frame",
-					"objectClass": "Sprite6",
-					"sid": 418424185217341,
-					"parameters": {
-						"frame-number": "1"
-					}
-				},
-				{
 					"id": "play",
 					"objectClass": "Audio",
 					"sid": 241661907853013,
@@ -2199,21 +2175,17 @@
 					}
 				},
 				{
-					"id": "move-to-top",
-					"objectClass": "Sprite6",
-					"sid": 147188878639197
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Sprite6",
-					"sid": 831256374815221,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
 					"callFunction": "DisableDraggables",
 					"sid": 736303100677435
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 437156621478957,
+					"parameters": {
+						"variable": "HowManyTry",
+						"value": "1"
+					}
 				}
 			],
 			"sid": 865562653271375,
@@ -2771,10 +2743,10 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 529670209735061,
+									"sid": 968504651717419,
 									"parameters": {
 										"variable": "HowManyTry",
-										"comparison": 2,
+										"comparison": 3,
 										"value": "2"
 									}
 								}
@@ -2904,12 +2876,23 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 822397625761341,
+							"sid": 653883412949131,
 							"parameters": {
 								"variable": "HowManyTry",
-								"comparison": 5,
+								"comparison": 4,
 								"value": "2"
 							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 932000153458360,
+							"parameters": {
+								"variable": "CountAnswer",
+								"comparison": 5,
+								"value": "3"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -3176,6 +3159,78 @@
 				}
 			],
 			"sid": 845497421668880
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 621952680753922,
+					"parameters": {
+						"object": "tryagain"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "EnableDraggables",
+					"sid": 492176563429586
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 286490096563355,
+					"parameters": {
+						"layer": "\"Mascot\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 849550375456909,
+					"parameters": {
+						"variable": "tryCount",
+						"value": "0"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "next",
+					"sid": 120530216197581,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"next\"",
+						"property": "size",
+						"end-x": "200",
+						"end-y": "140",
+						"time": "1",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "tryagain",
+					"sid": 404105789690825,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "0",
+						"end-y": "0",
+						"time": "1",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 259671992326752
 		},
 		{
 			"eventType": "comment",
@@ -4269,87 +4324,6 @@
 				}
 			],
 			"sid": 839988068271645
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-touched-object",
-					"objectClass": "Touch",
-					"sid": 698553814104521,
-					"parameters": {
-						"object": "tryagain"
-					}
-				}
-			],
-			"actions": [
-				{
-					"callFunction": "EnableDraggables",
-					"sid": 139659169742965
-				},
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 831478593586163,
-					"parameters": {
-						"layer": "\"Mascot\"",
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 417037996376436,
-					"parameters": {
-						"variable": "tryCount",
-						"value": "0"
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "next",
-					"sid": 258363612266664,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"next\"",
-						"property": "size",
-						"end-x": "200",
-						"end-y": "140",
-						"time": "1",
-						"ease": "easeinoutback",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "tryagain",
-					"sid": 757560634523126,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "size",
-						"end-x": "0",
-						"end-y": "0",
-						"time": "1",
-						"ease": "easeinoutback",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 572751236063475,
-					"parameters": {
-						"variable": "HowManyTry",
-						"value": "1"
-					}
-				}
-			],
-			"sid": 916210297720383
 		},
 		{
 			"eventType": "block",
