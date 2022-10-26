@@ -2870,6 +2870,15 @@
 							}
 						},
 						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 631652777592355,
+							"parameters": {
+								"layer": "\"Mascot\"",
+								"visibility": "visible"
+							}
+						},
+						{
 							"id": "set-opacity",
 							"objectClass": "CorrectMascot",
 							"sid": 893829267793840,
@@ -2978,11 +2987,6 @@
 					}
 				},
 				{
-					"id": "wait-for-previous-actions",
-					"objectClass": "System",
-					"sid": 199034871387726
-				},
-				{
 					"id": "tween-two-properties",
 					"objectClass": "tryagain",
 					"sid": 512414266372505,
@@ -3062,11 +3066,6 @@
 						"loop": "no",
 						"ping-pong": "no"
 					}
-				},
-				{
-					"id": "wait-for-previous-actions",
-					"objectClass": "System",
-					"sid": 500385298065250
 				},
 				{
 					"id": "tween-two-properties",
@@ -3852,6 +3851,15 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 482929279936636,
+					"parameters": {
+						"layer": "\"Mascot\"",
+						"visibility": "invisible"
+					}
+				},
 				{
 					"id": "set-visible",
 					"objectClass": "Acalm",

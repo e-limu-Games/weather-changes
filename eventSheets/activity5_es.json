@@ -2966,6 +2966,15 @@
 							}
 						},
 						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 573528589979900,
+							"parameters": {
+								"layer": "\"Mascot\"",
+								"visibility": "visible"
+							}
+						},
+						{
 							"id": "set-opacity",
 							"objectClass": "CorrectMascot",
 							"sid": 514807960068218,
@@ -3887,6 +3896,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 212325829847448,
+					"parameters": {
+						"layer": "\"Mascot\"",
+						"visibility": "invisible"
+					}
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "Acalm",
 					"sid": 963461497630632,
@@ -4037,35 +4055,11 @@
 					"sid": 178586376482551
 				},
 				{
-					"id": "set-visible",
-					"objectClass": "Correct3",
-					"sid": 121954475447546,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
 					"id": "set-animation-frame",
 					"objectClass": "Arainy",
 					"sid": 808949830773951,
 					"parameters": {
 						"frame-number": "3"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Correct1",
-					"sid": 447259812993457,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Correct4",
-					"sid": 931096730159889,
-					"parameters": {
-						"visibility": "visible"
 					}
 				},
 				{
@@ -4248,6 +4242,30 @@
 					"id": "destroy",
 					"objectClass": "showanswer",
 					"sid": 917994768641551
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Correct3",
+					"sid": 128943104465743,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Correct1",
+					"sid": 112034636917022,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Correct4",
+					"sid": 882867981963701,
+					"parameters": {
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 839988068271645

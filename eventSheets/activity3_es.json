@@ -2991,6 +2991,15 @@
 							}
 						},
 						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 399417411112929,
+							"parameters": {
+								"layer": "\"Mascot\"",
+								"visibility": "visible"
+							}
+						},
+						{
 							"id": "set-opacity",
 							"objectClass": "CorrectMascot",
 							"sid": 428791867831554,
@@ -4003,6 +4012,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 349175100571123,
+					"parameters": {
+						"layer": "\"Mascot\"",
+						"visibility": "invisible"
+					}
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "Acalm",
 					"sid": 573105721308980,
@@ -4284,30 +4302,6 @@
 					"sid": 390571149391475,
 					"parameters": {
 						"opacity": "100"
-					}
-				},
-				{
-					"id": "tween-one-property",
-					"objectClass": "Sprite6",
-					"sid": 289527045889793,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetOpacity",
-						"end-value": "100",
-						"time": "2",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "set-animation-frame",
-					"objectClass": "Sprite6",
-					"sid": 567901613536509,
-					"parameters": {
-						"frame-number": "0"
 					}
 				},
 				{

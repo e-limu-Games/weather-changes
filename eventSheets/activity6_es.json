@@ -2871,6 +2871,15 @@
 							}
 						},
 						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 551017111062682,
+							"parameters": {
+								"layer": "\"Mascot\"",
+								"visibility": "visible"
+							}
+						},
+						{
 							"id": "set-opacity",
 							"objectClass": "CorrectMascot",
 							"sid": 925611132441133,
@@ -3711,6 +3720,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 572600325291819,
+					"parameters": {
+						"layer": "\"Mascot\"",
+						"visibility": "invisible"
+					}
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "Acalm",
 					"sid": 467788169971610,
@@ -3861,35 +3879,11 @@
 					"sid": 876034376449661
 				},
 				{
-					"id": "set-visible",
-					"objectClass": "Correct3",
-					"sid": 717479809144399,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
 					"id": "set-animation-frame",
 					"objectClass": "Arainy",
 					"sid": 799174402348464,
 					"parameters": {
 						"frame-number": "4"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Correct1",
-					"sid": 218743067829199,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Correct4",
-					"sid": 655658479919574,
-					"parameters": {
-						"visibility": "visible"
 					}
 				},
 				{
@@ -4035,30 +4029,6 @@
 					}
 				},
 				{
-					"id": "tween-one-property",
-					"objectClass": "Sprite6",
-					"sid": 368323387264665,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetOpacity",
-						"end-value": "100",
-						"time": "2",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "set-animation-frame",
-					"objectClass": "Sprite6",
-					"sid": 570351559369008,
-					"parameters": {
-						"frame-number": "0"
-					}
-				},
-				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 274876733761903,
@@ -4106,27 +4076,27 @@
 					"sid": 945104834847274
 				},
 				{
-					"id": "set-animation-frame",
-					"objectClass": "WrongMascot",
-					"sid": 730153866358531,
-					"parameters": {
-						"frame-number": "0"
-					}
-				},
-				{
 					"id": "set-visible",
-					"objectClass": "WrongMascot",
-					"sid": 135796000819635,
+					"objectClass": "Correct3",
+					"sid": 732589788206310,
 					"parameters": {
 						"visibility": "invisible"
 					}
 				},
 				{
-					"id": "start-animation",
-					"objectClass": "WrongMascot",
-					"sid": 617056485335800,
+					"id": "set-visible",
+					"objectClass": "Correct1",
+					"sid": 441433486168538,
 					"parameters": {
-						"from": "beginning"
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Correct4",
+					"sid": 847740503566977,
+					"parameters": {
+						"visibility": "invisible"
 					}
 				}
 			],

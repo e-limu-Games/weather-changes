@@ -2111,6 +2111,14 @@
 							}
 						},
 						{
+							"id": "set-animation-frame",
+							"objectClass": "Arainy",
+							"sid": 684374404679047,
+							"parameters": {
+								"frame-number": "0"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "Arainy",
 							"sid": 564744789302477,
@@ -2157,25 +2165,6 @@
 							"sid": 357332662444236,
 							"parameters": {
 								"visibility": "visible"
-							}
-						},
-						{
-							"type": "comment",
-							"text": "",
-							"background-color": [
-								1,
-								0,
-								0,
-								1
-							]
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "Awindy",
-							"sid": 119362329183308,
-							"disabled": true,
-							"parameters": {
-								"frame-number": "5"
 							}
 						}
 					],
@@ -2236,6 +2225,14 @@
 							}
 						},
 						{
+							"id": "set-animation-frame",
+							"objectClass": "Awindy",
+							"sid": 889383513841552,
+							"parameters": {
+								"frame-number": "5"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "Awindy",
 							"sid": 189470981447917,
@@ -2282,15 +2279,6 @@
 							"sid": 905209536907864,
 							"parameters": {
 								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "Arainy",
-							"sid": 436838625174495,
-							"disabled": true,
-							"parameters": {
-								"frame-number": "0"
 							}
 						}
 					],
@@ -2585,6 +2573,15 @@
 								"loop": "not-looping",
 								"volume": "0",
 								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 823956804016291,
+							"parameters": {
+								"layer": "\"Mascot\"",
+								"visibility": "visible"
 							}
 						},
 						{
